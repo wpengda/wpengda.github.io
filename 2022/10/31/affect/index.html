@@ -1,0 +1,681 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/cat.png">
+  <link rel="icon" href="/img/cat.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Pengda Wang">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Affect-related Psychological Traits are Reflected by the Sentiment of Publicly Shared TextSentiment data is becoming more and more important today. Now, more and more high-risk decisions are made base">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Affect-related Psychological Traits are Reflected by the Sentiment of Publicly Shared Text">
+<meta property="og:url" content="http://wpengda.github.io/2022/10/31/affect/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Affect-related Psychological Traits are Reflected by the Sentiment of Publicly Shared TextSentiment data is becoming more and more important today. Now, more and more high-risk decisions are made base">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://wpengda.github.io/img/affect/Figure1.png">
+<meta property="og:image" content="http://wpengda.github.io/img/affect/Figure2.png">
+<meta property="og:image" content="http://wpengda.github.io/img/affect/Table1.png">
+<meta property="og:image" content="http://wpengda.github.io/img/affect/Table2.png">
+<meta property="article:published_time" content="2022-10-31T06:50:55.000Z">
+<meta property="article:modified_time" content="2022-11-01T20:12:09.386Z">
+<meta property="article:author" content="Pengda Wang">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://wpengda.github.io/img/affect/Figure1.png">
+  
+  
+  
+  <title>Affect-related Psychological Traits are Reflected by the Sentiment of Publicly Shared Text - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"wpengda.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Pengda Wang</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/sun4.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Affect-related Psychological Traits are Reflected by the Sentiment of Publicly Shared Text"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-10-31 01:50" pubdate>
+          October 31, 2022 am
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          24k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          204 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Affect-related Psychological Traits are Reflected by the Sentiment of Publicly Shared Text</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="Affect-related-Psychological-Traits-are-Reflected-by-the-Sentiment-of-Publicly-Shared-Text"><a href="#Affect-related-Psychological-Traits-are-Reflected-by-the-Sentiment-of-Publicly-Shared-Text" class="headerlink" title="Affect-related Psychological Traits are Reflected by the Sentiment of Publicly Shared Text"></a>Affect-related Psychological Traits are Reflected by the Sentiment of Publicly Shared Text</h2><p>Sentiment data is becoming more and more important today. Now, more and more high-risk decisions are made based on predictive models of publicly available sentiment data, especially on Twitter (Kwak et al., 2010). Sentiment analysis is a natural language processing (NLP) technique that categorizes positive, negative, or neutral data. It is beneficial for quickly gaining insights using large amounts of text data (Kothandaraman, 2021). Sentiment analysis allows researchers to understand these unstructured texts through automated processes, gaining actionable insights and saving manual data processing time (Kothandaraman, 2021). </p>
+<p>Most studies focused on how sentiment varies across individuals, ignoring variance accounted for by stable traits (e.g., Crannell et al., 2016). However, these studies ignore individual stability in sentiment across the situation, making the extent to which sentiment is consistent within individuals unknown. In contrast, psychometrics is suitable for measuring within-individual stability in sentiment as it can partition variation in sentiment explained by situations and individuals (Crocker &amp; Algina, 1986). </p>
+<p>Therefore, this study aims to use a psychometric approach to measure the degree to which sentiment is stable across situations within an individual. A psychometric approach is used because it treats sentiment variation across situations as error, so that variation in sentiment explained by a stable individual trait can be measured. Furthermore, we also tested the associations between latent sentiment and other affect-related psychological traits to evaluate the convergent validity of the latent sentiment trait. </p>
+<h3 id="Sentiment-Its-Prediction-and-Its-Measurement"><a href="#Sentiment-Its-Prediction-and-Its-Measurement" class="headerlink" title="Sentiment, Its Prediction, and Its Measurement"></a>Sentiment, Its Prediction, and Its Measurement</h3><p>The act of detecting positive or negative emotions in the text is called sentiment measurement. One of the most popular methods to measure sentiment is the lexicon-based approach. The lexicon-based process uses a dictionary of words marked by emotion to quantify the emotion of a piece of text based on the percentage of emotional words in the text. Some of the widely used sentiment lexicons include <strong>General Inquirer (Stone et al.,1962), Happiness Index (Dodds &amp; Danforth, 2009), Linguistic Inquiry and Word Count (LIWC (Pennebaker et al., 2015)), NRC Emotion Lexicon (Mohammad &amp; Turney, 2013), PANAS-t (Gonçalves et al., 2013), SenticNet (Cambria et al., 2010), SentiWordNet (Sebastiani &amp; Esuli, 2006).</strong></p>
+<p>The sentiment is a widely used predictor in prediction models of various outcomes. For example, sentiment can be used for social media monitoring so that companies do not ignore customers’ feelings on specific topics and can preemptively handle possible future problems.(Chaudhari, 2021). It can also be analyzed for investigations and customer support interactions while exploring new markets and forecasts (Chaudhari, 2021). </p>
+<p>Most sentiment research focused on modeling the shared variance across people and treating human variation as error, thereby ignoring individual stability in sentiment across situations. For example, Padilla et al. (2018) explored how different factors affect the sentiment of Chicago’s tourist attractions. This study focused on the seasonal weather, special days and concerts, and other tourist activities, ignoring the within-individual stability. Luo et al. (2019) explored ten years of Twitter tweets related to HPV vaccines. This study mainly focused on how sentiment towards a specific event varied across individuals and was ignored within individual stability across situations. </p>
+<h3 id="Using-a-Psychometric-Approach-to-Measure-Sentiment"><a href="#Using-a-Psychometric-Approach-to-Measure-Sentiment" class="headerlink" title="Using a Psychometric Approach to Measure Sentiment"></a>Using a Psychometric Approach to Measure Sentiment</h3><p>The goal of psychometric measurement is generally to standardize situational variance across measurement occasions so that this variance can be modeled as an unsystematic error (Crocker &amp; Algina, 1986). This makes it a desirable alternative measurement strategy to overcome this research gap in the sentiment literature. There is a paradigm called classical test theory in psychometric measurement, also known as true score theory (Cappelleri et al., 2014). The theory assumes that if there is no measurement error, the measurement will get a true score T. But we cannot directly observe the true score; it is assumed that observed score (X) = true score (T) + error (E) (Cappelleri et al., 2014). </p>
+<p>In particular, psychometric methods have been applied to measure both state and trait affect; additionally, accumulated evidence supports a state-trait distinction in affect. The state is a temporary way of existence (that is, thinking, feeling, behavior, and association), and the trait is often a more stable and lasting characteristic or pattern of behavior (Schmitt &amp; Blum, 2020). A distinction between state and trait has been observed in many psychological phenomena (Bernstein &amp; Eveland, 1982; Chaplin et al., 1988). For instance, Usala &amp; Hertzog (1991) used structural equation modeling (SEM) to assess the differential longitudinal stabilities of state and trait anxiety, establishing the differential stability for the trait, aggregate-state, and state anxiety. A similar traitstate distinction has been widely supported in affect research. For example, Merz &amp; Roesch (2011) modeled trait and state Positive Affect (PA) and Negative Affect (NA) through long-term studies of a daily diary found that trait and state measurement may have different predictive utilities. Barrett et al. (1998) found that women reported different levels of emotionality when making trait judgments and state-related judgments (reported higher levels of emotionality when making trait judgments).</p>
+<p>Previous studies have found close connections between sentiment and affect-related constructs. For example, Schwartz et al. (2013) found that sentiment predicted life satisfaction, an affect-related variable, above and beyond broad socioeconomic and demographic variables. Eichstaedt et al. (2018) found that sentiment in social media language preceding participants’ first diagnosis of depression could predict depression with fair accuracy.</p>
+<p>In addition, psychological theories of affect have been applied to measure sentiment, which supports the association between affect and sentiment and the possibility of using a psychometric approach to measure sentiment. For example, Gonçalves et al. (2013) proposed PANAS-t, a sentiment measure developed based on the well-established psychometric scale PANAS (positive and negative affect schedule), to measure the sentiment of tweets on Twitter. They also tested the efficacy of 10 truly significant subdimensions extracted by PANAS-t from 1.8 billion tweets and proved that it could effectively capture the expected sentiment of various issues covering tragedies, technology releases, political debates, and healthcare.</p>
+<p>The present study, therefore, explored whether a trait-state distinction in sentiment that is similar to the distinction in state and trait affect could be found using psychometric methods; Specifically, we focus on the measurement of “latent trait sentiment” (LTS), a term we use to describe the degree to which sentiment is consistent across contexts (i.e., regardless of topic, mood, or other nuisance situational causes) within a broader meaningful situational frame (e.g., a particular social media platform).</p>
+<p>To further test whether LTS represents a specific psychological trait that is similar to affect measured by traditional psychometric measurement, we test the associations between LTS and several measures that cover the breadth of the affect-related psychological construct space. These measures included positive and negative affect (PANAS) (Thompson, 2007), behavioral inhabitation (BIS) and activation (BAS) (Carver &amp; White, 1994), self-monitoring (Lennox &amp; Wolfe, 1984), trait optimism (Life Orientation Test-Revised) (Scheier et al.,1994), big five personalities (John et al., 1991), life satisfaction (Satisfaction with Life Scale; SWLS) (Diener et al., 1985), and counterproductive work behavior (CWB) (Koopmans et al., 2013). </p>
+<p>Among these scales, PANAS is an established measure of positive and negative affect (Thompson, 2007). BIS was shown to be related to negative affect, while BAS was related to positive affect (Carver &amp; White, 1994). Self-monitoring was negatively associated with social anxiety (Lennox &amp; Wolfe, 1984). Trait optimism was related to affect, affect was positive if progress toward the desired goal was being felt, and affect was negative if progress toward the desired goal was hindered (Scheier et al., 1994). Extraversion, Agreeableness, Conscientiousness, and Openness were shown to be related to positive affect, while Neuroticism was related to negative affect (John et al., 1991). Life satisfaction was related to affect because one with higher life satisfaction tended to have a positive affect (Diener et al., 1985). Individual Work Performance Questionnaire (IWPQ) found that OCB was related to positive affect, while CWB was related to negative affect (Koopmans et al., 2013).</p>
+<p><strong>H1: Shared variance of LTS within individuals across contexts can be modeled as a latent psychological trait.</strong></p>
+<p><strong>RQ1: Is LTS related to affect-related psychological trait variables?</strong></p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><h3 id="Participants-and-Procedure"><a href="#Participants-and-Procedure" class="headerlink" title="Participants and Procedure"></a>Participants and Procedure</h3><p>A total of 2064 participants were collected from two sources, Qualtrics’s online sampling service (N=843) and the University of Minnesota’s undergraduate psychology participant pool (N=1221), from February to December 2019. Participants reported their Twitter accounts and fill out a survey about psychological constructs that were documented to be associated with sentiment in prior literature through Qualtrics. Participants were instructed to tweet “it’s me” at this study’s Twitter profile. Investigators then extracted publicly available tweets from the reported profile. Of respondents, 1207 participants provided Twitter handles, had completed survey data, and passed attention check questions in the survey. After excluding outliers based on intra-individual response variability, Mahalanobis Distance, and long string, 1031 participants were retained. A subset of 842 participants was further filtered based on their Twitter account on the following criteria: (1) followed at least 30 accounts, (2) were followed back by at least one-third of the accounts they were following, (3) had posted at least one time in each of the following periods: 0 - 30 days ago, 30 - 60 days ago, 0 - 90 days ago, (4) was an account for private use.</p>
+<h3 id="Measures"><a href="#Measures" class="headerlink" title="Measures"></a>Measures</h3><p><strong>Positive and Negative Sentiment.</strong> Positive and negative sentiment was measured by applying two combined lexicons to individual tweets for each participant. The two lexicons targeted positive and negative sentiments, respectively. Each combined lexicon was built by combining positive or negative sentiment words from three established lexicons, including the respective sub-dictionaries related to affect from LIWC2015 (Pennebaker et al., 2015), General Inquirer (Stone et al.,1962), and NRC Emotion Lexicon (Mohammad &amp; Turney, 2013). LIWC2015’s dictionaries were empirically compiled with and validated by psychologists, sociologists, and linguists over many years to measure affect (Tausczik &amp; Pennebaker, 2010). General Inquirer is a model of content analysis developed by Stone et al. (1962) using the Harvard IV-4 dictionary, Lasswell value dictionary, and several other categories as dictionary procedures. NRC Emotion Lexicon ( Mohammad &amp; Turney, 2013) is a significant word–emotion association lexicon created through a massive online annotation project. The extent to which each tweet expressed positive and negative sentiment was represented by the percentage of words in the combined lexicon that occurred within the tweet. For example, if 9.3% of words from a tweet were positive sentiment words, then the value assigned to positive sentiment for that case was 9.3.</p>
+<p><strong>Positive and Negative Affect.</strong> Positive and Negative Affect was measured by a five-item Likert scale developed by Thomson (2007). A sample item is “Interested” (1 = Very Slightly or Not at all; 5 = Extremely).</p>
+<p><strong>Behavioral Inhabitation and Activation.</strong> Behavioral Inhabitation and Activation was measured by a four-item Likert scale developed by Carver &amp; White (1994). A sample item is “I go out of my way to get things I want.” (1 = very true for me; 4 = very false for me).</p>
+<p><strong>Self-Monitoring.</strong> Self- Monitoring was measured by a six-item Likert scale developed by Lennox &amp; Wolfe (1984). A sample item is “I am often able to read people’s true emotions correctly through their eyes.” (0 = Certainly, always false; 5 = Certainly, always true).</p>
+<p><strong>Trait Optimism.</strong> Trait Optimism was measured by the five-item Likert scale Life Orientation Test-Revised developed by Scheier et al. (1994). A sample item is “In uncertain times, I usually expect the best.” (A = I agree a lot; E = I Disagree a lot).</p>
+<p><strong>Big Five Inventory.</strong> Big Five Inventory was measured by a five-item Likert scale developed by John et al. (1991). A sample item is “Is talkative.” (1 = Strongly disagree or the statement is definitely false; 5 = Strongly agree or the statement is definitely true).</p>
+<p><strong>Life Satisfaction.</strong> Life Satisfaction was measured by a seven-item Likert scale developed by Diener et al. (1985). A sample item is “In most ways, my life is close to my ideal.” (1 = Strongly disagree; 7 = Strongly agree).</p>
+<p><strong>Counterproductive Work Behaviors.</strong> Counterproductive Work Behaviors were measured by a five-item Likert scale developed by Koopmans et al. (2013). A sample item is “I complained about unimportant matters at work” (0 = Never; 4 = Often).</p>
+<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p>To classify tweets into different situations, an algorithm was developed by training a cross-validated Hierarchical Latent Dirichlet Allocation (hLDA) topic model using more than 50,000 tweets collected from Twitter’s API. HLDA is a hierarchical variant of Latent Dirichlet Allocation (LDA). LDA is a generative statistical model that clusters semantically related words into topics. In hLDA, LDA topics found in a corpus are structured hierarchically in a tree. Each node represents a topic, and the levels represent different levels of abstraction in the topic. Then, the word distribution of the topic model is used as the feature for training the random forest classification model. The algorithm is applied to the Twitter timeline of our research object to classify a single tweet into four LDA topic clusters.</p>
+<p>We then used the aggregate positive and negative sentiment lexicons to score the participants’ tweets and obtain each person’s average positive and negative sentiment scores in each topic cluster. CFAs were conducted on positive and negative sentiment across the four topic clusters respectively to test hypothesis 1. To explore research question 1, SEMs in which positive or negative sentiment scores were regressed individually on each psychological variable were fitted to test whether LTS related to affect-related psychological trait variables.<br>Figure 1 shows the positive LTS CFA model (χ2(2) = 33.10, p &lt;.001, CFI =.97, RMSEA = .14, SRMR = .03, omega = .80, AVE =.51). Except for RMSEA and Chi-square, all the fitting index standards are met, and the composite reliability measured by omega and the validity measured by AVE both show satisfactory psychological properties. Figure 2 show the negative LTS CFA model in good model fit, reliability, and validity (χ2(2) = 5.09, p =.08, CFI = 1.00, RMSEA = .04, SRMR = .01, omega = .82, AVE =.54). Therefore, Hypothesis 1 was supported. </p>
+<p>Tables 1 and 2 show the results of individual models with psychological predictors and positive and negative sentiments. Both positive and negative sentiment can be predicted by several affect-related variables. Positive affect is related to negative sentiment (B = -.15) but not positive sentiment (B = .04); negative affect have correlation with both positive (B = -.15) and negative sentiment (B = .29); behavioral activation have correlation with both positive (B = .21) and negative sentiment (B = .22); behavioral inhabitation have significantly related to both positive (B = .30) and negative sentiment (B = .32); counterproductive work behaviors also have correlation with both positive (B = .15) and negative sentiment (B = .22); in the big five inventory, agreeableness (B = -.22) and conscientiousness (B = -.36) show correlation with negative sentiment but not positive sentiment, neuroticism have correlation with both positive (B = .15) and negative sentiment (B = .31) and openness show correlation with positive sentiment (B = -.27).</p>
+<p><img src="/img/affect/Figure1.png" srcset="/img/loading.gif" lazyload alt="Figure 1"></p>
+<p><img src="/img/affect/Figure2.png" srcset="/img/loading.gif" lazyload alt="Figure 2"></p>
+<p><img src="/img/affect/Table1.png" srcset="/img/loading.gif" lazyload alt="Table 1"></p>
+<p><img src="/img/affect/Table2.png" srcset="/img/loading.gif" lazyload alt="Table 2"></p>
+<h2 id="Discussion"><a href="#Discussion" class="headerlink" title="Discussion"></a>Discussion</h2><p>This study demonstrated psychometrically reliable and valid measures of LTS by creating measurement occasions through topic modeling, treating the content of tweets as non-systematic measurement errors, leaving only stable trait components. We also show that stable affect-related psychological traits predict variance in LTS. </p>
+<h3 id="Theoretical-Contributions-and-Practical-Implications"><a href="#Theoretical-Contributions-and-Practical-Implications" class="headerlink" title="Theoretical Contributions and Practical Implications"></a>Theoretical Contributions and Practical Implications</h3><p>The present study showed that word-level modeling has the potential to make meaningful predictions of individual psychological traits. By using sentiment, a model with this level of predictive performance can be created even in a fairly small sample, unlike what has been demonstrated in previously published approaches which required more complex machine learning (Kosinski et al., 2013). </p>
+<p>Using sentiment to draw more accurate conclusions about personal psychological traits can be applied in many situations. By mathematically isolating LTS and correcting the biases it may introduce in comparisons between subjects, researchers may be able to better predict emotional-related outcomes, such as turnover or workplace violence. Also, researchers may be able to better predict people’s attitudes towards corporate products and brands through sentiment. Similar benefits may apply to the broader context-centric machine learning literature. For example, unconsidered and relatively small sample features will have a negative impact on the accuracy of predictions (Tumasjan et al., 2010). By controlling the systematic error introduced by the individual trait level emotions, adjusting LTS to analyze each person in the data set before drawing a conclusion between people, which can improve the accuracy of prediction more widely.</p>
+<h3 id="Limitations-and-Future-Directions"><a href="#Limitations-and-Future-Directions" class="headerlink" title="Limitations and Future Directions"></a>Limitations and Future Directions</h3><p>This study has several limitations. One is that Twitter users are not sufficiently representative of the general population, this makes it difficult to generalize the research conclusions to a wider population. Research suggested that Twitter users are younger on average (Fox et al., 2009), tend to be more highly educated and urbanized (Mislove et al., 2011), have higher incomes, and are more likely to be democrats (Pew Research Centre, 2018). The limitation also comes from the nature of the semantic dictionary. Although dictionaries can validly and reliably measure constructs, they are not exhaustive. Therefore, we cannot measure sentiment when a potentially emotional word in the tweet is not in the dictionary. Another limitation of this study is the difficulty with interpreting situations represented by topic clusters. However, our findings still supported the consistency of sentiment across distinct contexts. </p>
+<p>The present study provided several fruitful avenues for future studies, for example, this study can be replicated on other social media platforms to see how well the study results cross-validated. For sentiment measurement, alternative measurement strategies such as emoji could be combined into the aggregated lexicons to improve their coverage. Future studies can also study what types of situations are represented by LDA topic clusters to better explain the meaning of different contexts.</p>
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>The present study support that the shared variance of LTS within an individual across contexts can be modeled as a latent psychological trait that is related to affect-related psychological trait variables. The study also provided important implications for theory and practice by enabling better prediction of affect-related outcomes.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>Barrett, L. F., Robin, L., Pietromonaco, P. R., &amp; Eyssell, K. M. (1998). Are Women the “More Emotional” Sex? Evidence From Emotional Experiences in Social Context. Cognition &amp; Emotion, 12(4), 555–578. <a target="_blank" rel="noopener" href="https://doi.org/10.1080/026999398379565">https://doi.org/10.1080/026999398379565</a></p>
+<p>Bernstein, I. H., &amp; Eveland, D. C. (1982). State vs trait anxiety: A case study in confirmatory factor analysis. Personality and Individual Differences, 3(4), 361–372. <a target="_blank" rel="noopener" href="https://doi.org/10.1016/0191-8869(82)90002-2">https://doi.org/10.1016/0191-8869(82)90002-2</a></p>
+<p>Carver, C. S., &amp; White, T. L. (1994). Behavioral inhibition, behavioral activation, and affective responses to impending reward and punishment: The BIS/BAS Scales. Journal of Personality and Social Psychology, 67(2), 319-333. <a target="_blank" rel="noopener" href="http://dx.doi.org/10.1037/0022-3514.67.2.319">http://dx.doi.org/10.1037/0022-3514.67.2.319</a></p>
+<p>Cappelleri, J. C., Jason Lundy, J., &amp; Hays, R. D. (2014). Overview of Classical Test Theory and Item Response Theory for the Quantitative Assessment of Items in Developing Patient-Reported Outcomes Measures. Clinical Therapeutics, 36(5), 648–662. <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.clinthera.2014.04.006">https://doi.org/10.1016/j.clinthera.2014.04.006</a></p>
+<p>Cambria, E., Speer, R., Havasi, C., &amp; Hussain, A. (2010). SenticNet: A Publicly Available Semantic Resource for Opinion Mining. AAAI Fall Symposium: Commonsense Knowledge.</p>
+<p>Chaudhari, A. (2021, September 24). Sentiment Analysis. Voxco. <a target="_blank" rel="noopener" href="https://www.voxco.com/blog/sentiment-analysis/">https://www.voxco.com/blog/sentiment-analysis/</a></p>
+<p>Chaplin, W. F., John, O. P., &amp; Goldberg, L. R. (1988). Conceptions of states and traits: Dimensional attributes with ideas as prototypes. Journal of Personality and Social Psychology, 54(4), 541–557. <a target="_blank" rel="noopener" href="https://doi.org/10.1037/0022-3514.54.4.541">https://doi.org/10.1037/0022-3514.54.4.541</a></p>
+<p>Crannell, W. C., Clark, E., Jones, C., James, T. A., &amp; Moore, J. (2016). A pattern-matched Twitter analysis of US cancer-patient sentiments. Journal of Surgical Research, 206(2), 536–542. <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.jss.2016.06.050">https://doi.org/10.1016/j.jss.2016.06.050</a></p>
+<p>Crocker, L., &amp; Algina, J. (1986). Introduction to classical and modern test theory. Holt, Rinehart, and Winston.<br>Diener, E., Emmons, R. A., Larsen, R. J., &amp; Griffin, S. (1985). The Satisfaction with Life Scale. Journal of Personality Assessment, 49(1), 71-75. <a target="_blank" rel="noopener" href="https://doi.org/10.1207/s15327752jpa4901_13">https://doi.org/10.1207/s15327752jpa4901_13</a></p>
+<p>Dodds, P. S., &amp; Danforth, C. M. (2009). Measuring the Happiness of Large-Scale Written Expression: Songs, Blogs, and Presidents. Journal of Happiness Studies, 11(4), 441–456. <a target="_blank" rel="noopener" href="https://doi.org/10.1007/s10902-009-9150-9">https://doi.org/10.1007/s10902-009-9150-9</a></p>
+<p>Eichstaedt, J. C., Smith, R. J., Merchant, R. M., Ungar, L. H., Crutchley, P., Preoţiuc-Pietro, D., Asch, D. A., &amp; Schwartz, H. A. (2018). Facebook language predicts depression in medical records. Proceedings of the National Academy of Sciences, 115(44), 11203–11208. <a target="_blank" rel="noopener" href="https://doi.org/10.1073/pnas.1802331115">https://doi.org/10.1073/pnas.1802331115</a></p>
+<p>Fox, S., Zickuhr, K., &amp; Smith, A. (2009, October 21). Twitter and Status Updating, Fall 2009. Pew Research Center: Internet, Science &amp; Tech. <a target="_blank" rel="noopener" href="https://www.pewresearch.org/internet/2009/10/21/twitter-and-status-updating-fall-2009/">https://www.pewresearch.org/internet/2009/10/21/twitter-and-status-updating-fall-2009/</a></p>
+<p>Gonçalves, P., Araújo, M., Benevenuto, F., &amp; Cha, M. (2013). Comparing and combining sentiment analysis methods. COSN ‘13 : Proceedings of the 2013 Conference on Online Social Networks : October 7-8, 2013, Boston, Massachusetts, USA, 27–38. <a target="_blank" rel="noopener" href="https://doi.org/10.1145/2512938.2512951">https://doi.org/10.1145/2512938.2512951</a></p>
+<p>Gonçalves, P., Benevenuto, F., &amp; Cha, M. (2013). PANAS-t: A Psychometric Scale for Measuring Sentiments on Twitter. Social and Information Networks. Published. <a target="_blank" rel="noopener" href="https://arxiv.org/abs/1308.1857">https://arxiv.org/abs/1308.1857</a></p>
+<p>John, O. P., Donahue, E. M., &amp; Kentle, R. L. (1991). Big Five Inventory (BFI) [Database record]. A.P.A. PsycTests. <a target="_blank" rel="noopener" href="https://doi.org/10.1037/t07550-000">https://doi.org/10.1037/t07550-000</a></p>
+<p>Koopmans, L., Bernaards, C., Hildebrandt, V., van Buuren, S., Van der Beek, A. J., &amp; de Vet, H. C. (2013). Development of an individual work performance questionnaire. International journal of productivity and performance management. <a target="_blank" rel="noopener" href="http://dx.doi.org/10.1108/17410401311285273">http://dx.doi.org/10.1108/17410401311285273</a> </p>
+<p>Kosinski, M., Stillwell, D., Graepel, T. (2013) Private traits and attributes are predictable from digital records of human behavior. Proceedings of the National Academy of Sciences, 110(15), 5802–5805. <a target="_blank" rel="noopener" href="https://doi.org/10.1073/pnas.1218772110">https://doi.org/10.1073/pnas.1218772110</a></p>
+<p>Kothandaraman, S. (2021, October 25). Sentiment Analysis Using NLP: The Go-To Guide. Aviso. <a target="_blank" rel="noopener" href="https://www.aviso.com/blog/sentiment-analysis-using-nlp/">https://www.aviso.com/blog/sentiment-analysis-using-nlp/</a></p>
+<p>Kwak, H., Lee, C., Park, H., Moon, S. (2010) What is Twitter, a social network or a news media? Proceedings of the 19th International Conference on World Wide Web. (A.C.M.), 591–600. <a target="_blank" rel="noopener" href="https://doi.org/10.1145/1772690.1772751">https://doi.org/10.1145/1772690.1772751</a></p>
+<p>Lennox, R. D., &amp; Wolfe, R. N. (1984). Revision of the Self-Monitoring Scale. Journal of Personality and Social Psychology, 46(6), 1349–1364. <a target="_blank" rel="noopener" href="https://doi.org/10.1037/0022-3514.46.6.1349">https://doi.org/10.1037/0022-3514.46.6.1349</a></p>
+<p>Luo, X., Zimet, G., &amp; Shah, S. (2019). A natural language processing framework to analyze the opinions on HPV vaccination reflected in twitter over 10 years (2008 - 2017). Human Vaccines &amp; Immunotherapeutics, 15(7–8), 1496–1504. <a target="_blank" rel="noopener" href="https://doi.org/10.1080/21645515.2019.1627821">https://doi.org/10.1080/21645515.2019.1627821</a></p>
+<p>Merz, E. L., &amp; Roesch, S. C. (2011). Modeling trait and state variation using multilevel factor analysis with PANAS daily diary data. Journal of Research in Personality, 45(1), 2–9. <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.jrp.2010.11.003">https://doi.org/10.1016/j.jrp.2010.11.003</a></p>
+<p>Mislove, A., Lehmann, S., Ahn, Y.-Y., Onnela, J.-P., &amp; Rosenquist, J. (2021). Understanding the Demographics of Twitter Users. Proceedings of the International AAAI Conference on Web and Social Media, 5(1), 554-557. Retrieved from <a target="_blank" rel="noopener" href="https://ojs.aaai.org/index.php/ICWSM/article/view/14168">https://ojs.aaai.org/index.php/ICWSM/article/view/14168</a></p>
+<p>Mohammad, S. M., &amp; Turney, P. D. (2013). Nrc emotion lexicon. National Research Council Canada, 2. <a target="_blank" rel="noopener" href="http://www.saifmohammad.com/WebDocs/NRCemotionlexicon.pdf">http://www.saifmohammad.com/WebDocs/NRCemotionlexicon.pdf</a></p>
+<p>Padilla, J. J., Kavak, H., Lynch, C. J., Gore, R. J., &amp; Diallo, S. Y. (2018). Temporal and spatiotemporal investigation of tourist attraction visit sentiment on Twitter. PLOS ONE, 13(6), e0198857. <a target="_blank" rel="noopener" href="https://doi.org/10.1371/journal.pone.0198857">https://doi.org/10.1371/journal.pone.0198857</a></p>
+<p>Pennebaker, J. W., Boyd, R. L., Jordan, K., &amp; Blackburn, K. (2015). The development and psychometric properties of LIWC2015. <a target="_blank" rel="noopener" href="http://liwc.net/LIWC2007LanguageManual.pdf">http://liwc.net/LIWC2007LanguageManual.pdf</a></p>
+<p>Scheier, M. F., Carver, C. S., &amp; Bridges, M. W. (1994). Distinguishing optimism from neuroticism (and trait anxiety, self-mastery, and self-esteem): A reevaluation of the Life Orientation Test. Journal of Personality and Social Psychology, 67(6), 1063-1078. <a target="_blank" rel="noopener" href="http://dx.doi.org/10.1037/0022-3514.67.6.1063">http://dx.doi.org/10.1037/0022-3514.67.6.1063</a></p>
+<p>Schmitt, M., &amp; Blum, G. S. (2020). State/Trait Interactions. Encyclopedia of Personality and Individual Differences, 5206–5209. <a target="_blank" rel="noopener" href="https://doi.org/10.1007/978-3-319-24612-3_1922">https://doi.org/10.1007/978-3-319-24612-3_1922</a></p>
+<p>Schwartz, H. A., Eichstaedt, J. C., Dziurzynski, L., Kern, M. L., Blanco, E., Kosinski, M., Stillwell, D., Seligman, M. E. P., &amp; Ungar, L. H. (2013). Characterizing geographic variation in well-being using tweets. In Seventh International AAAI Conference on Weblogs and Social Media</p>
+<p>Sebastiani, F., &amp; Esuli, A. (2006). SentiWordNet: A Publicly Available Lexical Resource for Opinion Mining. International Conference on Language Resources and Evaluation (LREC), 417–422. <a target="_blank" rel="noopener" href="http://www.lrec-conf.org/proceedings/lrec2006/pdf/384_pdf.pdf">http://www.lrec-conf.org/proceedings/lrec2006/pdf/384_pdf.pdf</a></p>
+<p>Stone, P. J., Bales, R. F., Namenwirth, J. Z., &amp; Ogilvie, D. M. (1962). The general inquirer: A computer system for content analysis and retrieval based on the sentence as a unit of information. Behavioral Science, 7(4), 484–498. <a target="_blank" rel="noopener" href="https://doi.org/10.1002/bs.3830070412">https://doi.org/10.1002/bs.3830070412</a></p>
+<p>Tausczik, Y. R., &amp; Pennebaker, J. W. (2010). The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods. Journal of Language and Social Psychology, 29(1), 24–54. <a target="_blank" rel="noopener" href="https://doi.org/10.1177/0261927x09351676">https://doi.org/10.1177/0261927x09351676</a></p>
+<p>Thompson, E. R. (2007). Development and Validation of an Internationally Reliable Short-Form of the Positive and Negative Affect Schedule (PANAS). Journal of Cross-Cultural Psychology, 38(2), 227–242. <a target="_blank" rel="noopener" href="https://doi.org/10.1177/0022022106297301">https://doi.org/10.1177/0022022106297301</a></p>
+<p>Tumasjan, A., Sprenger, T.O., Sandner, P.G. &amp; Welpe, I.M. (2010) Predicting elections with Twitter: What 140 characters reveal about political sentiment. International Conference on Weblogs and Social Media. 10(1), 178–185. <a target="_blank" rel="noopener" href="https://ojs.aaai.org/index.php/ICWSM/article/view/14009">https://ojs.aaai.org/index.php/ICWSM/article/view/14009</a></p>
+<p>Usala, P. D., &amp; Hertzog, C. (1991). Evidence of differential stability of state and trait anxiety in adults. Journal of Personality and Social Psychology, 60(3), 471–479. <a target="_blank" rel="noopener" href="https://doi.org/10.1037/0022-3514.60.3.471">https://doi.org/10.1037/0022-3514.60.3.471</a></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Paper/" class="category-chain-item">Paper</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Affect-related Psychological Traits are Reflected by the Sentiment of Publicly Shared Text</div>
+      <div>http://wpengda.github.io/2022/10/31/affect/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Pengda Wang</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>October 31, 2022</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/10/31/game-OCB/" title="Can Gamification Improve Organizational Citizenship Behavior in Employees?">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Can Gamification Improve Organizational Citizenship Behavior in Employees?</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Table of Contents</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
