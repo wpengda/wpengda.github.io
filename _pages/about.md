@@ -32,7 +32,13 @@ As a PhD student, I am always excited to collaborate with other researchers and 
 - *2023.12*, Our sympoisum, [Future of Performance Prediction and Evaluation: Artificial Intelligence and Big Data](https://www.siop.org/Annual-Conference), has been accepted at SIOP 2024.
 - *2023.08*, I joined [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology) as a first-year PhD student. 
 
-<!-- # 📝 Publications  -->
+# 📝 Publications 
+- Wang, P., Myeong, H., & Oswald, F. L. (in press). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology: Perspectives on Science and Practice*.
+
+- Wang, P., Xiao, Z., Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *arXiv (Cornell University)*. [https://doi.org/10.48550/arxiv.2404.01461](https://doi.org/10.48550/arxiv.2404.01461)
+
+- Myeong, H., Wang, P., & King, E. B. (2024). The weight of beauty in psychological research. *Industrial and Organizational Psychology, 17*(1), 111–114. [https://doi.org/10.1017/iop.2023.87](https://doi.org/10.1017/iop.2023.87)
+
 
 
 <!-- # 🎖 Honors and Awards
