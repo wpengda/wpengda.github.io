@@ -33,12 +33,15 @@ As a PhD student, I am always excited to collaborate with other researchers and 
 - *2023.08*, I joined [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology) as a first-year PhD student. 
 
 # 📝 Publications 
-- Wang, P., Myeong, H., & Oswald, F. L. (in press). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology: Perspectives on Science and Practice*.
+- **Wang, P.**, Myeong, H., & Oswald, F. L. (in press). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology: Perspectives on Science and Practice*.
 
-- Wang, P., Xiao, Z., Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *arXiv (Cornell University)*. [https://doi.org/10.48550/arxiv.2404.01461](https://doi.org/10.48550/arxiv.2404.01461)
+- **Wang, P.**, Xiao, Z., Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *arXiv (Cornell University)*. [https://doi.org/10.48550/arxiv.2404.01461](https://doi.org/10.48550/arxiv.2404.01461)
 
-- Myeong, H., Wang, P., & King, E. B. (2024). The weight of beauty in psychological research. *Industrial and Organizational Psychology, 17*(1), 111–114. [https://doi.org/10.1017/iop.2023.87](https://doi.org/10.1017/iop.2023.87)
+- Myeong, H., **Wang, P.**, & King, E. B. (2024). The weight of beauty in psychological research. *Industrial and Organizational Psychology, 17*(1), 111–114. [https://doi.org/10.1017/iop.2023.87](https://doi.org/10.1017/iop.2023.87)
 
+# 💬 Conference Presentations
+- Wu, F., **Wang, P.**, & Oswald, F. O. (2024). The Influence of Disability and Career Challenges on Vocational Interests. In Hoff, K. A. (Chair) (2024). To RIASEC and Beyond: Advances in Vocational Interest Research [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States.
+- **Wang, P.**, & Oswald, F. L. (2024). Leveraging synthetic data for advancements in organizational research. In Liou, G., \& Tay, L. (Co-Chairs) (2024). Future of performance prediction and evaluation: Artificial intelligence and big data [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States.
 
 
 <!-- # 🎖 Honors and Awards
@@ -49,9 +52,7 @@ As a PhD student, I am always excited to collaborate with other researchers and 
 - *2023 - Present*, PhD in Industrial-Organizational Psychology, Rice University.
 - *2019 - 2023*, BS in Psychology and BA in Computer Science, University of Minnesota, TwinCities.
 
-<!-- # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
+
 
 # 💻 Internships and Research Experiences
 - *2023.08 - Present*, [OWL Lab](https://workforce.rice.edu/) Research Assistant, Houston, TX, USA.
