@@ -42,7 +42,7 @@ As a PhD student, I am always excited to collaborate with other researchers and 
 
 # 💬 Conference Presentations
 - Wu, F., **Wang, P.**, & Oswald, F. O. (2024). The Influence of Disability and Career Challenges on Vocational Interests. In Hoff, K. A. (Chair) (2024). To RIASEC and Beyond: Advances in Vocational Interest Research [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States.
-- **Wang, P.**, & Oswald, F. L. (2024). Leveraging synthetic data for advancements in organizational research. In Liou, G., \& Tay, L. (Co-Chairs) (2024). Future of performance prediction and evaluation: Artificial intelligence and big data [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States.
+- **Wang, P.**, & Oswald, F. L. (2024). Leveraging synthetic data for advancements in organizational research. In Liou, G., & Tay, L. (Co-Chairs) (2024). Future of performance prediction and evaluation: Artificial intelligence and big data [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States.
 
 
 <!-- # 🎖 Honors and Awards
