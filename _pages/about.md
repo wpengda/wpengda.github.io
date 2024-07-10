@@ -28,9 +28,9 @@ As a PhD student, I am always excited to collaborate with other researchers and 
 
 # 🔥 News
 - *2024.07*, Our article, [Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs.](https://doi.org/10.48550/arxiv.2404.01461), has now been accepted at [COLM 2024](https://colmweb.org/).
-- *2024.03*, Our article, [The weight of beauty in psychological research](https://doi.org/10.1017/iop.2023.87), has now been published in Industrial and Organizational Psychology.
-- *2023.12*, Our sympoisum, [To RIASEC and Beyond: Advances in Vocational Interest Research](https://www.siop.org/Annual-Conference), has been accepted at SIOP 2024.
-- *2023.12*, Our sympoisum, [Future of Performance Prediction and Evaluation: Artificial Intelligence and Big Data](https://www.siop.org/Annual-Conference), has been accepted at SIOP 2024.
+- *2024.03*, Our article, [The weight of beauty in psychological research](https://doi.org/10.1017/iop.2023.87), has now been published in [Industrial and Organizational Psychology](https://www.siop.org/Research-Publications/IOP-Journal).
+- *2023.12*, Our sympoisum, [To RIASEC and Beyond: Advances in Vocational Interest Research](https://www.siop.org/Annual-Conference), has been accepted at [SIOP 2024](https://www.siop.org/annual-conference).
+- *2023.12*, Our sympoisum, [Future of Performance Prediction and Evaluation: Artificial Intelligence and Big Data](https://www.siop.org/Annual-Conference), has been accepted at [SIOP 2024](https://www.siop.org/annual-conference).
 - *2023.08*, I joined [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology) as a first-year PhD student. 
 
 # 📝 Publications 
