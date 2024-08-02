@@ -39,29 +39,27 @@ As a PhD student, I am always excited to collaborate with other researchers and 
 
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Leveraging Synthetic Data to Advance Organizational Science." width=150px></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Leveraging Synthetic Data to Advance Organizational Science." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-**Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (in review). Leveraging Synthetic Data to Advance Organizational Science. https://doi.org/10.31234/osf.io/4qbjz
-<br>
+**Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (in review). Leveraging Synthetic Data to Advance Organizational Science. https://doi.org/10.31234/osf.io/4qbjz <br />
 [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/criteria.png' alt="On putting the horse (raters and criteria) before the cart (variance components in ratings)." width=150px></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/criteria.png' alt="On putting the horse (raters and criteria) before the cart (variance components in ratings)." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **Wang, P.**, Myeong, H., & Oswald, F. L. (in press). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology: Perspectives on Science and Practice*.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/heuristic.png' alt="Will the real Linda please stand up... To large language models?" width=150px></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/heuristic.png' alt="Will the real Linda please stand up... To large language models?" width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-**Wang, P.**, Xiao, Z., Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *arXiv (Cornell University)*. [https://doi.org/10.48550/arxiv.2404.01461](https://doi.org/10.48550/arxiv.2404.01461)
- <br>
+**Wang, P.**, Xiao, Z., Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *arXiv (Cornell University)*. [https://doi.org/10.48550/arxiv.2404.01461](https://doi.org/10.48550/arxiv.2404.01461) <br />
 [[Code]](https://github.com/MrZilinXiao/LLMHeuristicReHEAT)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/weight.png' alt="The weight of beauty in psychological research." width=150px></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/weight.png' alt="The weight of beauty in psychological research." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 Myeong, H., **Wang, P.**, & King, E. B. (2024). The weight of beauty in psychological research. *Industrial and Organizational Psychology, 17*(1), 111–114. [https://doi.org/10.1017/iop.2023.87](https://doi.org/10.1017/iop.2023.87)
 </div>
