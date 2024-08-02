@@ -41,8 +41,9 @@ As a PhD student, I am always excited to collaborate with other researchers and 
 # 📝 Publications 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Leveraging Synthetic Data to Advance Organizational Science." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-[[Code]] (https://github.com/wpengda/SyntheticData_OrganizationalScience)
 **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (in review). Leveraging Synthetic Data to Advance Organizational Science. https://doi.org/10.31234/osf.io/4qbjz
+
+[[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience)
 </div>
 </div>
 
@@ -54,8 +55,9 @@ As a PhD student, I am always excited to collaborate with other researchers and 
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/heuristic.png' alt="Will the real Linda please stand up... To large language models?" width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-[[Code]] (https://github.com/MrZilinXiao/LLMHeuristicReHEAT)
 **Wang, P.**, Xiao, Z., Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *arXiv (Cornell University)*. [https://doi.org/10.48550/arxiv.2404.01461](https://doi.org/10.48550/arxiv.2404.01461)
+
+[[Code]](https://github.com/MrZilinXiao/LLMHeuristicReHEAT)
 </div>
 </div>
 
