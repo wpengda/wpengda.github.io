@@ -39,12 +39,15 @@ As a PhD student, I am always excited to collaborate with other researchers and 
 
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Leveraging Synthetic Data to Advance Organizational Science." width=150px></div></div>
-<div class='paper-box-text' markdown="1">
-**Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (in review). Leveraging Synthetic Data to Advance Organizational Science. https://doi.org/10.31234/osf.io/4qbjz
-
-[[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience)
-</div>
+<div class='paper-box' style="display: flex; align-items: center;">
+  <div class='paper-box-image' style="margin-right: 10px;">
+    <img src='images/synthetic.png' alt="Leveraging Synthetic Data to Advance Organizational Science." width="150px">
+  </div>
+  <div class='paper-box-text' markdown="1">
+    **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (in review). Leveraging Synthetic Data to Advance Organizational Science. https://doi.org/10.31234/osf.io/4qbjz
+    <br>
+    [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience)
+  </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/criteria.png' alt="On putting the horse (raters and criteria) before the cart (variance components in ratings)." width=150px></div></div>
