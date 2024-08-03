@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a second-year Industrial-Organizational Psychology Ph.D. student at [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology), advised by [Prof. Fred Oswald](https://profiles.rice.edu/faculty/fred-oswald). Prior to this, I received my B.S. in Psychology and B.A. in Computer Science, both with high distinction, from the [University of Minnesota, Twin Cities](https://twin-cities.umn.edu/), where I had the privilege of working with [Prof. Richard Landers](https://cla.umn.edu/about/directory/profile/lande065), [Prof. Deniz Ones](https://cla.umn.edu/about/directory/profile/onesx001), and [Prof. Gail Ferguson](https://icd.umn.edu/gail-ferguson).
+I am a second-year Industrial-Organizational Psychology Ph.D. student in the [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology), advised by [Prof. Fred Oswald](https://profiles.rice.edu/faculty/fred-oswald). Prior to this, I received my B.S. in Psychology and B.A. in Computer Science, both with high distinction, from the [University of Minnesota, Twin Cities](https://twin-cities.umn.edu/), where I had the privilege of working with [Prof. Richard Landers](https://cla.umn.edu/about/directory/profile/lande065), [Prof. Deniz Ones](https://cla.umn.edu/about/directory/profile/onesx001), and [Prof. Gail Ferguson](https://icd.umn.edu/gail-ferguson).
 
-My primary research interests are centered around leveraging innovative technologies to enhance psychometric assessments and employee selection. I am also interested in advancing open science through the adoption of novel methodologies. My aim is to become an expert in quantitative analysis, with a keen focus on harnessing machine learning to elevate the accuracy and fairness of psychological measurement and selection systems.
+My primary research interests are centered around leveraging innovative technologies to enhance psychometric assessments and employee selection. I am also interested in advancing open science through the adoption of novel methodologies. My aim is to become an I-O psychologist who is an expert in quantitative analysis, with a keen focus on harnessing machine learning to elevate the accuracy and fairness of psychological measurement and personnel selection systems.
 
 I am always excited to collaborate with other researchers and explore new fields. Do not hesitate to contact me if you are interested!
 
@@ -43,7 +43,7 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box-text' markdown="1">
 **Leveraging Synthetic Data to Advance Organizational Science.** <br />
 [[PDF]](../files/synthetic_data.pdf) [[DOI]](https://doi.org/10.31234/osf.io/4qbjz) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
-**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (in review). Leveraging Synthetic Data to Advance Organizational Science. https://doi.org/10.31234/osf.io/4qbjz
+**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (under review). Leveraging synthetic data to advance organizational science. https://doi.org/10.31234/osf.io/4qbjz
 </div>
 </div>
 
@@ -81,15 +81,15 @@ I am always excited to collaborate with other researchers and explore new fields
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
-# 📖 Educations
+# 📖 Education
 - *2023 - Present*, Ph.D. in Industrial-Organizational Psychology, Rice University.
 - *2019 - 2023*, B.S. in Psychology and B.A. in Computer Science, University of Minnesota, TwinCities.
 
 
 
 # 💻 Internships and Research Experiences
-- *2023.08 - Present*, [OWL Lab](https://workforce.rice.edu/) Research Assistant, Houston, TX, USA.
-- *2022.05 - 2023.06*, [CFL Lab](https://innovation.umn.edu/culture-and-family-life-lab/people/) Research Assistant, Minneapolis, MN, USA.
-- *2021.04 - 2023.06*, [TNTLAB](https://rlanders.net/) Research Assistant, Minneapolis, MN, USA.
-- *2021.12 - 2022.07*, [ACR Homes](https://acrhomes.com/) Human Resources Intern, Minneapolis, MN, USA.
-- *2020.06 - 2022.07*, [One's Green Lab](https://cla.umn.edu/about/directory/profile/onesx001) Research Assistant, Minneapolis, MN, USA.
+- *2023.08 - Present*, [OWL Lab](https://workforce.rice.edu/) Research Assistant, Houston, TX, USA
+- *2022.05 - 2023.06*, [CFL Lab](https://innovation.umn.edu/culture-and-family-life-lab/people/) Research Assistant, Minneapolis, MN, USA
+- *2021.04 - 2023.06*, [TNTLAB](https://rlanders.net/) Research Assistant, Minneapolis, MN, USA
+- *2021.12 - 2022.07*, [ACR Homes](https://acrhomes.com/) Human Resources Intern, Minneapolis, MN, USA
+- *2020.06 - 2022.07*, [Ones Green Lab](https://cla.umn.edu/about/directory/profile/onesx001) Research Assistant, Minneapolis, MN, USA
