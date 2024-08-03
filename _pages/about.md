@@ -17,11 +17,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a first-year Industrial-Organizational Psychology PhD student at [OWL Lab](https://workforce.rice.edu/) in [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology), advised by [Prof. Fred Oswald](https://profiles.rice.edu/faculty/fred-oswald). Prior to this, I get my Psychology, BS and Computer Science, BA dual degree with high distinction from [University of Minnesota, Twin Cities](https://twin-cities.umn.edu/), where I had the privilege of working with [Prof. Richard Landers](https://cla.umn.edu/about/directory/profile/lande065), [Prof. Deniz Ones](https://cla.umn.edu/about/directory/profile/onesx001), and [Prof. Gail Ferguson](https://icd.umn.edu/gail-ferguson).
+I am a second-year Industrial-Organizational Psychology Ph.D. student at [OWL Lab](https://workforce.rice.edu/) in [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology), advised by [Prof. Fred Oswald](https://profiles.rice.edu/faculty/fred-oswald). Prior to this, I get my Psychology, B.S. and Computer Science, B.A. dual degree with high distinction from [University of Minnesota, Twin Cities](https://twin-cities.umn.edu/), where I had the privilege of working with [Prof. Richard Landers](https://cla.umn.edu/about/directory/profile/lande065), [Prof. Deniz Ones](https://cla.umn.edu/about/directory/profile/onesx001), and [Prof. Gail Ferguson](https://icd.umn.edu/gail-ferguson).
 
 My primary research interests are centered around leveraging innovative technologies to enhance psychometric assessments and employee selection; I am also interest in advancing open science through the adoption of novel methodologies. My aim is to become an expert in quantitative analysis, with a keen focus on harnessing machine learning to elevate the accuracy and fairness of psychological measurement and selection systems. 
 
-As a PhD student, I am always excited to collaborate with other researchers and explore new fields. Do not hesitate to contact me if you are interested!
+I am always excited to collaborate with other researchers and explore new fields. Do not hesitate to contact me if you are interested!
 
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
@@ -41,27 +41,29 @@ As a PhD student, I am always excited to collaborate with other researchers and 
 # 📝 Publications 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Leveraging Synthetic Data to Advance Organizational Science." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-**Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (in review). Leveraging Synthetic Data to Advance Organizational Science. https://doi.org/10.31234/osf.io/4qbjz <br />
-[[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience)
+**Leveraging Synthetic Data to Advance Organizational Science.** [[DOI]](https://doi.org/10.31234/osf.io/4qbjz) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
+**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (in review). Leveraging Synthetic Data to Advance Organizational Science. https://doi.org/10.31234/osf.io/4qbjz
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/criteria.png' alt="On putting the horse (raters and criteria) before the cart (variance components in ratings)." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-**Wang, P.**, Myeong, H., & Oswald, F. L. (in press). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology: Perspectives on Science and Practice*.
+**On putting the horse (raters and criteria) before the cart (variance components in ratings).** <br />
+**[Cite]:** **Wang, P.**, Myeong, H., & Oswald, F. L. (in press). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology*.
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/heuristic.png' alt="Will the real Linda please stand up... To large language models?" width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-**Wang, P.**, Xiao, Z., Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *arXiv (Cornell University)*. [https://doi.org/10.48550/arxiv.2404.01461](https://doi.org/10.48550/arxiv.2404.01461) <br />
-[[Code]](https://github.com/MrZilinXiao/LLMHeuristicReHEAT)
+**Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs.** [[DOI]](https://doi.org/10.48550/arxiv.2404.01461) [[Code]](https://github.com/MrZilinXiao/LLMHeuristicReHEAT) <br />
+**[Cite]:** **Wang, P.**, Xiao, Z., Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *arXiv (Cornell University)*. https://doi.org/10.48550/arxiv.2404.01461
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/weight.png' alt="The weight of beauty in psychological research." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-Myeong, H., **Wang, P.**, & King, E. B. (2024). The weight of beauty in psychological research. *Industrial and Organizational Psychology, 17*(1), 111–114. [https://doi.org/10.1017/iop.2023.87](https://doi.org/10.1017/iop.2023.87)
+**The weight of beauty in psychological research.** [[DOI]](https://doi.org/10.1017/iop.2023.87) <br />
+**[Cite]:** Myeong, H., **Wang, P.**, & King, E. B. (2024). The weight of beauty in psychological research. *Industrial and Organizational Psychology, 17*(1), 111–114. https://doi.org/10.1017/iop.2023.87
 </div>
 </div>
 
