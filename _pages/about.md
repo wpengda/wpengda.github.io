@@ -41,7 +41,7 @@ I am always excited to collaborate with other researchers and explore new fields
 # 📝 Publications 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Leveraging Synthetic Data to Advance Organizational Science." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-**Leveraging Synthetic Data to Advance Organizational Science.** [[DOI]](https://doi.org/10.31234/osf.io/4qbjz) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
+**Leveraging Synthetic Data to Advance Organizational Science.** [[PDF]](../files/synthetic_data.pdf) [[DOI]](https://doi.org/10.31234/osf.io/4qbjz) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
 **[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (in review). Leveraging Synthetic Data to Advance Organizational Science. https://doi.org/10.31234/osf.io/4qbjz
 </div>
 </div>
@@ -55,7 +55,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/heuristic.png' alt="Will the real Linda please stand up... To large language models?" width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-**Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs.** [[DOI]](https://doi.org/10.48550/arxiv.2404.01461) [[Code]](https://github.com/MrZilinXiao/LLMHeuristicReHEAT) <br />
+**Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs.** [[PDF]](../files/heuristic.pdf) [[DOI]](https://doi.org/10.48550/arxiv.2404.01461) [[Code]](https://github.com/MrZilinXiao/LLMHeuristicReHEAT) <br />
 **[Cite]:** **Wang, P.**, Xiao, Z., Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *arXiv (Cornell University)*. https://doi.org/10.48550/arxiv.2404.01461
 </div>
 </div>
