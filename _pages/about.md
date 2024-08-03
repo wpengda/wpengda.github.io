@@ -42,7 +42,7 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Leveraging Synthetic Data to Advance Organizational Science." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **Leveraging Synthetic Data to Advance Organizational Science.** [[DOI]](https://doi.org/10.31234/osf.io/4qbjz) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
-**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (in review). Leveraging Synthetic Data to Advance Organizational Science. https://doi.org/10.31234/osf.io/4qbjz
+**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., &amp Oswald, F. L. (in review). Leveraging Synthetic Data to Advance Organizational Science. https://doi.org/10.31234/osf.io/4qbjz
 </div>
 </div>
 
@@ -79,8 +79,8 @@ I am always excited to collaborate with other researchers and explore new fields
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # 📖 Educations
-- *2023 - Present*, PhD in Industrial-Organizational Psychology, Rice University.
-- *2019 - 2023*, BS in Psychology and BA in Computer Science, University of Minnesota, TwinCities.
+- *2023 - Present*, Ph.D. in Industrial-Organizational Psychology, Rice University.
+- *2019 - 2023*, B.S. in Psychology and B.A. in Computer Science, University of Minnesota, TwinCities.
 
 
 
