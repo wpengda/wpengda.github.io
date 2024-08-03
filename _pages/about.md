@@ -27,13 +27,13 @@ I am always excited to collaborate with other researchers and explore new fields
 
 
 # 🔥 News
-- *2024.07*, Our article, [Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs.](https://doi.org/10.48550/arxiv.2404.01461), has now been accepted at [COLM 2024](https://colmweb.org/).
+- *2024.07*, Our article, **Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs**, has now been accepted at [COLM 2024](https://colmweb.org/).
 
-- *2024.03*, Our article, [The weight of beauty in psychological research](https://doi.org/10.1017/iop.2023.87), has now been published in [Industrial and Organizational Psychology](https://www.siop.org/Research-Publications/IOP-Journal).
+- *2024.03*, Our article, **The weight of beauty in psychological research**, has now been published in [Industrial and Organizational Psychology](https://www.cambridge.org/core/journals/industrial-and-organizational-psychology).
 
-- *2023.12*, Our sympoisum, [To RIASEC and Beyond: Advances in Vocational Interest Research](https://www.siop.org/Annual-Conference), has been accepted at [SIOP 2024](https://www.siop.org/annual-conference).
+- *2023.12*, Our sympoisum, **To RIASEC and beyond: Advances in vocational interest research**, has been accepted at [SIOP 2024](https://www.siop.org/annual-conference).
 
-- *2023.12*, Our sympoisum, [Future of Performance Prediction and Evaluation: Artificial Intelligence and Big Data](https://www.siop.org/Annual-Conference), has been accepted at [SIOP 2024](https://www.siop.org/annual-conference).
+- *2023.12*, Our sympoisum, **Future of performance prediction and evaluation: Artificial intelligence and big data**, has been accepted at [SIOP 2024](https://www.siop.org/annual-conference).
 
 - *2023.08*, I joined [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology) as a first-year PhD student. 
 
@@ -69,7 +69,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 
 # 💬 Conference Presentations
-- Wu, F., **Wang, P.**, & Oswald, F. O. (2024). The Influence of Disability and Career Challenges on Vocational Interests. In Hoff, K. A. (Chair) (2024). To RIASEC and Beyond: Advances in Vocational Interest Research [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States.
+- Wu, F., **Wang, P.**, & Oswald, F. O. (2024). The influence of disability and career challenges on vocational interests. In Hoff, K. A. (Chair) (2024). To RIASEC and beyond: Advances in vocational interest research [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States.
 
 - **Wang, P.**, & Oswald, F. L. (2024). Leveraging synthetic data for advancements in organizational research. In Liou, G., & Tay, L. (Co-Chairs) (2024). Future of performance prediction and evaluation: Artificial intelligence and big data [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States.
 
