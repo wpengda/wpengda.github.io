@@ -82,8 +82,8 @@ I am always excited to collaborate with other researchers and explore new fields
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # 📖 Education
-- *2023 - Present*, Ph.D. in Industrial-Organizational Psychology, Rice University.
-- *2019 - 2023*, B.S. in Psychology and B.A. in Computer Science, University of Minnesota, TwinCities.
+- *2023 - Present*, Ph.D. in Industrial-Organizational Psychology, Rice University
+- *2019 - 2023*, B.S. in Psychology and B.A. in Computer Science, University of Minnesota, Twin Cities
 
 
 
