@@ -62,7 +62,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/weight.png' alt="The weight of beauty in psychological research." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-**The weight of beauty in psychological research.** [[DOI]](https://doi.org/10.1017/iop.2023.87) <br />
+**The weight of beauty in psychological research.** [[PDF]](../files/the-weight-of-beauty-in-psychological-research.pdf) [[DOI]](https://doi.org/10.1017/iop.2023.87) <br />
 **[Cite]:** Myeong, H., **Wang, P.**, & King, E. B. (2024). The weight of beauty in psychological research. *Industrial and Organizational Psychology, 17*(1), 111–114. https://doi.org/10.1017/iop.2023.87
 </div>
 </div>
