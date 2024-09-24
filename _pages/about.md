@@ -47,7 +47,7 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box-text' markdown="1">
 **Not Yet: Large Language Models Cannot Replace Human Respondents for Psychometric Research.** <br />
 [[PDF]](../files/LLM_responses.pdf) [[DOI]](https://doi.org/10.31219/osf.io/rwy9b) [[Code]](https://github.com/wpengda/LLM_Responses) <br />
-**[Cite]:** **Wang, P.**, Zou, H., Yan, Z., Guo, F., Sun, T., Xiao, Z., & Zhang, B. (pre-print). Not Yet: Large Language Models Cannot Replace Human Respondents for Psychometric Research. *OSF*, https://doi.org/10.31219/osf.io/rwy9b
+**[Cite]:** **Wang, P.**, Zou, H., Yan, Z., Guo, F., Sun, T., Xiao, Z., & Zhang, B. (pre-print). Not Yet: Large Language Models Cannot Replace Human Respondents for Psychometric Research. *OSF*. https://doi.org/10.31219/osf.io/rwy9b
 </div>
 </div>
 
