@@ -63,7 +63,7 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box-text' markdown="1">
 **On putting the horse (raters and criteria) before the cart (variance components in ratings).** <br />
 [[PDF]](../files/on-putting-the-horse-raters-and-criteria-before-the-cart-variance-components-in-ratings.pdf) [[DOI]](https://doi.org/10.1017/iop.2024.16) <br />
-**[Cite]:** **Wang, P.**, Myeong, H., & Oswald, F. L. (in press). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology*, 1–5. https://doi.org/10.1017/iop.2024.16
+**[Cite]:** **Wang, P.**, Myeong, H., & Oswald, F. L. (2024). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology*, 1–5. https://doi.org/10.1017/iop.2024.16
 </div>
 </div>
 
