@@ -47,7 +47,7 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box-text' markdown="1">
 **Not Yet: Large Language Models Cannot Replace Human Respondents for Psychometric Research.** <br />
 [[PDF]](../files/LLM_responses.pdf) [[DOI]](https://doi.org/10.31219/osf.io/rwy9b) [[Code]](https://github.com/wpengda/LLM_Responses) <br />
-**[Cite]:** **Wang, P.**, Zou, H., Yan, Z., Guo, F., Sun, T., Xiao, Z., & Zhang, B. (pre-print). Not Yet: Large Language Models Cannot Replace Human Respondents for Psychometric Research. *OSF*. https://doi.org/10.31219/osf.io/rwy9b
+**[Cite]:** **Wang, P.**, Zou, H., Yan, Z., Guo, F., Sun, T., Xiao, Z., & Zhang, B. (2024). Not Yet: Large Language Models Cannot Replace Human Respondents for Psychometric Research. *PsyArXiv*. https://doi.org/10.31219/osf.io/rwy9b [pre-print]
 </div>
 </div>
 
@@ -55,7 +55,7 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box-text' markdown="1">
 **Leveraging Synthetic Data to Advance Organizational Science.** <br />
 [[PDF]](../files/synthetic_data.pdf) [[DOI]](https://doi.org/10.31234/osf.io/4qbjz) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
-**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (under review). Leveraging synthetic data to advance organizational science. https://doi.org/10.31234/osf.io/4qbjz
+**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (2024). Leveraging synthetic data to advance organizational science. *PsyArXiv*. https://doi.org/10.31234/osf.io/4qbjz [pre-print]
 </div>
 </div>
 
