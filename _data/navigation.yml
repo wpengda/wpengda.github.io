@@ -12,8 +12,8 @@ main:
   - title: "Conference Presentations"
     url: "/#-conference-presentations"
 
-  # - title: "Honors and Awards"
-  #   url: "/#-honors-and-awards"
+  - title: "Honors and Awards"
+    url: "/#-honors-and-awards"
 
   - title: "Education"
     url: "/#-education"

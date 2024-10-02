@@ -90,9 +90,9 @@ I am always excited to collaborate with other researchers and explore new fields
 - **Wang, P.**, & Oswald, F. L. (2024). Leveraging synthetic data for advancements in organizational research. In Liou, G., & Tay, L. (Co-Chairs) (2024). Future of performance prediction and evaluation: Artificial intelligence and big data [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States.
 
 
-<!-- # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+# 🎖 Honors and Awards
+- *2023*, Mortensen Research Award & CLA Research Scholarship, University of Minnesota - Twin Cities. $1,500.
+
 
 # 📖 Education
 - *2023 - Present*, Ph.D. in Industrial-Organizational Psychology, Rice University
