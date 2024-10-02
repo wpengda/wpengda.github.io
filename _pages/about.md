@@ -69,7 +69,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/heuristic.png' alt="Will the real Linda please stand up... To large language models?" width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-**Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs.**  **[Oral spotlight presentation (top 2%)]**<br />
+**Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs.** <span style="background-color: #ffff99;">🏅Oral spotlight presentation (top 2%)</span> <br />
 [[PDF]](../files/heuristic.pdf) [[DOI]](https://doi.org/10.48550/arxiv.2404.01461) [[Code]](https://github.com/MrZilinXiao/LLMHeuristicReHEAT) <br />
 **[Cite]:** **Wang, P.**, Xiao, Z., Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *The Conference on Language Modeling (COLM 2024)*. https://doi.org/10.48550/arxiv.2404.01461
 </div>
