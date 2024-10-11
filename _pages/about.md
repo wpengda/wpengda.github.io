@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a second-year Industrial-Organizational Psychology Ph.D. student in the [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology), advised by [Prof. Fred Oswald](https://profiles.rice.edu/faculty/fred-oswald). Prior to this, I received my B.S. in Psychology and B.A. in Computer Science, both with high distinction, from the [University of Minnesota, Twin Cities](https://twin-cities.umn.edu/), where I had the privilege of working with [Prof. Richard Landers](https://cla.umn.edu/about/directory/profile/lande065), [Prof. Deniz Ones](https://cla.umn.edu/about/directory/profile/onesx001), and [Prof. Gail Ferguson](https://icd.umn.edu/gail-ferguson).
+I am a second-year Industrial-Organizational Psychology Ph.D. student in the [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology), advised by [Prof. Fred Oswald](https://profiles.rice.edu/faculty/fred-oswald). Prior to this, I received my B.S. in Psychology and B.A. in Computer Science, both with high distinction, from the [University of Minnesota-Twin Cities](https://twin-cities.umn.edu/), where I had the privilege of working with [Prof. Richard Landers](https://cla.umn.edu/about/directory/profile/lande065), [Prof. Deniz Ones](https://cla.umn.edu/about/directory/profile/onesx001), and [Prof. Gail Ferguson](https://icd.umn.edu/gail-ferguson).
 
 My primary research interests are centered around leveraging innovative technologies to enhance psychometric assessments and employee selection. I am also interested in advancing open science through the adoption of novel methodologies. My aim is to become an I-O psychologist who is an expert in quantitative analysis, with a keen focus on harnessing machine learning to elevate the accuracy and fairness of psychological measurement and personnel selection systems.
 
@@ -95,12 +95,12 @@ I am always excited to collaborate with other researchers and explore new fields
 
 
 # 🎖 Honors and Awards
-- *2023*, Mortensen Research Award & CLA Research Scholarship, University of Minnesota - Twin Cities. $1,500.
+- *2023*, Mortensen Research Award & CLA Research Scholarship, University of Minnesota-Twin Cities. $1,500.
 
 
 # 📖 Education
 - *2023 - Present*, Ph.D. in Industrial-Organizational Psychology, Rice University
-- *2019 - 2023*, B.S. in Psychology and B.A. in Computer Science, University of Minnesota, Twin Cities
+- *2019 - 2023*, B.S. in Psychology and B.A. in Computer Science, University of Minnesota-Twin Cities
 
 
 
