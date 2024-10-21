@@ -26,7 +26,7 @@ I am always excited to collaborate with other researchers and explore new fields
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
-# 🔥 News
+<!-- # 🔥 News
 - *2024.09*, Our article, **Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs**, selected as an **oral spotlight presentation (top 2%)** at [COLM 2024](https://colmweb.org/).
 
 - *2024.08*, also be a member of [Chili Lab](https://hanjiechen.github.io/group.html) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology).
@@ -43,10 +43,34 @@ I am always excited to collaborate with other researchers and explore new fields
 
 - *2023.12*, Our sympoisum, **Future of performance prediction and evaluation: Artificial intelligence and big data**, has been accepted at [SIOP 2024](https://www.siop.org/annual-conference).
 
-- *2023.08*, I joined [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology) as a first-year PhD student. 
+- *2023.08*, I joined [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology) as a first-year PhD student. -->
+
+# 🔥 News
+
+<div style="height: 300px; overflow-y: scroll; padding: 10px;">
+  <ul>
+    <li><strong>2024.09</strong> - Our article, <em>Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs</em>, selected as an <strong>oral spotlight presentation (top 2%)</strong> at <a href="https://colmweb.org/">COLM 2024</a>.</li>
+    <li><strong>2024.08</strong> - Also joined the <a href="https://hanjiechen.github.io/group.html">Chili Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
+    <li><strong>2024.08</strong> - Also joined the <a href="https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view">SMART Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
+    <li><strong>2024.08</strong> - Our article, <em>On putting the horse (raters and criteria) before the cart (variance components in ratings)</em>, has now been published in <a href="https://www.cambridge.org/core/journals/industrial-and-organizational-psychology">Industrial and Organizational Psychology</a>.</li>
+    <li><strong>2024.07</strong> - Our article, <em>Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs</em>, has now been accepted at <a href="https://colmweb.org/">COLM 2024</a>.</li>
+    <li><strong>2024.03</strong> - Our article, <em>The weight of beauty in psychological research</em>, has now been published in <a href="https://www.cambridge.org/core/journals/industrial-and-organizational-psychology">Industrial and Organizational Psychology</a>.</li>
+    <li><strong>2023.12</strong> - Our symposium, <em>To RIASEC and beyond: Advances in vocational interest research</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2024</a>.</li>
+    <li><strong>2023.12</strong> - Our symposium, <em>Future of performance prediction and evaluation: Artificial intelligence and big data</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2024</a>.</li>
+    <li><strong>2023.08</strong> - I joined <a href="https://workforce.rice.edu/">OWL Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a> as a first-year PhD student.</li>
+  </ul>
+</div>
 
 
 # 📝 Publications 
+
+<div style="height: 800px; overflow-y: scroll; padding: 10px;">
+
+
+
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/linguistic.jpg' alt="From babbling to fluency: Evaluating the evolution of language models in terms of human language acquisition." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **From babbling to fluency: Evaluating the evolution of language models in terms of human language acquisition.** <br />
@@ -68,6 +92,9 @@ I am always excited to collaborate with other researchers and explore new fields
 </div>
 </div>
 
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Leveraging synthetic data to advance organizational science." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **Leveraging synthetic data to advance organizational science.** <br />
@@ -78,6 +105,8 @@ I am always excited to collaborate with other researchers and explore new fields
 </div>
 </div>
 
+
+
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/criteria.png' alt="On putting the horse (raters and criteria) before the cart (variance components in ratings)." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **On putting the horse (raters and criteria) before the cart (variance components in ratings).** <br />
@@ -85,6 +114,9 @@ I am always excited to collaborate with other researchers and explore new fields
 **[Cite]:** **Wang, P.**, Myeong, H., & Oswald, F. L. (2024). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology*, 1–5. https://doi.org/10.1017/iop.2024.16
 </div>
 </div>
+
+
+
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/heuristic.png' alt="Will the real Linda please stand up... To large language models?" width=150px></div></div>
 <div class='paper-box-text' markdown="1">
@@ -94,6 +126,9 @@ I am always excited to collaborate with other researchers and explore new fields
 </div>
 </div>
 
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/weight.png' alt="The weight of beauty in psychological research." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **The weight of beauty in psychological research.** <br />
@@ -101,12 +136,20 @@ I am always excited to collaborate with other researchers and explore new fields
 **[Cite]:** Myeong, H., **Wang, P.**, & King, E. B. (2024). The weight of beauty in psychological research. *Industrial and Organizational Psychology, 17*(1), 111–114. https://doi.org/10.1017/iop.2023.87
 </div>
 </div>
+</div> <!-- End of scrollable section -->
 
 
 # 💬 Conference Presentations
-- Wu, F., **Wang, P.**, & Oswald, F. O. (2024). The influence of disability and career challenges on vocational interests. In Hoff, K. A. (Chair) (2024). To RIASEC and beyond: Advances in vocational interest research [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States.
+
+<div style="height: 200px; overflow-y: scroll; padding: 10px; line-height: 1.6;" markdown="1">
+
+- **Wang, P.\***, Xiao, Z.\*, Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. The Conference on Language Modeling (COLM 2024), Philadelphia, PA, United States. <span style="background-color: #ffff99;">🏅Oral spotlight presentation (top 2%)</span> <br /><br />
+
+- Wu, F., **Wang, P.**, & Oswald, F. O. (2024). The influence of disability and career challenges on vocational interests. In Hoff, K. A. (Chair) (2024). To RIASEC and beyond: Advances in vocational interest research [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States. <br /><br />
 
 - **Wang, P.**, & Oswald, F. L. (2024). Leveraging synthetic data for advancements in organizational research. In Liou, G., & Tay, L. (Co-Chairs) (2024). Future of performance prediction and evaluation: Artificial intelligence and big data [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States.
+
+</div>
 
 
 # 🎖 Honors and Awards
