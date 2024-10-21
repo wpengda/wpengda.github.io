@@ -71,6 +71,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 
 
+
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/linguistic.jpg' alt="From babbling to fluency: Evaluating the evolution of language models in terms of human language acquisition." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **From babbling to fluency: Evaluating the evolution of language models in terms of human language acquisition.** <br />
@@ -143,7 +144,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div style="height: 200px; overflow-y: scroll; padding: 10px; line-height: 1.6;" markdown="1">
 
-- **Wang, P.\***, Xiao, Z.\*, Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. The Conference on Language Modeling (COLM 2024), Philadelphia, PA, United States. <span style="background-color: #ffff99;">🏅Oral spotlight presentation (top 2%)</span> <br /><br />
+- **Wang, P.\***, Xiao, Z.\*, Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs [Oral presentation]. The Conference on Language Modeling (COLM 2024), Philadelphia, PA, United States. <span style="background-color: #ffff99;">🏅Oral spotlight presentation (top 2%)</span> <br /><br />
 
 - Wu, F., **Wang, P.**, & Oswald, F. O. (2024). The influence of disability and career challenges on vocational interests. In Hoff, K. A. (Chair) (2024). To RIASEC and beyond: Advances in vocational interest research [Symposium]. Society for Industrial and Organizational Psychology Annual Conference, Chicago, IL, United States. <br /><br />
 
