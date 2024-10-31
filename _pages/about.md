@@ -49,8 +49,8 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div style="height: 300px; overflow-y: scroll; padding: 10px;">
   <ul>
-    <li><strong>2024.10</strong> - Serve as a reviewer for <a href="https://www.siop.org/annual-conference">SIOP 2025.
-    <li><strong>2024.09</strong> - Serve as a reviewer for <a href="https://chi2025.acm.org/">CHI 2025.
+    <li><strong>2024.10</strong> - Serve as a reviewer for <a href="https://www.siop.org/annual-conference">SIOP 2025.</a>.</li>
+    <li><strong>2024.09</strong> - Serve as a reviewer for <a href="https://chi2025.acm.org/">CHI 2025.</a>.</li>
     <li><strong>2024.09</strong> - Our article, <em>Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs</em>, selected as an <strong>oral spotlight presentation (top 2%)</strong> at <a href="https://colmweb.org/">COLM 2024</a>.</li>
     <li><strong>2024.08</strong> - Also joined the <a href="https://hanjiechen.github.io/group.html">Chili Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
     <li><strong>2024.08</strong> - Also joined the <a href="https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view">SMART Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
@@ -67,11 +67,6 @@ I am always excited to collaborate with other researchers and explore new fields
 # 📝 Publications 
 
 <div style="height: 800px; overflow-y: scroll; padding: 10px;">
-
-
-
-
-
 
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/linguistic.jpg' alt="From babbling to fluency: Evaluating the evolution of language models in terms of human language acquisition." width=150px></div></div>
@@ -175,6 +170,6 @@ I am always excited to collaborate with other researchers and explore new fields
 - *2020.06 - 2022.07*, [Ones Green Lab](https://cla.umn.edu/about/directory/profile/onesx001) Research Assistant, Minneapolis, MN, USA
 
 
-# Service
+# 🫶 Service
 - SIOP 2025, Reviewer
 - CHI 2025, Reviewer
