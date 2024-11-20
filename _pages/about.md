@@ -31,7 +31,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div style="height: 300px; overflow-y: scroll; padding: 10px;">
   <ul>
-    <li><strong>2024.08</strong> - Our article, <em>Advancing Organizational Science through Synthetic Data: A Path to Enhanced Data Sharing and Collaboration</em>, has now been accepted at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
+    <li><strong>2024.11</strong> - Our article, <em>Advancing Organizational Science through Synthetic Data: A Path to Enhanced Data Sharing and Collaboration</em>, has now been accepted at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
     <li><strong>2024.10</strong> - Serve as a reviewer for <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.09</strong> - Serve as a reviewer for <a href="https://chi2025.acm.org/">CHI 2025</a>.</li>
     <li><strong>2024.09</strong> - Our article, <em>Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs</em>, selected as an <strong>oral spotlight presentation (top 2%)</strong> at <a href="https://colmweb.org/">COLM 2024</a>.</li>
