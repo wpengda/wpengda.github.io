@@ -26,29 +26,12 @@ I am always excited to collaborate with other researchers and explore new fields
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
-<!-- # 🔥 News
-- *2024.09*, Our article, **Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs**, selected as an **oral spotlight presentation (top 2%)** at [COLM 2024](https://colmweb.org/).
-
-- *2024.08*, also be a member of [Chili Lab](https://hanjiechen.github.io/group.html) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology).
-
-- *2024.08*, also be a member of [SMART Lab](https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology).
-
-- *2024.08*, Our article, **On putting the horse (raters and criteria) before the cart (variance components in ratings)**, has now been published in [Industrial and Organizational Psychology](https://www.cambridge.org/core/journals/industrial-and-organizational-psychology).
-
-- *2024.07*, Our article, **Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs**, has now been accepted at [COLM 2024](https://colmweb.org/).
-
-- *2024.03*, Our article, **The weight of beauty in psychological research**, has now been published in [Industrial and Organizational Psychology](https://www.cambridge.org/core/journals/industrial-and-organizational-psychology).
-
-- *2023.12*, Our sympoisum, **To RIASEC and beyond: Advances in vocational interest research**, has been accepted at [SIOP 2024](https://www.siop.org/annual-conference).
-
-- *2023.12*, Our sympoisum, **Future of performance prediction and evaluation: Artificial intelligence and big data**, has been accepted at [SIOP 2024](https://www.siop.org/annual-conference).
-
-- *2023.08*, I joined [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology) as a first-year PhD student. -->
 
 # 🔥 News
 
 <div style="height: 300px; overflow-y: scroll; padding: 10px;">
   <ul>
+    <li><strong>2024.08</strong> - Our article, <em>Advancing Organizational Science through Synthetic Data: A Path to Enhanced Data Sharing and Collaboration</em>, has now been accepted at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
     <li><strong>2024.10</strong> - Serve as a reviewer for <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.09</strong> - Serve as a reviewer for <a href="https://chi2025.acm.org/">CHI 2025</a>.</li>
     <li><strong>2024.09</strong> - Our article, <em>Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs</em>, selected as an <strong>oral spotlight presentation (top 2%)</strong> at <a href="https://colmweb.org/">COLM 2024</a>.</li>
@@ -64,7 +47,7 @@ I am always excited to collaborate with other researchers and explore new fields
 </div>
 
 
-# 📝 Publications 
+# 📝 Publications and Pre-pritns
 
 <div style="height: 800px; overflow-y: scroll; padding: 10px;">
 
