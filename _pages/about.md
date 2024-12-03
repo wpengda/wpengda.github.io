@@ -56,7 +56,7 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box-text' markdown="1">
 **Can LLM "self-report"?: Evaluating the validity of self-report scales in measuring personality design in LLM-based chatbots.** <br />
 [[PDF]](../files/self_report.pdf) [[DOI]](https://doi.org/10.48550/arXiv.2412.00207) [[Code]](https://github.com/isle-dev/self-report) <br />
-**[Cite]:*Zou, H., **Wang, P.**, Yan, Z., Sun, T., & Xiao, Z. (2024). Can LLM "self-report"?: Evaluating the validity of self-report scales in measuring personality design in LLM-based chatbots. *arXiv (Cornell University)*. https://doi.org/10.48550/arXiv.2412.00207
+**[Cite]:** Zou, H., **Wang, P.**, Yan, Z., Sun, T., & Xiao, Z. (2024). Can LLM "self-report"?: Evaluating the validity of self-report scales in measuring personality design in LLM-based chatbots. *arXiv (Cornell University)*. https://doi.org/10.48550/arXiv.2412.00207
 
 [pre-print]
 </div>
