@@ -51,6 +51,15 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div style="height: 800px; overflow-y: scroll; padding: 10px;">
 
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration." width=150px></div></div>
+<div class='paper-box-text' markdown="1">
+**Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration.** <br />
+[[PDF]](../files/synthetic.pdf) [[DOI]](https://doi.org/10.1007/s10869-024-09997-w) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
+**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (2024). Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration. *Journal of Business and Psychology*. https://doi.org/10.31234/osf.io/4qbjz 
+
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/self_report.jpg' alt="Can LLM 'self-report'?: Evaluating the validity of self-report scales in measuring personality design in LLM-based chatbots." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
@@ -87,7 +96,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Leveraging synthetic data to advance organizational science." width=150px></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Leveraging synthetic data to advance organizational science." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **Leveraging synthetic data to advance organizational science.** <br />
 [[PDF]](../files/synthetic_data.pdf) [[DOI]](https://doi.org/10.31234/osf.io/4qbjz) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
@@ -95,7 +104,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 [pre-print]
 </div>
-</div>
+</div> -->
 
 
 
