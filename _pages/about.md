@@ -47,7 +47,7 @@ I am always excited to collaborate with other researchers and explore new fields
 </div>
 
 
-# 📝 Publications and Pre-pritns
+# 📝 Publications
 
 <div style="height: 800px; overflow-y: scroll; padding: 10px;">
 
