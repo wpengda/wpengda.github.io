@@ -31,6 +31,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div style="height: 300px; overflow-y: scroll; padding: 10px;">
   <ul>
+    <li><strong>2024.12</strong> - Our symposium, <em>Innovations in AI assessment of individual differences: Improving validity and equity</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.12</strong> - Our symposium, <em>Machine learning for I-O 7.0: Large language models for assessments</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.12</strong> - Our alternative session presentation, <em>Bridging disciplines: How Computer Science and I-O Psychology benefit each other</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.11</strong> - Our article, <em>Advancing Organizational Science through Synthetic Data: A Path to Enhanced Data Sharing and Collaboration</em>, has now been accepted at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
