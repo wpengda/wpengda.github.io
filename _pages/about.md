@@ -172,7 +172,7 @@ I am always excited to collaborate with other researchers and explore new fields
 - *2023.08 - Present*, [OWL Lab](https://workforce.rice.edu/) Research Assistant, Houston, TX, USA
 - *2022.05 - 2023.06*, [CFL Lab](https://innovation.umn.edu/culture-and-family-life-lab/people/) Research Assistant, Minneapolis, MN, USA
 - *2021.04 - 2023.06*, [TNTLAB](https://rlanders.net/) Research Assistant, Minneapolis, MN, USA
-- *2021.12 - 2022.07*, [ACR Homes](https://acrhomes.com/) Human Resources Intern, Minneapolis, MN, USA
+- *2021.12 - 2022.07*, [3D HoloGroup, Inc](https://www.linkedin.com/company/3dhologroup/) Human Resources Intern, Minneapolis, MN, USA
 - *2020.06 - 2022.07*, [Ones Green Lab](https://cla.umn.edu/about/directory/profile/onesx001) Research Assistant, Minneapolis, MN, USA
 
 
