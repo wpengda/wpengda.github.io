@@ -32,6 +32,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div style="height: 300px; overflow-y: scroll; padding: 10px;">
   <ul>
+    <li><strong>2025.01</strong> - Our article, <em>Advancing Organizational Science through Synthetic Data: A Path to Enhanced Data Sharing and Collaboration</em>, selected as <strong>Editor Commendation (22/over 1600)</strong> at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
     <li><strong>2024.12</strong> - Our symposium, <em>Innovations in AI assessment of individual differences: Improving validity and equity</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.12</strong> - Our symposium, <em>Machine learning for I-O 7.0: Large language models for assessments</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.12</strong> - Our alternative session presentation, <em>Bridging disciplines: How Computer Science and I-O Psychology benefit each other</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
@@ -57,7 +58,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-**Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration.** <br />
+**Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration.** <span style="background-color: #ffff99;">🏅Editor Commendation (22/over 1600)</span> <br />
 [[PDF]](../files/synthetic.pdf) [[DOI]](https://doi.org/10.1007/s10869-024-09997-w) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
 **[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (2024). Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration. *Journal of Business and Psychology*. https://doi.org/10.31234/osf.io/4qbjz 
 
@@ -116,7 +117,7 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box-text' markdown="1">
 **On putting the horse (raters and criteria) before the cart (variance components in ratings).** <br />
 [[PDF]](../files/on-putting-the-horse-raters-and-criteria-before-the-cart-variance-components-in-ratings.pdf) [[DOI]](https://doi.org/10.1017/iop.2024.16) <br />
-**[Cite]:** **Wang, P.**, Myeong, H., & Oswald, F. L. (2024). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology*, 1–5. https://doi.org/10.1017/iop.2024.16
+**[Cite]:** **Wang, P.**, Myeong, H., & Oswald, F. L. (2024). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology*, 1-5. https://doi.org/10.1017/iop.2024.16
 </div>
 </div>
 
