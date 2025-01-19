@@ -32,14 +32,14 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div style="height: 300px; overflow-y: scroll; padding: 10px;">
   <ul>
-    <li><strong>2025.01</strong> - Our article, <em>Advancing Organizational Science through Synthetic Data: A Path to Enhanced Data Sharing and Collaboration</em>, selected as <strong>Editor Commendation (22/over 1600)</strong> at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
+    <li><strong>2025.01</strong> - Our article, <em>Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration</em>, selected as <strong>Editor Commendation (22/over 1600)</strong> at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
     <li><strong>2024.12</strong> - Our symposium, <em>Innovations in AI assessment of individual differences: Improving validity and equity</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.12</strong> - Our symposium, <em>Machine learning for I-O 7.0: Large language models for assessments</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.12</strong> - Our alternative session presentation, <em>Bridging disciplines: How Computer Science and I-O Psychology benefit each other</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
-    <li><strong>2024.11</strong> - Our article, <em>Advancing Organizational Science through Synthetic Data: A Path to Enhanced Data Sharing and Collaboration</em>, has now been accepted at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
+    <li><strong>2024.11</strong> - Our article, <em>Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration</em>, has now been accepted at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
     <li><strong>2024.10</strong> - Serve as a reviewer for <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.09</strong> - Serve as a reviewer for <a href="https://chi2025.acm.org/">CHI 2025</a>.</li>
-    <li><strong>2024.09</strong> - Our article, <em>Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs</em>, selected as an <strong>oral spotlight presentation (top 2%)</strong> at <a href="https://colmweb.org/">COLM 2024</a>.</li>
+    <li><strong>2024.09</strong> - Our article, <em>Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs</em>, selected as an <strong>Oral Spotlight Presentation (top 2%)</strong> at <a href="https://colmweb.org/">COLM 2024</a>.</li>
     <li><strong>2024.08</strong> - Also joined the <a href="https://hanjiechen.github.io/group.html">Chili Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
     <li><strong>2024.08</strong> - Also joined the <a href="https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view">SMART Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
     <li><strong>2024.08</strong> - Our article, <em>On putting the horse (raters and criteria) before the cart (variance components in ratings)</em>, has now been published in <a href="https://www.cambridge.org/core/journals/industrial-and-organizational-psychology">Industrial and Organizational Psychology</a>.</li>
@@ -126,7 +126,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/heuristic.png' alt="Will the real Linda please stand up... To large language models?" width=150px></div></div>
 <div class='paper-box-text' markdown="1">
-**Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs.** <span style="background-color: #ffff99;">🏅Oral spotlight presentation (top 2%)</span> <br />
+**Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs.** <span style="background-color: #ffff99;">🏅Oral Spotlight Presentation (top 2%)</span> <br />
 [[PDF]](../files/heuristic.pdf) [[DOI]](https://doi.org/10.48550/arxiv.2404.01461) [[Code]](https://github.com/MrZilinXiao/LLMHeuristicReHEAT) <br />
 **[Cite]:** **Wang, P.\***, Xiao, Z.\*, Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *The Conference on Language Modeling (COLM 2024)*. https://doi.org/10.48550/arxiv.2404.01461
 </div>
