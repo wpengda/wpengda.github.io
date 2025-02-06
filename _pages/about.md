@@ -60,7 +60,7 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box-text' markdown="1">
 **Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration.** <span style="background-color: #ffff99;">🏅Editor Commendation (22/over 1600)</span> <br />
 [[PDF]](../files/synthetic.pdf) [[DOI]](https://doi.org/10.1007/s10869-024-09997-w) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
-**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (2024). Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration. *Journal of Business and Psychology*. https://doi.org/10.31234/osf.io/4qbjz 
+**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (2024). Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration. *Journal of Business and Psychology*. https://doi.org/10.31234/osf.io/4qbjz <br />
 [[BibTeX]](../files/synthetic.bib)
 
 </div>
