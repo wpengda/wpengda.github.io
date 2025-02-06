@@ -61,6 +61,7 @@ I am always excited to collaborate with other researchers and explore new fields
 **Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration.** <span style="background-color: #ffff99;">🏅Editor Commendation (22/over 1600)</span> <br />
 [[PDF]](../files/synthetic.pdf) [[DOI]](https://doi.org/10.1007/s10869-024-09997-w) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
 **[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (2024). Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration. *Journal of Business and Psychology*. https://doi.org/10.31234/osf.io/4qbjz 
+[[BibTeX]](../files/synthetic.md)
 
 </div>
 </div>
@@ -92,7 +93,7 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box-text' markdown="1">
 **Not yet: Large language models cannot replace human respondents for psychometric research.** <br />
 [[PDF]](../files/LLM_responses.pdf) [[DOI]](https://doi.org/10.31219/osf.io/rwy9b) [[Code]](https://github.com/wpengda/LLM_Responses) <br />
-**[Cite]:** **Wang, P.**, Zou, H., Yan, Z., Guo, F., Sun, T., Xiao, Z., & Zhang, B. (2024). Not yet: Large language models cannot replace human respondents for psychometric research. *PsyArXiv*. https://doi.org/10.31219/osf.io/rwy9b 
+**[Cite]:** **Wang, P.**, Zou, H., Yan, Z., Guo, F., Sun, T., Xiao, Z., & Zhang, B. (2024). Not yet: Large language models cannot replace human respondents for psychometric research. *OSF*. https://doi.org/10.31219/osf.io/rwy9b 
 
 [pre-print]
 </div>
