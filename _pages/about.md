@@ -59,9 +59,8 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration.** <span style="background-color: #ffff99;">🏅Editor Commendation (22/over 1600)</span> <br />
-[[PDF]](../files/synthetic.pdf) [[DOI]](https://doi.org/10.1007/s10869-024-09997-w) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) <br />
-**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (2024). Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration. *Journal of Business and Psychology*. https://doi.org/10.31234/osf.io/4qbjz <br />
-[[BibTeX]](../files/synthetic.bib)
+[[PDF]](../files/synthetic.pdf) [[DOI]](https://doi.org/10.1007/s10869-024-09997-w) [[Code]](https://github.com/wpengda/SyntheticData_OrganizationalScience) [[BibTeX]](../files/synthetic.bib) <br />
+**[Cite]:** **Wang, P.**, Loignon, A. C., Shrestha, S., Banks, G. C., & Oswald, F. L. (2024). Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration. *Journal of Business and Psychology*. https://doi.org/10.31234/osf.io/4qbjz 
 
 </div>
 </div>
@@ -70,9 +69,8 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/self_report.jpg' alt="Can LLM 'self-report'?: Evaluating the validity of self-report scales in measuring personality design in LLM-based chatbots." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **Can LLM "self-report"?: Evaluating the validity of self-report scales in measuring personality design in LLM-based chatbots.** <br />
-[[PDF]](../files/self_report.pdf) [[DOI]](https://doi.org/10.48550/arXiv.2412.00207) [[Code]](https://github.com/isle-dev/self-report) <br />
-**[Cite]:** Zou, H., **Wang, P.**, Yan, Z., Sun, T., & Xiao, Z. (2024). Can LLM "self-report"?: Evaluating the validity of self-report scales in measuring personality design in LLM-based chatbots. *arXiv (Cornell University)*. https://doi.org/10.48550/arXiv.2412.00207 <br />
-[[BibTeX]](../files/self_report.bib)
+[[PDF]](../files/self_report.pdf) [[DOI]](https://doi.org/10.48550/arXiv.2412.00207) [[Code]](https://github.com/isle-dev/self-report) [[BibTeX]](../files/self_report.bib) <br />
+**[Cite]:** Zou, H., **Wang, P.**, Yan, Z., Sun, T., & Xiao, Z. (2024). Can LLM "self-report"?: Evaluating the validity of self-report scales in measuring personality design in LLM-based chatbots. *arXiv (Cornell University)*. https://doi.org/10.48550/arXiv.2412.00207
 
 [pre-print]
 </div>
@@ -82,9 +80,8 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/linguistic.jpg' alt="From babbling to fluency: Evaluating the evolution of language models in terms of human language acquisition." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **From babbling to fluency: Evaluating the evolution of language models in terms of human language acquisition.** <br />
-[[PDF]](../files/linguistic.pdf) [[DOI]](https://doi.org/10.48550/arXiv.2410.13259) [[Code]](https://github.com/ericyang1029/Language-Acquisition) <br />
-**[Cite]:** Yang, Y.\*, **Wang, P.\***, Plonsky, L. D., Oswald, F. L., & Chen, H. (2024). From babbling to fluency: Evaluating the evolution of language models in terms of human language acquisition. *arXiv (Cornell University)*. https://doi.org/10.48550/arXiv.2410.13259 <br />
-[[BibTeX]](../files/linguistic.bib)
+[[PDF]](../files/linguistic.pdf) [[DOI]](https://doi.org/10.48550/arXiv.2410.13259) [[Code]](https://github.com/ericyang1029/Language-Acquisition) [[BibTeX]](../files/linguistic.bib) <br />
+**[Cite]:** Yang, Y.\*, **Wang, P.\***, Plonsky, L. D., Oswald, F. L., & Chen, H. (2024). From babbling to fluency: Evaluating the evolution of language models in terms of human language acquisition. *arXiv (Cornell University)*. https://doi.org/10.48550/arXiv.2410.13259 
 
 [pre-print]
 </div>
@@ -94,9 +91,8 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/LLM_responses.png' alt="Not yet: Large language models cannot replace human respondents for psychometric research." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **Not yet: Large language models cannot replace human respondents for psychometric research.** <br />
-[[PDF]](../files/LLM_responses.pdf) [[DOI]](https://doi.org/10.31219/osf.io/rwy9b) [[Code]](https://github.com/wpengda/LLM_Responses) <br />
-**[Cite]:** **Wang, P.**, Zou, H., Yan, Z., Guo, F., Sun, T., Xiao, Z., & Zhang, B. (2024). Not yet: Large language models cannot replace human respondents for psychometric research. *OSF*. https://doi.org/10.31219/osf.io/rwy9b <br />
-[[BibTeX]](../files/LLM_responses.bib)
+[[PDF]](../files/LLM_responses.pdf) [[DOI]](https://doi.org/10.31219/osf.io/rwy9b) [[Code]](https://github.com/wpengda/LLM_Responses) [[BibTeX]](../files/LLM_responses.bib) <br />
+**[Cite]:** **Wang, P.**, Zou, H., Yan, Z., Guo, F., Sun, T., Xiao, Z., & Zhang, B. (2024). Not yet: Large language models cannot replace human respondents for psychometric research. *OSF*. https://doi.org/10.31219/osf.io/rwy9b
 
 [pre-print]
 </div>
@@ -120,9 +116,8 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/criteria.png' alt="On putting the horse (raters and criteria) before the cart (variance components in ratings)." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **On putting the horse (raters and criteria) before the cart (variance components in ratings).** <br />
-[[PDF]](../files/on-putting-the-horse-raters-and-criteria-before-the-cart-variance-components-in-ratings.pdf) [[DOI]](https://doi.org/10.1017/iop.2024.16) <br />
-**[Cite]:** **Wang, P.**, Myeong, H., & Oswald, F. L. (2024). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology*, 1-5. https://doi.org/10.1017/iop.2024.16 <br />
-[[BibTeX]](../files/on-putting-the-horse-raters-and-criteria-before-the-cart-variance-components-in-ratings.bib)
+[[PDF]](../files/on-putting-the-horse-raters-and-criteria-before-the-cart-variance-components-in-ratings.pdf) [[DOI]](https://doi.org/10.1017/iop.2024.16) [[BibTeX]](../files/on-putting-the-horse-raters-and-criteria-before-the-cart-variance-components-in-ratings.bib) <br />
+**[Cite]:** **Wang, P.**, Myeong, H., & Oswald, F. L. (2024). On putting the horse (raters and criteria) before the cart (variance components in ratings). *Industrial and Organizational Psychology*, 1-5. https://doi.org/10.1017/iop.2024.16
 
 </div>
 </div>
@@ -133,9 +128,8 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/heuristic.png' alt="Will the real Linda please stand up... To large language models?" width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs.** <span style="background-color: #ffff99;">🏅Oral Spotlight Presentation (top 2%)</span> <br />
-[[PDF]](../files/heuristic.pdf) [[DOI]](https://doi.org/10.48550/arxiv.2404.01461) [[Code]](https://github.com/MrZilinXiao/LLMHeuristicReHEAT) <br />
-**[Cite]:** **Wang, P.\***, Xiao, Z.\*, Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *The Conference on Language Modeling (COLM 2024)*. https://doi.org/10.48550/arxiv.2404.01461 <br />
-[[BibTeX]](../files/heuristic.bib)
+[[PDF]](../files/heuristic.pdf) [[DOI]](https://doi.org/10.48550/arxiv.2404.01461) [[Code]](https://github.com/MrZilinXiao/LLMHeuristicReHEAT) [[BibTeX]](../files/heuristic.bib) <br />
+**[Cite]:** **Wang, P.\***, Xiao, Z.\*, Chen, H., & Oswald, F. L. (2024). Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs. *The Conference on Language Modeling (COLM 2024)*. https://doi.org/10.48550/arxiv.2404.01461
 
 </div>
 </div>
@@ -146,9 +140,8 @@ I am always excited to collaborate with other researchers and explore new fields
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/weight.png' alt="The weight of beauty in psychological research." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **The weight of beauty in psychological research.** <br />
-[[PDF]](../files/the-weight-of-beauty-in-psychological-research.pdf) [[DOI]](https://doi.org/10.1017/iop.2023.87) <br />
+[[PDF]](../files/the-weight-of-beauty-in-psychological-research.pdf) [[DOI]](https://doi.org/10.1017/iop.2023.87) [[BibTeX]](../files/the-weight-of-beauty-in-psychological-research.bib) <br />
 **[Cite]:** Myeong, H., **Wang, P.**, & King, E. B. (2024). The weight of beauty in psychological research. *Industrial and Organizational Psychology, 17*(1), 111–114. https://doi.org/10.1017/iop.2023.87
-[[BibTeX]](../files/the-weight-of-beauty-in-psychological-research.bib)
 
 </div>
 </div>
