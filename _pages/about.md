@@ -56,6 +56,29 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div style="height: 800px; overflow-y: scroll; padding: 10px;">
 
+
+<!-- <div class='paper-box'><div class='paper-box-image'><div><img src='images/PSI.jpg' alt="Personality structured interview for large language model simulation in personality research." width=150px></div></div>
+<div class='paper-box-text' markdown="1">
+**Personality structured interview for large language model simulation in personality research.** <br />
+[[PDF]](../files/PSI.pdf) [[DOI]]() [[Code]](https://github.com/isle-dev/self-report) [[BibTeX]](../files/PSI.bib) <br />
+**[Cite]:** **Wang, P.**, Zou, H., Chen, H., Sun, T., Xiao, Z., & Oswald, F. L. (2025). Personality structured interview for large language model simulation in personality research. *arXiv (Cornell University)*.
+
+[pre-print]
+</div>
+</div> -->
+
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/employment_AIchatbot.png' alt="Automating personality-based employment interviews: Development and validation of an artificial intelligence chatbot." width=150px></div></div>
+<div class='paper-box-text' markdown="1">
+**Automating personality-based employment interviews: Development and validation of an artificial intelligence chatbot.** <br />
+[[PDF]](../files/employment_AIchatbot.pdf) [[DOI]](https://doi.org/10.31234/osf.io/9ktmf_v3) [[BibTeX]](../files/employment_AIchatbot.bib) <br />
+**[Cite]:** Sylvara, A., **Wang, P.**, Sun, T., Heimann, A. L., & Ingold, P. V. (2025). Automating personality-based employment interviews: Development and validation of an artificial intelligence chatbot. *OSF*. https://doi.org/10.31234/osf.io/9ktmf_v3
+
+[pre-print]
+</div>
+</div>
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/synthetic.png' alt="Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration.** <span style="background-color: #ffff99;">🏅Editor Commendation (22/over 1600)</span> <br />
