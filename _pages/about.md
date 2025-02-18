@@ -57,15 +57,15 @@ I am always excited to collaborate with other researchers and explore new fields
 <div style="height: 800px; overflow-y: scroll; padding: 10px;">
 
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><img src='images/PSI.jpg' alt="Personality structured interview for large language model simulation in personality research." width=150px></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/PSI.jpg' alt="Personality structured interview for large language model simulation in personality research." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
 **Personality structured interview for large language model simulation in personality research.** <br />
-[[PDF]](../files/PSI.pdf) [[DOI]]() [[Code]](https://github.com/isle-dev/self-report) [[BibTeX]](../files/PSI.bib) <br />
-**[Cite]:** **Wang, P.**, Zou, H., Chen, H., Sun, T., Xiao, Z., & Oswald, F. L. (2025). Personality structured interview for large language model simulation in personality research. *arXiv (Cornell University)*.
+[[PDF]](../files/PSI.pdf) [[DOI]](https://doi.org/10.48550/arXiv.2502.12109) [[Code]](https://github.com/wpengda/PSI) [[BibTeX]](../files/PSI.bib) <br />
+**[Cite]:** **Wang, P.**, Zou, H., Chen, H., Sun, T., Xiao, Z., & Oswald, F. L. (2025). Personality structured interview for large language model simulation in personality research. *arXiv (Cornell University)*. https://doi.org/10.48550/arXiv.2502.12109
 
 [pre-print]
 </div>
-</div> -->
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/employment_AIchatbot.png' alt="Automating personality-based employment interviews: Development and validation of an artificial intelligence chatbot." width=150px></div></div>
 <div class='paper-box-text' markdown="1">
