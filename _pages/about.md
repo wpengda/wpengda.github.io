@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a second-year Industrial-Organizational Psychology Ph.D. student in the [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology), advised by [Prof. Fred Oswald](https://profiles.rice.edu/faculty/fred-oswald). Prior to this, I received my B.S. in Psychology and B.A. in Computer Science, both with high distinction, from the [University of Minnesota-Twin Cities](https://twin-cities.umn.edu/), where I had the privilege of working with [Prof. Richard Landers](https://cla.umn.edu/about/directory/profile/lande065), [Prof. Deniz Ones](https://cla.umn.edu/about/directory/profile/onesx001), and [Prof. Gail Ferguson](https://icd.umn.edu/gail-ferguson). 
+I am a second-year Industrial-Organizational Psychology Ph.D. student in the [OWL Lab](https://workforce.rice.edu/) at [Rice University](https://psychology.rice.edu/graduate/industrial-organizational-psychology), advised by [Prof. Fred Oswald](https://profiles.rice.edu/faculty/fred-oswald) and [Tianjun Sun](https://profiles.rice.edu/faculty/tianjun-sun) (Co-Advised). Prior to this, I received my B.S. in Psychology and B.A. in Computer Science, both with high distinction, from the [University of Minnesota-Twin Cities](https://twin-cities.umn.edu/), where I had the privilege of working with [Prof. Richard Landers](https://cla.umn.edu/about/directory/profile/lande065), [Prof. Deniz Ones](https://cla.umn.edu/about/directory/profile/onesx001), and [Prof. Gail Ferguson](https://icd.umn.edu/gail-ferguson). 
 
 My primary research interests are centered around leveraging innovative technologies to enhance psychometric assessments and employee selection. I am also interested in advancing open science through the adoption of novel methodologies. My aim is to become an I-O psychologist who is an expert in quantitative analysis, with a keen focus on harnessing machine learning to elevate the accuracy and fairness of psychological measurement and personnel selection systems. 
 <!-- [[CV]](../files/CV_Pengda.pdf) -->
@@ -25,6 +25,7 @@ My primary research interests are centered around leveraging innovative technolo
 I am always excited to collaborate with other researchers and explore new fields. Do not hesitate to contact me if you are interested!
 
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
+
 <a href="../files/CV_Pengda.pdf" style="display: inline-block; padding: 10px 20px; background-color:rgb(136, 149, 162); color: white; text-decoration: none; border-radius: 5px;">Download CV</a>
 
 
