@@ -33,6 +33,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div style="height: 300px; overflow-y: scroll; padding: 10px;">
   <ul> 
+    <li><strong>2025.05</strong> - I will join <a href="https://www.midjourney.com/explore?tab=top">Midjourney</a> as a research intern in 2025 Summer!</li>
     <li><strong>2025.04</strong> - Our submission entitled <em>Differential embedding dimension functioning in natural language processing for psychological assessment</em>, has been accepted for <strong>Oral presentation</strong> at the <a href="https://www.psychometricsociety.org/imps-2025">IMPS 2025</a>.</li>
     <li><strong>2025.01</strong> - Our article, <em>Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration</em>, selected as <strong>Editor Commendation (22/over 1600)</strong> at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
     <li><strong>2024.12</strong> - Our symposium, <em>Innovations in AI assessment of individual differences: Improving validity and equity</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
@@ -206,13 +207,14 @@ I am always excited to collaborate with other researchers and explore new fields
 
 
 # 💻 Internships and Research Experiences
-- *2024.08 - Present*, [Chili Lab](https://hanjiechen.github.io/group.html) Research Assistant, Houston, TX, USA
-- *2024.08 - Present*, [SMART Lab](https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view) Research Assistant, Houston, TX, USA
-- *2023.08 - Present*, [OWL Lab](https://workforce.rice.edu/) Research Assistant, Houston, TX, USA
-- *2022.05 - 2023.06*, [CFL Lab](https://innovation.umn.edu/culture-and-family-life-lab/people/) Research Assistant, Minneapolis, MN, USA
-- *2021.04 - 2023.06*, [TNTLAB](https://rlanders.net/) Research Assistant, Minneapolis, MN, USA
+- <img src="../images/midjourney-logo-png.jpg" width="32"/> *2025.05 - Present*, [Midjourney, Inc](https://www.midjourney.com/explore?tab=top) ML/AI PhD Resident, San Francisco, CA, USA
+- <img src="../images/Rice-University-Symbol.png" width="32"/> *2024.08 - Present*, [Chili Lab](https://hanjiechen.github.io/group.html) Research Assistant, Houston, TX, USA
+- <img src="../images/Rice-University-Symbol.png" width="32"/> *2024.08 - Present*, [SMART Lab](https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view) Research Assistant, Houston, TX, USA
+- <img src="../images/Rice-University-Symbol.png" width="32"/> *2023.08 - Present*, [OWL Lab](https://workforce.rice.edu/) Research Assistant, Houston, TX, USA
+- <img src="../images/University_of_Minnesota_Logo.svg.png" width="32"/> *2022.05 - 2023.06*, [CFL Lab](https://innovation.umn.edu/culture-and-family-life-lab/people/) Research Assistant, Minneapolis, MN, USA
+- <img src="../images/University_of_Minnesota_Logo.svg.png" width="32"/> *2021.04 - 2023.06*, [TNTLAB](https://rlanders.net/) Research Assistant, Minneapolis, MN, USA
 - *2021.12 - 2022.07*, [3D HoloGroup, Inc](https://www.linkedin.com/company/3dhologroup/) Human Resources Intern, Minneapolis, MN, USA
-- *2020.06 - 2022.07*, [Ones Green Lab](https://cla.umn.edu/about/directory/profile/onesx001) Research Assistant, Minneapolis, MN, USA
+- <img src="../images/University_of_Minnesota_Logo.svg.png" width="32"/> *2020.06 - 2022.07*, [Ones Green Lab](https://cla.umn.edu/about/directory/profile/onesx001) Research Assistant, Minneapolis, MN, USA
 
 
 # 🫶 Service
