@@ -211,10 +211,10 @@ I am always excited to collaborate with other researchers and explore new fields
 - <img src="../images/Rice-University-Symbol.png" width="48"/> *2024.08 - Present*, [Chili Lab](https://hanjiechen.github.io/group.html) Research Assistant, Houston, TX, USA
 - <img src="../images/Rice-University-Symbol.png" width="48"/> *2024.08 - Present*, [SMART Lab](https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view) Research Assistant, Houston, TX, USA
 - <img src="../images/Rice-University-Symbol.png" width="48"/> *2023.08 - Present*, [OWL Lab](https://workforce.rice.edu/) Research Assistant, Houston, TX, USA
-- <img src="../images/University_of_Minnesota_Logo.svg.png" width="32"/> *2022.05 - 2023.06*, [CFL Lab](https://innovation.umn.edu/culture-and-family-life-lab/people/) Research Assistant, Minneapolis, MN, USA
-- <img src="../images/University_of_Minnesota_Logo.svg.png" width="32"/> *2021.04 - 2023.06*, [TNTLAB](https://rlanders.net/) Research Assistant, Minneapolis, MN, USA
-- <img src="../images/3dhologroup_logo.jpg" width="32"/> *2021.12 - 2022.07*, [3D HoloGroup, Inc](https://www.linkedin.com/company/3dhologroup/) Human Resources Intern, Minneapolis, MN, USA
-- <img src="../images/University_of_Minnesota_Logo.svg.png" width="32"/> *2020.06 - 2022.07*, [Ones Green Lab](https://cla.umn.edu/about/directory/profile/onesx001) Research Assistant, Minneapolis, MN, USA
+- <img src="../images/University_of_Minnesota_Logo.svg.png" width="48"/> *2022.05 - 2023.06*, [CFL Lab](https://innovation.umn.edu/culture-and-family-life-lab/people/) Research Assistant, Minneapolis, MN, USA
+- <img src="../images/University_of_Minnesota_Logo.svg.png" width="48"/> *2021.04 - 2023.06*, [TNTLAB](https://rlanders.net/) Research Assistant, Minneapolis, MN, USA
+- <img src="../images/3dhologroup_logo.jpg" width="48"/> *2021.12 - 2022.07*, [3D HoloGroup, Inc](https://www.linkedin.com/company/3dhologroup/) Human Resources Intern, Minneapolis, MN, USA
+- <img src="../images/University_of_Minnesota_Logo.svg.png" width="48"/> *2020.06 - 2022.07*, [Ones Green Lab](https://cla.umn.edu/about/directory/profile/onesx001) Research Assistant, Minneapolis, MN, USA
 
 
 # 🫶 Service
