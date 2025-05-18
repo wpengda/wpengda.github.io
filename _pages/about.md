@@ -207,15 +207,15 @@ I am always excited to collaborate with other researchers and explore new fields
 
 
 # 💻 Internships and Research Experiences
-- <img src="../images/Midjourney_Emblem.svg.png" style="width:48px; height48px; margin-right:4px;"/> *2025.05 - Present*, [Midjourney, Inc](https://www.midjourney.com/explore?tab=top), ML/AI PhD Resident, San Francisco, CA, USA
-- <img src="../images/Rice-University-Symbol.png" style="width:48px; height48px; margin-right:4px;"/> *2024.08 - Present*, [Chili Lab](https://hanjiechen.github.io/group.html), Research Assistant, Houston, TX, USA
-- <img src="../images/Rice-University-Symbol.png" style="width:48px; height48px; margin-right:4px;"/> *2024.08 - Present*, [SMART Lab](https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view), Research Assistant, Houston, TX, USA
-- <img src="../images/Rice-University-Symbol.png" style="width:48px; height48px; margin-right:4px;"/> *2023.08 - Present*, [OWL Lab](https://workforce.rice.edu/), Research Assistant, Houston, TX, USA
-- <img src="../images/University_of_Minnesota_Logo.svg.png" style="width:48px; height48px; margin-right:4px;"/> *2022.05 - 2023.06*, [CFL Lab](https://innovation.umn.edu/culture-and-family-life-lab/people/), Research Assistant, Minneapolis, MN, USA
-- <img src="../images/University_of_Minnesota_Logo.svg.png" style="width:48px; height48px; margin-right:4px;"/> *2021.04 - 2023.06*, [TNTLAB](https://rlanders.net/), Research Assistant, Minneapolis, MN, USA
-- <img src="../images/ACR_Logo_Icon-Blue.png" style="width:48px; height40px; margin-right:4px;"/> *2021.10 - 2022.07*, [ACR Homes](https://acrhomes.com/), Human Resources Intern, Minneapolis, MN, USA
+- <img src="../images/Midjourney.png" style="width:48px; height48px; margin-right:4px;"/> *2025.05 - Present*, [Midjourney, Inc](https://www.midjourney.com/explore?tab=top), ML/AI PhD Resident, San Francisco, CA, USA
+- <img src="../images/Rice.png" style="width:48px; height48px; margin-right:4px;"/> *2024.08 - Present*, [Chili Lab](https://hanjiechen.github.io/group.html), Research Assistant, Houston, TX, USA
+- <img src="../images/Rice.png" style="width:48px; height48px; margin-right:4px;"/> *2024.08 - Present*, [SMART Lab](https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view), Research Assistant, Houston, TX, USA
+- <img src="../images/Rice.png" style="width:48px; height48px; margin-right:4px;"/> *2023.08 - Present*, [OWL Lab](https://workforce.rice.edu/), Research Assistant, Houston, TX, USA
+- <img src="../images/umn.png" style="width:48px; height48px; margin-right:4px;"/> *2022.05 - 2023.06*, [CFL Lab](https://innovation.umn.edu/culture-and-family-life-lab/people/), Research Assistant, Minneapolis, MN, USA
+- <img src="../images/umn.png" style="width:48px; height48px; margin-right:4px;"/> *2021.04 - 2023.06*, [TNTLAB](https://rlanders.net/), Research Assistant, Minneapolis, MN, USA
+- <img src="../images/acrhomes.png" style="width:48px; height40px; margin-right:4px;"/> *2021.10 - 2022.07*, [ACR Homes](https://acrhomes.com/), Human Resources Intern, Minneapolis, MN, USA
 <!-- - <img src="../images/3dhologroup_logo.jpg" style="width:48px; height48px; margin-right:4px;"/> *2021.12 - 2022.07*, [3D HoloGroup, Inc](https://www.linkedin.com/company/3dhologroup/), Human Resources Intern, Minneapolis, MN, USA -->
-- <img src="../images/University_of_Minnesota_Logo.svg.png" style="width:48px; height48px; margin-right:4px;"/> *2020.06 - 2022.07*, [Ones Green Lab](https://cla.umn.edu/about/directory/profile/onesx001), Research Assistant, Minneapolis, MN, USA
+- <img src="../images/umn.png" style="width:48px; height48px; margin-right:4px;"/> *2020.06 - 2022.07*, [Ones Green Lab](https://cla.umn.edu/about/directory/profile/onesx001), Research Assistant, Minneapolis, MN, USA
 
 
 # 🫶 Service
