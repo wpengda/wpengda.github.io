@@ -219,6 +219,6 @@ I am always excited to collaborate with other researchers and explore new fields
 
 
 # 🫶 Service
-- NIPS 2025, Reviewer
-- SIOP 2025, Reviewer
-- CHI 2025, Reviewer
+- Conference on Neural Information Processing Systems (NIPS), 2025 - Present, Reviewer
+- Conference on Human Factors in Computing Systems (CHI), 2024 - Present, Reviewer
+- Society for Industrial and Organizational Psychology Annual Conference (SIOP), 2024 - Present, Reviewer
