@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Pengda Wang"
-description              : "Ph.D. Student<br>Dept. of Psychological Sciences<br>Rice University"
+description              : "Ph.D. Student<br>Dept. of Psychological Sciences"
 repository               : "wpengda/wpengda.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Pengda Wang"
   avatar           : "images/android-chrome-192x192_2.png"
-  bio              : "<div><img src='../../images/rice_long.png' width='30%'></div>"
+  bio              : "<div><img src='../../images/rice_long.png' width='10%'></div>"
   location         : "Houston, TX"
   employer         :
   pubmed           : 
