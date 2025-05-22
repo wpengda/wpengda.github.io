@@ -33,6 +33,7 @@ I am always excited to collaborate with other researchers and explore new fields
 
 <div style="height: 300px; overflow-y: scroll; padding: 10px;">
   <ul> 
+    <li><strong>2025.05</strong> - I received the <a href="https://ciisr.rice.edu/">Center for Computational Insights on Inequality and Society at Rice University (CIISR)</a> Graduate Research Fellowship.</li>
     <li><strong>2025.05</strong> - I joined <a href="https://www.midjourney.com/explore?tab=top">Midjourney</a> as a research intern in 2025 Summer.</li>
     <li><strong>2025.04</strong> - Our submission entitled <em>Differential embedding dimension functioning in natural language processing for psychological assessment</em>, has been accepted for <strong>Oral presentation</strong> at the <a href="https://www.psychometricsociety.org/imps-2025">IMPS 2025</a>.</li>
     <li><strong>2025.01</strong> - Our article, <em>Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration</em>, selected as <strong>Editor Commendation (22/over 1600)</strong> at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
@@ -40,11 +41,11 @@ I am always excited to collaborate with other researchers and explore new fields
     <li><strong>2024.12</strong> - Our symposium, <em>Machine learning for I-O 7.0: Large language models for assessments</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.12</strong> - Our alternative session presentation, <em>Bridging disciplines: How Computer Science and I-O Psychology benefit each other</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
     <li><strong>2024.11</strong> - Our article, <em>Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration</em>, has now been accepted at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
-    <li><strong>2024.10</strong> - Serve as a reviewer for <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
-    <li><strong>2024.09</strong> - Serve as a reviewer for <a href="https://chi2025.acm.org/">CHI 2025</a>.</li>
+    <li><strong>2024.10</strong> - I served as a reviewer for <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
+    <li><strong>2024.09</strong> - I served as a reviewer for <a href="https://chi2025.acm.org/">CHI 2025</a>.</li>
     <li><strong>2024.09</strong> - Our article, <em>Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs</em>, selected as an <strong>Oral Spotlight Presentation (top 2%)</strong> at <a href="https://colmweb.org/">COLM 2024</a>.</li>
-    <li><strong>2024.08</strong> - Also joined the <a href="https://hanjiechen.github.io/group.html">Chili Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
-    <li><strong>2024.08</strong> - Also joined the <a href="https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view">SMART Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
+    <li><strong>2024.08</strong> - I joined the <a href="https://hanjiechen.github.io/group.html">Chili Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
+    <li><strong>2024.08</strong> - I joined the <a href="https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view">SMART Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
     <li><strong>2024.08</strong> - Our article, <em>On putting the horse (raters and criteria) before the cart (variance components in ratings)</em>, has now been published in <a href="https://www.cambridge.org/core/journals/industrial-and-organizational-psychology">Industrial and Organizational Psychology</a>.</li>
     <li><strong>2024.07</strong> - Our article, <em>Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs</em>, has now been accepted at <a href="https://colmweb.org/">COLM 2024</a>.</li>
     <li><strong>2024.03</strong> - Our article, <em>The weight of beauty in psychological research</em>, has now been published in <a href="https://www.cambridge.org/core/journals/industrial-and-organizational-psychology">Industrial and Organizational Psychology</a>.</li>
