@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Pengda Wang"
   avatar           : "images/android-chrome-192x192_2.png"
-  bio              : "<div><img src='../../images/rice_long.png' width='10%'></div>"
+  bio              : "<div><img src='../../images/rice_long.png' style='width: 5%; height: auto;'></div>"
   location         : "Houston, TX"
   employer         :
   pubmed           : 
