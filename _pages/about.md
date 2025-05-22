@@ -196,8 +196,9 @@ I am always excited to collaborate with other researchers and explore new fields
 
 
 # 🎖 Honors and Awards
-- *2025*, Researcher Access Program, OpenAI. $5,000.
-- *2023*, Mortensen Research Award & CLA Research Scholarship, University of Minnesota-Twin Cities. $1,500.
+- <img src="../images/Rice.png" style="width:48px; height48px; margin-right:4px;"/> *2025*, Center for Computational Insights on Inequality and Society at Rice University (CIISR) Graduate Research Fellowship, Rice University. $1,500.
+- <img src="../images/openai.png" style="width:48px; height48px; margin-right:4px;"/> *2024*, Researcher Access Program, OpenAI. $5,000.
+- <img src="../images/umn.png" style="width:48px; height48px; margin-right:4px;"/> *2023*, Mortensen Research Award & CLA Research Scholarship, University of Minnesota-Twin Cities. $1,500.
 
 
 # 📖 Education
