@@ -33,7 +33,7 @@ I am always excited to collaborate with other researchers and explore new fields
   A selection of tools and platforms I personally create or recommend for research, analysis, and open science.
 </p>
 
-<div style="height: 30px; overflow-y: scroll; padding: 10px;">
+<div style="height: 80px; overflow-y: scroll; padding: 10px;">
   <ul>
     <li><strong><a href="https://github.com/wpengda/personality-process-assessment-reading-list" target="_blank">Personality reading list</a></strong> – A curated list of literature for anyone interested in personality research.</li>
   </ul>
