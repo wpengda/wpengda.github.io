@@ -275,6 +275,10 @@ body.dark-mode .styled-figure {
 
 /* Responsive design */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .profile-section {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -287,6 +291,7 @@ body.dark-mode .styled-figure {
     .education-section {
         order: 1;
         margin-bottom: 0.0rem;
+        margin-top: 0;
     }
     
     .about-figure {
@@ -336,8 +341,10 @@ body.dark-mode .styled-figure {
     }
     
     .news-scroll {
-        height: 300px;
+        height: min(250px, 50vh);
         padding: 1rem;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
     
     .news-scroll li {
@@ -558,6 +565,8 @@ main {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
     margin-bottom: 2rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Experience and Service sections styling */
@@ -1221,7 +1230,7 @@ body.dark-mode .about-text-content p {
 
 /* Photo Gallery */
 #photo-gallery {
-    padding: 0rem 0;
+    padding: 2rem 0;
     margin: 4rem 0;
     /* Break out of main container's 1400px limit */
     width: 100vw;
@@ -1230,15 +1239,47 @@ body.dark-mode .about-text-content p {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    overflow-x: hidden;
+    /* Center the scrollbar within the gallery */
+    display: flex;
+    justify-content: center;
 }
 
 .photo-grid {
     display: flex;
     justify-content: center;
     gap: 1.25rem;
-    overflow: hidden;
-    padding: 1rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1rem;
     margin: -1rem 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    /* Small, centered scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+    /* Center the grid with max width */
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Custom small scrollbar styling for Webkit browsers */
+.photo-grid::-webkit-scrollbar {
+    height: 4px;
+}
+
+.photo-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.photo-grid::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 2px;
+}
+
+.photo-grid::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
 }
 
 .photo-item {
@@ -1291,10 +1332,68 @@ body.dark-mode .photo-item {
     background-color: #27272a;
 }
 
+/* Dark mode small scrollbar styling */
+body.dark-mode .photo-grid {
+    scrollbar-color: #52525b transparent;
+}
+
+body.dark-mode .photo-grid::-webkit-scrollbar-thumb {
+    background: #52525b;
+}
+
+body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
+    background: #71717a;
+}
+
+
+
+/* Mobile-first responsive design for photo gallery */
+@media (max-width: 480px) {
+    #photo-gallery {
+        margin: 2rem 0;
+        padding: 1rem 0;
+    }
+    
+    .photo-grid {
+        gap: 0.75rem;
+        padding: 0.5rem;
+        justify-content: flex-start;
+        /* Better touch scrolling */
+        scroll-snap-type: x mandatory;
+        /* Keep scrollbar hidden on mobile */
+        overflow-x: auto;
+    }
+    
+    .photo-item {
+        width: 8rem;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        /* Better touch feedback */
+        touch-action: manipulation;
+    }
+    
+    .photo-item:hover {
+        /* Reduce hover effects on touch devices */
+        transform: rotate(0deg) translateY(-4px);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+    .photo-grid {
+        gap: 1rem;
+    }
+    
+    .photo-item {
+        width: 10rem;
+    }
+}
+
 /* Responsive design for photo gallery */
 @media (min-width: 640px) {
     .photo-grid {
         gap: 2rem;
+        overflow-x: auto;
+        overflow-y: hidden;
     }
     
     .photo-item {
@@ -1882,6 +1981,7 @@ footer {
         flex-wrap: wrap;
         gap: 1rem;
         padding: 0 1rem;
+        min-height: 60px; /* Ensure minimum touch target height */
     }
     
     /* Override absolute positioning on mobile */
@@ -1894,17 +1994,21 @@ footer {
         position: static;
         order: 2;
         margin-left: auto;
+        /* Ensure touch-friendly size */
+        min-width: 44px;
+        min-height: 44px;
     }
     
     .nav-menu {
         order: 3;
         width: 100%;
         justify-content: center;
+        /* Prevent menu from becoming too cramped */
+        min-height: 44px;
     }
     
     main {
         padding: 0 1rem;
-        max-height: 80vh;
         min-height: 400px;
     }
     
@@ -1935,6 +2039,11 @@ footer {
     .nav-menu a {
         font-size: 0.9rem;
         padding: 0.4rem 0.8rem;
+        /* Ensure touch-friendly size */
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .photo-grid {
@@ -1977,6 +2086,17 @@ footer {
 }
 
 @media (max-width: 480px) {
+    main {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0 0.5rem;
+        border-radius: 8px;
+    }
+    
+    #hero {
+        padding: 2rem 0;
+    }
+    
     .page-header h1, #hero h1 {
         font-size: 1.8rem;
     }
@@ -2045,6 +2165,60 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+    }
+}
+
+/* Extra small screens (320px and below) */
+@media (max-width: 320px) {
+    .nav-menu {
+        gap: 0.25rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .nav-menu a {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.4rem;
+    }
+    
+    .page-header h1, #hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .intro p {
+        font-size: 0.9rem;
+    }
+    
+    .social-links {
+        gap: 0.75rem;
+    }
+    
+    .social-link {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    main {
+        padding: 0 0.25rem;
+    }
+    
+    .news-scroll {
+        height: min(200px, 45vh);
+        padding: 0.75rem;
+    }
+    
+    .paper-box {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0.75rem;
+    }
+    
+    .modern-about-container {
+        padding: 2rem 1rem 1rem;
     }
 }
 
