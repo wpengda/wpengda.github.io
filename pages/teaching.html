@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching - Pengda Wang</title>
+    <link rel="stylesheet" href="../style/styles.css">
+
+    <!-- Favicon and browser icons -->
+    <link rel="icon" type="image/png" sizes="512x512" href="../images/android-chrome-512x512.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <a href="../index.html" class="brand-link">
+                    <img src="../images/android-chrome-512x512_2.png" alt="[Your Name]" class="nav-profile-pic">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html" class="active">Teaching</a></li>
+                <li><a href="awards.html">Awards</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">
+                    <span class="toggle-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-container" style="max-width: 1200px; margin: 0 auto;">
+            <section class="page-header">
+                <h1>Teaching Experience</h1>
+                <p class="page-subtitle">I am passionate about education and have experience supporting student learning through teaching assistance.</p>
+            </section>
+
+            <section id="teaching-assistant">
+                <h2>Teaching Assistant</h2>
+                
+                <div class="simple-list">
+                    <div class="simple-item award-with-icon">
+                        <div class="award-icon">
+                            <img src="../images/Rice.png" style="width:48px; height:48px;"/>
+                        </div>
+                        <div class="award-content">
+                            <h3>Advanced Psychological Statistics</h3>
+                            <p class="simple-details">Rice University | Houston, TX</p>
+                            <p class="simple-description">Assisted with advanced statistical methods course for graduate students. Responsibilities included leading discussion sections, grading assignments, holding office hours, and providing one-on-one student support for complex statistical concepts and methodologies.</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-item award-with-icon">
+                        <div class="award-icon">
+                            <img src="../images/umn.png" style="width:48px; height:48px;"/>
+                        </div>
+                        <div class="award-content">
+                            <h3>Computational Linear Algebra</h3>
+                            <p class="simple-details">University of Minnesota-Twin Cities | Minneapolis, MN</p>
+                            <p class="simple-description">Supported students in computational approaches to linear algebra. Assisted with lab sessions, graded programming assignments, and provided academic support during office hours for both theoretical concepts and practical implementation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="guest-lectures">
+                <h2>Guest Lectures</h2>
+                
+                <div class="simple-list">
+                    <div class="simple-item award-with-icon">
+                        <div class="award-icon">
+                            <img src="../images/Rice.png" style="width:48px; height:48px;"/>
+                        </div>
+                        <div class="award-content">
+                            <h3>Advanced Psychological Statistics</h3>
+                            <p class="simple-details">Rice University | Houston, TX</p>
+                            <p class="simple-description">Delivered a comprehensive guest lecture on Analysis of Variance (ANOVA) for graduate students in Advanced Psychological Statistics. Covered one-way and factorial ANOVA designs, assumptions testing, post-hoc comparisons, and practical implementation using R, with hands-on exercises demonstrating how ANOVA techniques can effectively analyze group differences in psychological research.</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-item award-with-icon">
+                        <div class="award-icon">
+                            <img src="../images/umn.png" style="width:48px; height:48px;"/>
+                        </div>
+                        <div class="award-content">
+                            <h3>Computational Linear Algebra</h3>
+                            <p class="simple-details">University of Minnesota-Twin Cities | Minneapolis, MN</p>
+                            <p class="simple-description">Led an interactive workshop on advanced matrix decomposition methods for Computational Linear Algebra students. Covered eigenvalue decomposition, singular value decomposition (SVD), and their applications in machine learning and data science. Students implemented algorithms in Python and MATLAB, exploring practical applications in dimensionality reduction, image compression, and principal component analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">© Pengda Wang. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            
+            // Toggle dark mode on both body and toggle button
+            body.classList.toggle('dark-mode');
+            themeToggle.classList.toggle('dark-mode');
+            
+            // Update aria-label for accessibility
+            const isDarkMode = body.classList.contains('dark-mode');
+            themeToggle.setAttribute('aria-label', isDarkMode ? 'Switch to light mode' : 'Switch to dark mode');
+            
+            // Save theme preference to localStorage
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        }
+        
+        // Auto-hide navigation functionality
+        let lastScrollTop = 0;
+        let isNavVisible = true;
+        let scrollTimeout;
+        
+        function handleNavVisibility() {
+            const header = document.querySelector('header');
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Show nav when scrolling up or at top of page
+            if (currentScrollTop < lastScrollTop || currentScrollTop <= 100) {
+                if (!isNavVisible) {
+                    header.classList.remove('nav-hidden');
+                    header.classList.add('nav-visible');
+                    isNavVisible = true;
+                }
+            } 
+            // Hide nav when scrolling down (but not immediately)
+            else if (currentScrollTop > lastScrollTop && currentScrollTop > 200) {
+                if (isNavVisible) {
+                    header.classList.remove('nav-visible');
+                    header.classList.add('nav-hidden');
+                    isNavVisible = false;
+                }
+            }
+            
+            lastScrollTop = currentScrollTop;
+        }
+        
+        // Show nav when mouse moves to top of screen
+        function handleMouseMove(e) {
+            const header = document.querySelector('header');
+            
+            if (e.clientY <= 100 && !isNavVisible) {
+                header.classList.remove('nav-hidden');
+                header.classList.add('nav-visible');
+                isNavVisible = true;
+            }
+        }
+        
+        // Load saved theme and initialize navigation on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                themeToggle.classList.add('dark-mode');
+                themeToggle.setAttribute('aria-label', 'Switch to light mode');
+            } else {
+                themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+            }
+            
+            // Initialize navigation auto-hide
+            window.addEventListener('scroll', function() {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(handleNavVisibility, 10);
+            });
+            
+            document.addEventListener('mousemove', handleMouseMove);
+            
+            // Initialize header state
+            const header = document.querySelector('header');
+            header.classList.add('nav-visible');
+        });
+    </script>
+</body>
+</html>

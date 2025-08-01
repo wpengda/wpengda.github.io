@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengda Wang</title>
+    <link rel="stylesheet" href="style/styles.css">
+    
+    <!-- Favicon and browser icons -->
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+</head>
+<body class="home-page">
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="images/android-chrome-512x512_2.png" alt="PW" class="nav-profile-pic">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/publications.html">Publications</a></li>
+                <li><a href="pages/teaching.html">Teaching</a></li>
+                <li><a href="pages/awards.html">Awards</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">
+                    <span class="toggle-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="profile-section">
+                <div class="main-content">
+
+                    <div class="profile-image">
+                        <div class="profile-3d-container" onclick="flipCard()">
+                            <div class="profile-3d-wrapper" id="profileCard">
+                                <div class="profile-front">
+                                    <img src="images/android-chrome-512x512_2.png" alt="Pengda Wang" class="profile-pic">
+                                </div>
+                                <div class="profile-back">
+                                    <img src="images/hello.png" alt="Hello" class="profile-pic">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h1>Maybe a PSYC Researcher :)</h1>
+                    <div class="intro">
+                        <p style="margin-bottom: 0.5rem;">Hi, I am <strong>Pengda Wang</strong>, a third-year Psychology Ph.D. student at Rice University and an ML/AI Ph.D. Resident at Midjourney, Inc. I do research on <strong>psychometrics</strong> (e.g., SEM, computational measurement, AI/ML approaches), <strong>individual differences</strong> (e.g., bright/dark personalities, social behaviors), and <strong>personnel selection</strong> (e.g., faking, bias, AI/ML applications, interpretable/responsible AI use).</p>
+                        <p>I am always excited to collaborate with other researchers and explore new fields. Do not hesitate to contact me (<a href="mailto:pw32@rice.edu"><strong>pw32@rice.edu</strong></a>) if you are interested!</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pengda-wang/" target="_blank" class="social-link" title="LinkedIn">
+                            <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+                        </a>
+                        <a href="https://github.com/wpengda" target="_blank" class="social-link" title="Github">
+                            <img src="images/github.png" alt="GitHub" class="social-icon">
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=-C0UxKQAAAAJ&hl" target="_blank" class="social-link" title="Google Scholar">
+                            <img src="images/googlescholar.png" alt="Google Scholar" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="education-section">
+                    <h2 class="education-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="education-icon">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" class="book-spine"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" class="book-cover"></path>
+                        </svg>
+                        <span>Education</span>
+                    </h2>
+                    <ol class="education-list">
+                        <li class="education-item">
+                            <dl class="education-details">
+                                <dt class="sr-only">Institution</dt>
+                                <dd class="education-institution">Rice University</dd>
+                                <dt class="sr-only">Degree</dt>
+                                <dd class="education-degree">IO Psych Ph.D.</dd>
+                                <dt class="sr-only">Date</dt>
+                                <dd class="education-years" aria-label="2023 until 2028">
+                                    <time datetime="2023">2023</time> 
+                                    <span aria-hidden="true">-</span> 
+                                    <time datetime="2028">2028</time>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="education-item">
+                            <dl class="education-details">
+                                <dt class="sr-only">Institution</dt>
+                                <dd class="education-institution">Rice University</dd>
+                                <dt class="sr-only">Degree</dt>
+                                <dd class="education-degree">IO Psych M.A.</dd>
+                                <dt class="sr-only">Date</dt>
+                                <dd class="education-years" aria-label="2023 until 2025">
+                                    <time datetime="2023">2023</time> 
+                                    <span aria-hidden="true">-</span> 
+                                    <time datetime="2025">2025</time>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="education-item">
+                            <dl class="education-details">
+                                <dt class="sr-only">Institution</dt>
+                                <dd class="education-institution">University of Minnesota-Twin Cities</dd>
+                                <dt class="sr-only">Degree</dt>
+                                <dd class="education-degree">Psych B.S. & CS B.A.</dd>
+                                <dt class="sr-only">Date</dt>
+                                <dd class="education-years" aria-label="2019 until 2023">
+                                    <time datetime="2019">2019</time> 
+                                    <span aria-hidden="true">-</span> 
+                                    <time datetime="2023">2023</time>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ol>
+                    <a class="cv-download" download="PengdaWang_CV" href="files/CV_Pengda.pdf">
+                        Download CV
+                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="download-icon">
+                            <path d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="news">
+            <div class="news-container">
+                <div class="news-scroll">
+                    <ul> 
+                        <li><strong>2025.08</strong> - Check out our new survey paper, <a href="https://doi.org/10.48550/arXiv.2507.22847"><em><strong>The incomplete bridge: How AI research (mis)engages with psychology</strong></em></a>.</li>
+                        <li><strong>2025.07</strong> - Our article, <em>Can LLM "self-report"?: Evaluating the validity of self-report scales in measuring personality design in LLM-based chatbots</em>, has now been accepted at <a href="https://colmweb.org/">COLM 2025</a>.</li>
+                        <li><strong>2025.05</strong> - I received the <a href="https://ciisr.rice.edu/">Center for Computational Insights on Inequality and Society at Rice University (CIISR)</a> Graduate Research Fellowship.</li>
+                        <li><strong>2025.05</strong> - I joined <a href="https://www.midjourney.com/explore?tab=top">Midjourney</a> as a research intern in 2025 Summer.</li>
+                        <li><strong>2025.04</strong> - Our submission entitled <em>Differential embedding dimension functioning in natural language processing for psychological assessment</em>, has been accepted for <span class="achievement-highlight">Oral presentation</span> at the <a href="https://www.psychometricsociety.org/imps-2025">IMPS 2025</a>.</li>
+                        <li><strong>2025.01</strong> - Our article, <em>Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration</em>, selected as <span class="achievement-highlight">Editor Commendation (22/over 1600)</span> at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
+                        <li><strong>2024.12</strong> - Our symposium, <em>Innovations in AI assessment of individual differences: Improving validity and equity</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
+                        <li><strong>2024.12</strong> - Our symposium, <em>Machine learning for I-O 7.0: Large language models for assessments</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
+                        <li><strong>2024.12</strong> - Our alternative session presentation, <em>Bridging disciplines: How Computer Science and I-O Psychology benefit each other</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2025</a>.</li>
+                        <li><strong>2024.11</strong> - Our article, <em>Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration</em>, has now been accepted at <a href="https://link.springer.com/journal/10869">Journal of Business and Psychology</a>.</li>
+                        <li><strong>2024.09</strong> - Our article, <em>Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs</em>, selected as an <span class="achievement-highlight">Oral Spotlight Presentation (top 2%)</span> at <a href="https://colmweb.org/">COLM 2024</a>.</li>
+                        <li><strong>2024.08</strong> - I joined the <a href="https://hanjiechen.github.io/group.html">Chili Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
+                        <li><strong>2024.08</strong> - I joined the <a href="https://drive.google.com/file/d/1TQMWbNDCBxYwH5aSPrn8_jRQ08pdrn4-/view">SMART Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a>.</li>
+                        <li><strong>2024.08</strong> - Our article, <em>On putting the horse (raters and criteria) before the cart (variance components in ratings)</em>, has now been published in <a href="https://www.cambridge.org/core/journals/industrial-and-organizational-psychology">Industrial and Organizational Psychology</a>.</li>
+                        <li><strong>2024.07</strong> - Our article, <em>Will the real Linda please stand up... To large language models? Examining the representativeness heuristic in LLMs</em>, has now been accepted at <a href="https://colmweb.org/">COLM 2024</a>.</li>
+                        <li><strong>2024.03</strong> - Our article, <em>The weight of beauty in psychological research</em>, has now been published in <a href="https://www.cambridge.org/core/journals/industrial-and-organizational-psychology">Industrial and Organizational Psychology</a>.</li>
+                        <li><strong>2023.12</strong> - Our symposium, <em>To RIASEC and beyond: Advances in vocational interest research</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2024</a>.</li>
+                        <li><strong>2023.12</strong> - Our symposium, <em>Future of performance prediction and evaluation: Artificial intelligence and big data</em>, has been accepted at <a href="https://www.siop.org/annual-conference">SIOP 2024</a>.</li>
+                        <li><strong>2023.08</strong> - I joined <a href="https://workforce.rice.edu/">OWL Lab</a> at <a href="https://psychology.rice.edu/graduate/industrial-organizational-psychology">Rice University</a> as a first-year PhD student.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="photo-gallery">
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="images/1.jpg" alt="Gallery image 1">
+                </div>
+                <div class="photo-item">
+                    <img src="images/2.jpg" alt="Gallery image 2">
+                </div>
+                <div class="photo-item">
+                    <img src="images/3.jpg" alt="Gallery image 3">
+                </div>
+                <div class="photo-item">
+                    <img src="images/4.jpg" alt="Gallery image 4">
+                </div>
+            </div>
+        </section>
+
+        
+
+
+    </main>
+
+    <footer>
+        <p class="copyright">© Pengda Wang. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            
+            // Toggle dark mode on both body and toggle button
+            body.classList.toggle('dark-mode');
+            themeToggle.classList.toggle('dark-mode');
+            
+            // Update aria-label for accessibility
+            const isDarkMode = body.classList.contains('dark-mode');
+            themeToggle.setAttribute('aria-label', isDarkMode ? 'Switch to light mode' : 'Switch to dark mode');
+            
+            // Save theme preference to localStorage
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        }
+        
+        // Auto-hide navigation functionality
+        let lastScrollTop = 0;
+        let isNavVisible = true;
+        let scrollTimeout;
+        
+        function handleNavVisibility() {
+            const header = document.querySelector('header');
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Show nav when scrolling up or at top of page
+            if (currentScrollTop < lastScrollTop || currentScrollTop <= 100) {
+                if (!isNavVisible) {
+                    header.classList.remove('nav-hidden');
+                    header.classList.add('nav-visible');
+                    isNavVisible = true;
+                }
+            } 
+            // Hide nav when scrolling down (but not immediately)
+            else if (currentScrollTop > lastScrollTop && currentScrollTop > 200) {
+                if (isNavVisible) {
+                    header.classList.remove('nav-visible');
+                    header.classList.add('nav-hidden');
+                    isNavVisible = false;
+                }
+            }
+            
+            lastScrollTop = currentScrollTop;
+        }
+        
+        // Show nav when mouse moves to top of screen
+        function handleMouseMove(e) {
+            const header = document.querySelector('header');
+            
+            if (e.clientY <= 100 && !isNavVisible) {
+                header.classList.remove('nav-hidden');
+                header.classList.add('nav-visible');
+                isNavVisible = true;
+            }
+        }
+        
+        // Load saved theme and initialize navigation on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                themeToggle.classList.add('dark-mode');
+                themeToggle.setAttribute('aria-label', 'Switch to light mode');
+            } else {
+                themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+            }
+            
+            // Initialize navigation auto-hide
+            window.addEventListener('scroll', function() {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(handleNavVisibility, 10);
+            });
+            
+            document.addEventListener('mousemove', handleMouseMove);
+            
+            // Initialize header state
+            const header = document.querySelector('header');
+            header.classList.add('nav-visible');
+        });
+        
+        let currentRotation = 0;
+        
+        function flipCard() {
+            const card = document.getElementById('profileCard');
+            currentRotation += 900; // Rotate 2.5 times (900 degrees) each click
+            card.style.transform = `rotateY(${currentRotation}deg)`;
+        }
+    </script>
+</body>
+</html>

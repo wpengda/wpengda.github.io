@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards - Pengda Wang</title>
+    <link rel="stylesheet" href="../style/styles.css">
+
+    <!-- Favicon and browser icons -->
+    <link rel="icon" type="image/png" sizes="512x512" href="../images/android-chrome-512x512.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <a href="../index.html" class="brand-link">
+                    <img src="../images/android-chrome-512x512_2.png" alt="[Your Name]" class="nav-profile-pic">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="awards.html" class="active">Awards</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">
+                    <span class="toggle-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-container" style="max-width: 1200px; margin: 0 auto;">
+            <section class="page-header">
+                <h1>Awards & Recognition</h1>
+                <p class="page-subtitle">Honors, fellowships, grants, and awards received throughout my academic career.</p>
+            </section>
+
+            <section id="awards">
+                <h2>Awards</h2>
+                
+                <div class="simple-list">
+                    <div class="simple-item award-with-icon">
+                        <div class="award-icon">
+                            <img src="../images/Rice.png" style="width:48px; height:48px;"/>
+                        </div>
+                        <div class="award-content">
+                            <h3>Center for Computational Insights on Inequality and Society Graduate Research Fellowship</h3>
+                            <p class="simple-details">Rice University | 2025 | $1,500</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-item award-with-icon">
+                        <div class="award-icon">
+                            <img src="../images/openai.png" style="width:48px; height:48px;"/>
+                        </div>
+                        <div class="award-content">
+                            <h3>Researcher Access Program</h3>
+                            <p class="simple-details">OpenAI | 2024 | $5,000</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-item award-with-icon">
+                        <div class="award-icon">
+                            <img src="../images/umn.png" style="width:48px; height:48px;"/>
+                        </div>
+                        <div class="award-content">
+                            <h3>Mortensen Research Award & CLA Research Scholarship</h3>
+                            <p class="simple-details">University of Minnesota-Twin Cities | 2023 | $1,500</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="awards">
+                <h2>Recognition</h2>
+                
+                <div class="simple-list">
+                    
+                    <div class="simple-item award-with-icon">
+                        <div class="award-icon">
+                            <img src="../images/jbp.png" style="width:48px; height:48px;"/>
+                        </div>
+                        <div class="award-content">
+                            <h3>Editor Commendation (22/over 1600)</h3>
+                            <p class="simple-details">Advancing organizational science through synthetic data: A path to enhanced data sharing and collaboration.</p>
+                        </div>
+                    </div>
+
+                    <div class="simple-item award-with-icon">
+                        <div class="award-icon">
+                            <img src="../images/colm.png" style="width:48px; height:48px;"/>
+                        </div>
+                        <div class="award-content">
+                            <h3>Oral Spotlight Presentation (top 2%)</h3>
+                            <p class="simple-details">Will the real Linda please stand up… To large language models? Examining the representativeness heuristic in LLMs.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">© Pengda Wang. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            
+            // Toggle dark mode on both body and toggle button
+            body.classList.toggle('dark-mode');
+            themeToggle.classList.toggle('dark-mode');
+            
+            // Update aria-label for accessibility
+            const isDarkMode = body.classList.contains('dark-mode');
+            themeToggle.setAttribute('aria-label', isDarkMode ? 'Switch to light mode' : 'Switch to dark mode');
+            
+            // Save theme preference to localStorage
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        }
+        
+        // Auto-hide navigation functionality
+        let lastScrollTop = 0;
+        let isNavVisible = true;
+        let scrollTimeout;
+        
+        function handleNavVisibility() {
+            const header = document.querySelector('header');
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Show nav when scrolling up or at top of page
+            if (currentScrollTop < lastScrollTop || currentScrollTop <= 100) {
+                if (!isNavVisible) {
+                    header.classList.remove('nav-hidden');
+                    header.classList.add('nav-visible');
+                    isNavVisible = true;
+                }
+            } 
+            // Hide nav when scrolling down (but not immediately)
+            else if (currentScrollTop > lastScrollTop && currentScrollTop > 200) {
+                if (isNavVisible) {
+                    header.classList.remove('nav-visible');
+                    header.classList.add('nav-hidden');
+                    isNavVisible = false;
+                }
+            }
+            
+            lastScrollTop = currentScrollTop;
+        }
+        
+        // Show nav when mouse moves to top of screen
+        function handleMouseMove(e) {
+            const header = document.querySelector('header');
+            
+            if (e.clientY <= 100 && !isNavVisible) {
+                header.classList.remove('nav-hidden');
+                header.classList.add('nav-visible');
+                isNavVisible = true;
+            }
+        }
+        
+        // Load saved theme and initialize navigation on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                themeToggle.classList.add('dark-mode');
+                themeToggle.setAttribute('aria-label', 'Switch to light mode');
+            } else {
+                themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+            }
+            
+            // Initialize navigation auto-hide
+            window.addEventListener('scroll', function() {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(handleNavVisibility, 10);
+            });
+            
+            document.addEventListener('mousemove', handleMouseMove);
+            
+            // Initialize header state
+            const header = document.querySelector('header');
+            header.classList.add('nav-visible');
+        });
+    </script>
+</body>
+</html>

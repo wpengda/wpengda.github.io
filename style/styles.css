@@ -1,0 +1,2540 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f5;
+    transition: all 0.3s ease;
+}
+
+/* Global link styles - make all links bold and add hover effects */
+a {
+    font-weight: bold;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #14b8a6;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    color: #e5e7eb;
+    background-color: #18181b;
+}
+
+/* Dark mode global link styles */
+body.dark-mode a {
+    color: #d1d5db;
+}
+
+body.dark-mode a:hover {
+    color: #14b8a6;
+}
+
+body.dark-mode header {
+    background-color: rgba(24, 24, 27, 0.95);
+}
+
+body.dark-mode .nav-menu {
+    background-color: #1f2937;
+    border-color: #374151;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .nav-menu a {
+    color: #9ca3af;
+}
+
+body.dark-mode .nav-menu a:hover {
+    color: #14b8a6;
+    text-decoration: underline;
+    text-decoration-color: #14b8a6;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+body.dark-mode .nav-menu a.active {
+    color: #14b8a6;
+}
+
+body.dark-mode .nav-profile-pic {
+    border-color: #374151;
+}
+
+body.dark-mode .nav-profile-pic:hover {
+    border-color: #14b8a6;
+}
+
+body.dark-mode #hero h1,
+body.dark-mode .page-header h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #f9fafb;
+}
+
+body.dark-mode .intro p,
+body.dark-mode .page-subtitle {
+    color: #d1d5db;
+}
+
+body.dark-mode .intro a {
+    color: #9ca3af;
+}
+
+body.dark-mode .intro a:hover {
+    color: #14b8a6;
+}
+
+body.dark-mode .profile-pic {
+    border-color: #374151;
+}
+
+body.dark-mode .social-link:hover {
+    background-color: #374151;
+}
+
+body.dark-mode .social-icon {
+    filter: invert(1) brightness(0.9);
+    opacity: 0.8;
+}
+
+body.dark-mode .social-link:hover .social-icon {
+    opacity: 1;
+}
+
+body.dark-mode .photo-item {
+    background-color: #374151;
+}
+
+
+
+
+
+
+
+body.dark-mode footer {
+    border-top-color: #374151;
+}
+
+body.dark-mode .footer-nav a {
+    color: #9ca3af;
+}
+
+body.dark-mode .footer-nav a:hover {
+    color: #f3f4f6;
+}
+
+body.dark-mode .education-section {
+    background: #27272a;
+    border-color: rgba(115, 115, 115, 0.4);
+}
+
+body.dark-mode .education-header {
+    color: #f4f4f5;
+}
+
+body.dark-mode .book-spine {
+    stroke: #71717a;
+}
+
+body.dark-mode .book-cover {
+    stroke: #71717a;
+}
+
+body.dark-mode .briefcase-top,
+body.dark-mode .briefcase-body,
+body.dark-mode .briefcase-handle {
+    stroke: #71717a;
+}
+
+body.dark-mode .service-people,
+body.dark-mode .service-head,
+body.dark-mode .service-extra {
+    stroke: #71717a;
+}
+
+body.dark-mode .education-institution {
+    color: #f4f4f5;
+    display: flex;
+    align-items: center;
+}
+
+body.dark-mode .education-institution a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .education-institution a:hover {
+    color: #14b8a6;
+}
+
+body.dark-mode .education-degree {
+    color: #a1a1aa;
+}
+
+body.dark-mode .education-years {
+    color: #71717a;
+}
+
+body.dark-mode .cv-download {
+    background: rgba(39, 39, 42, 0.5);
+    color: #d4d4d8;
+}
+
+body.dark-mode .cv-download:hover {
+    background: #27272a;
+    color: #f4f4f5;
+}
+
+body.dark-mode .cv-download:active {
+    background: rgba(39, 39, 42, 0.5);
+    color: rgba(244, 244, 245, 0.7);
+}
+
+body.dark-mode .download-icon {
+    stroke: #a1a1aa;
+}
+
+body.dark-mode .cv-download:hover .download-icon {
+    stroke: #f4f4f5;
+}
+
+body.dark-mode .cv-download:active .download-icon {
+    stroke: #f4f4f5;
+}
+
+/* About page figure styles - using exact photo-item effects */
+.about-figure {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 1rem;
+}
+
+.styled-figure {
+    position: relative;
+    aspect-ratio: 9/10;
+    width: 11rem;
+    flex: none;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    background-color: #f4f4f5;
+    transition: all 0.3s ease;
+    transform: rotate(2deg);
+}
+
+/* Image inside the figure - exact photo-item img styling */
+.figure-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effects - exact photo-item hover effects */
+.styled-figure:hover {
+    transform: rotate(0deg) translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.styled-figure:hover .figure-image {
+    transform: scale(1.05);
+}
+
+/* Dark mode styles for the figure - exact photo-item dark mode */
+body.dark-mode .styled-figure {
+    background-color: #27272a;
+}
+
+/* Responsive design for about figure - matches photo-item breakpoints */
+@media (min-width: 1024px) {
+    .styled-figure {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .styled-figure {
+        width: 22rem;
+    }
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .main-content {
+        order: 2;
+    }
+    
+    .education-section {
+        order: 1;
+        margin-bottom: 0.0rem;
+    }
+    
+    .about-figure {
+        order: 1;
+        margin-bottom: 1rem;
+        padding-top: 0;
+    }
+    
+    .styled-figure {
+        width: 9rem;
+        transform: rotate(2deg);
+    }
+    
+    .styled-figure:hover {
+        transform: rotate(0deg) translateY(-6px);
+    }
+    
+    #hero h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .profile-3d-container {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .profile-3d-wrapper {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .profile-front,
+    .profile-back {
+        width: 80px;
+        height: 80px;
+    }
+    
+    /* News section mobile adjustments */
+    .news-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .news-scroll {
+        height: 300px;
+        padding: 1rem;
+    }
+    
+    .news-scroll li {
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+}
+
+body.dark-mode .copyright {
+    color: #6b7280;
+}
+
+/* Header and Navigation */
+header {
+    position: sticky;
+    top: 0;
+    padding: 1.5rem 0;
+    background-color: transparent;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(0);
+}
+
+/* Auto-hide navigation states */
+header.nav-hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+header.nav-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Dark mode header background */
+body.dark-mode header {
+    background-color: transparent;
+}
+
+/* Hide avatar on home page */
+.home-page .nav-brand {
+    display: none;
+}
+
+/* Remove extra padding since we're using sticky positioning */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+/* Position theme toggle on the right */
+.nav-toggle {
+    position: absolute;
+    right: 2rem;
+}
+
+/* Position avatar on the left when visible */
+.nav-brand {
+    position: absolute;
+    left: 2rem;
+}
+
+
+
+.brand-link {
+    display: block;
+}
+
+.nav-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
+}
+
+.nav-profile-pic:hover {
+    border-color: #14b8a6;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0.75rem 2rem;
+    background-color: #f8f9fa;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    position: relative;
+}
+
+.nav-menu a:hover {
+    color: #14b8a6;
+    text-decoration: underline;
+    text-decoration-color: #14b8a6;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+.nav-menu a.active {
+    color: #14b8a6;
+    text-decoration: underline;
+    text-decoration-color: #14b8a6;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+/* Theme Toggle */
+.nav-toggle {
+    flex-shrink: 0;
+}
+
+.theme-toggle {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    position: relative;
+}
+
+.theme-toggle:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+}
+
+.toggle-icon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+/* Sun icon (default/day mode) */
+.toggle-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #f59e0b;
+    border-radius: 50%;
+    box-shadow: 
+        0 -12px 0 -4px #f59e0b,
+        0 12px 0 -4px #f59e0b,
+        12px 0 0 -4px #f59e0b,
+        -12px 0 0 -4px #f59e0b,
+        8px -8px 0 -4px #f59e0b,
+        -8px 8px 0 -4px #f59e0b,
+        8px 8px 0 -4px #f59e0b,
+        -8px -8px 0 -4px #f59e0b;
+}
+
+/* Dark mode toggle button */
+.theme-toggle.dark-mode {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+/* Moon icon (night mode) */
+.theme-toggle.dark-mode .toggle-icon::before {
+    width: 12px;
+    height: 12px;
+    background-color: #6b7280;
+    border-radius: 50%;
+    box-shadow: inset 4px -2px 0 0 #1f2937;
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+.theme-toggle:hover .toggle-icon::before {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.theme-toggle.dark-mode:hover .toggle-icon::before {
+    transform: translate(-50%, -50%) rotate(160deg);
+}
+
+/* Main content */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background-color: #ffffff;
+    border: 1px solid #e4e4e7;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Experience and Service sections styling */
+.experience-section,
+.service-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.2rem 0.5rem;
+}
+
+.experience-section .profile-section,
+.service-section .profile-section {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+}
+
+.experience-section .education-section,
+.service-section .education-section {
+    margin-top: 0;
+    max-width: 100%;
+}
+
+.experience-section {
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-section {
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+/* Dark mode main content */
+body.dark-mode main {
+    background-color: #09090b;
+    border-color: rgba(39, 39, 42, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Page Header */
+.page-header {
+    padding: 3rem 0 0.5rem;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Hero section - Homepage */
+#hero {
+    padding: 3rem 0;
+}
+
+.profile-section {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2rem;
+    margin-bottom: 0rem;
+    align-items: start;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-section {
+    margin-top: 7.5rem;
+    align-self: start;
+}
+
+.profile-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    align-items: start;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e9ecef;
+    filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 10px 20px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform 0.3s ease;
+}
+
+.profile-3d-container {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    z-index: 0;
+    user-select: none;
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-3d-wrapper {
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transition: transform 0.6s ease-in-out;
+}
+
+.profile-front,
+.profile-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-back {
+    transform: rotateY(180deg);
+}
+
+.profile-3d-container:hover .profile-pic {
+    transform: scale(1.05);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image {
+    margin-bottom: 1rem;
+}
+
+.education-section {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 16px;
+    border: 1px solid #e9ecef;
+    height: fit-content;
+}
+
+.education-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #18181b;
+    margin-bottom: 1rem;
+}
+
+.education-icon {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+}
+
+.book-spine {
+    fill: none;
+    stroke: #a1a1aa;
+}
+
+.book-cover {
+    fill: none;
+    stroke: #a1a1aa;
+}
+
+.briefcase-top,
+.briefcase-body,
+.briefcase-handle {
+    fill: none;
+    stroke: #a1a1aa;
+}
+
+.service-people,
+.service-head,
+.service-extra {
+    fill: none;
+    stroke: #a1a1aa;
+}
+
+.document-body,
+.document-fold,
+.document-line {
+    fill: none;
+    stroke: #a1a1aa;
+}
+
+.presentation-left,
+.presentation-right,
+.presentation-dot {
+    fill: none;
+    stroke: #a1a1aa;
+}
+
+.education-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.0rem;
+}
+
+.education-item {
+    display: flex;
+    gap: 0rem;
+    margin-bottom: 0.0rem;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.education-details {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.education-details dt,
+.education-details dd {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.education-institution {
+    width: 100%;
+    flex: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #18181b;
+    margin: 0;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+}
+
+.education-institution a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.education-institution a:hover {
+    color: #14b8a6;
+}
+
+.education-degree {
+    font-size: 0.875rem;
+    color: #71717a;
+    margin: 0;
+    line-height: 1.2;
+    flex: 1;
+}
+
+.education-years {
+    margin-left: auto;
+    font-size: 0.875rem;
+    color: #a1a1aa;
+    line-height: 1.2;
+    text-align: right;
+}
+
+.cv-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.2rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    background: #f4f4f5;
+    color: #18181b;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.cv-download:hover {
+    background: #e4e4e7;
+}
+
+.cv-download:active {
+    background: #e4e4e7;
+    color: rgba(24, 24, 27, 0.6);
+    transition: none;
+}
+
+.download-icon {
+    width: 1rem;
+    height: 1rem;
+    stroke: #a1a1aa;
+    transition: stroke 0.15s ease;
+}
+
+.cv-download:active .download-icon {
+    stroke: #52525b;
+}
+
+
+
+#hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #222;
+    text-align: left;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.intro a {
+    color: #71717a;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.intro a:hover {
+    color: #14b8a6;
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 0.0rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.social-link:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.social-link:hover .social-icon {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* News Section */
+#news {
+    padding: 0rem 0;
+}
+
+.news-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.news-container h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.news-scroll {
+    background: #f8f9fa;
+    padding: 1rem 1.5rem;
+    border-radius: 16px;
+    border: 1px solid #e9ecef;
+    height: 210px;
+    overflow-y: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.news-scroll ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.news-scroll li {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.news-scroll li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.news-scroll li strong {
+    color: #222;
+    font-weight: bold;
+}
+
+/* Add margin only to date elements (first strong in each news item) */
+.news-scroll li > strong:first-child {
+    margin-right: 0.5rem;
+}
+
+.news-scroll li a {
+    color: #666 !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.news-scroll li a:hover {
+    color: #14b8a6 !important;
+}
+
+.news-scroll li em {
+    font-style: italic;
+    color: #666;
+}
+
+/* Override em color when inside links */
+.news-scroll li a em {
+    color: inherit;
+}
+
+.news-scroll li a strong {
+    color: inherit;
+}
+
+/* Dark mode for news section */
+body.dark-mode #news .news-container h2 {
+    color: #f9fafb;
+}
+
+body.dark-mode .news-scroll {
+    background: #27272a;
+    border-color: rgba(115, 115, 115, 0.4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .news-scroll li {
+    color: #d1d5db;
+    border-bottom-color: rgba(115, 115, 115, 0.3);
+}
+
+body.dark-mode .news-scroll li strong {
+    color: #fff;
+}
+
+body.dark-mode .news-scroll li a {
+    color: #d1d5db !important;
+}
+
+body.dark-mode .news-scroll li a:hover {
+    color: #14b8a6 !important;
+}
+
+body.dark-mode .news-scroll li em {
+    color: #a1a1aa;
+}
+
+/* Override em and strong color when inside links in dark mode */
+body.dark-mode .news-scroll li a em {
+    color: inherit;
+}
+
+body.dark-mode .news-scroll li a strong {
+    color: inherit;
+}
+
+/* Grey achievement highlights */
+.achievement-highlight {
+    color: #666;
+    font-weight: bold;
+}
+
+body.dark-mode .achievement-highlight {
+    color: #d1d5db;
+}
+
+/* About Page New Layout */
+.about-hero {
+    padding: 4rem 0;
+}
+
+.about-layout-new {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-figure {
+    position: sticky;
+    top: 2rem;
+}
+
+.about-profile-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.about-profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e9ecef;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.about-profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.about-content-new h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+.about-text-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.about-text-content p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.about-text-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Dark mode for new about layout */
+body.dark-mode .about-profile-image {
+    border-color: #374151;
+}
+
+body.dark-mode .about-content-new h1 {
+    color: #f9fafb;
+}
+
+body.dark-mode .about-text-content p {
+    color: #d1d5db;
+}
+
+/* Responsive design for new about layout */
+@media (max-width: 1024px) {
+    .about-layout-new {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .about-figure {
+        position: static;
+        order: -1;
+    }
+    
+    .about-profile-container {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 2rem 0;
+    }
+    
+    .about-layout-new {
+        gap: 2rem;
+    }
+    
+    .about-content-new h1 {
+        font-size: 2rem;
+    }
+    
+    .about-profile-container {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .about-text-content {
+        font-size: 1rem;
+    }
+}
+
+/* Photo Gallery */
+#photo-gallery {
+    padding: 0rem 0;
+    margin: 4rem 0;
+    /* Break out of main container's 1400px limit */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    overflow: hidden;
+    padding: 1rem 0;
+    margin: -1rem 0;
+}
+
+.photo-item {
+    position: relative;
+    aspect-ratio: 9/10;
+    width: 11rem;
+    flex: none;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    background-color: #f4f4f5;
+    transition: all 0.3s ease;
+}
+
+.photo-item:nth-child(1) {
+    transform: rotate(2deg);
+}
+
+.photo-item:nth-child(2) {
+    transform: rotate(-2deg);
+}
+
+.photo-item:nth-child(3) {
+    transform: rotate(2deg);
+}
+
+.photo-item:nth-child(4) {
+    transform: rotate(2deg);
+}
+
+.photo-item img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo-item:hover {
+    transform: rotate(0deg) translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.photo-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Dark mode */
+body.dark-mode .photo-item {
+    background-color: #27272a;
+}
+
+/* Responsive design for photo gallery */
+@media (min-width: 640px) {
+    .photo-grid {
+        gap: 2rem;
+    }
+    
+    .photo-item {
+        width: 18rem;
+        border-radius: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .photo-grid {
+        gap: 2.5rem;
+    }
+    
+    .photo-item {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .photo-grid {
+        gap: 3rem;
+    }
+    
+    .photo-item {
+        width: 22rem;
+    }
+}
+
+
+
+/* About Page Layout */
+.about-content {
+    padding: 2rem 0 4rem;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.about-text h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    color: #222;
+}
+
+.research-interests {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+.research-interests li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.about-sidebar {
+    position: sticky;
+    top: 2rem;
+}
+
+.about-profile-pic {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.sidebar-content {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.social-links-sidebar {
+    margin-bottom: 2rem;
+}
+
+.social-link-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5rem;
+}
+
+.social-link-sidebar:hover {
+    background-color: #e9ecef;
+}
+
+.social-text {
+    font-weight: 500;
+}
+
+.contact-sidebar h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+
+
+/* Publications section */
+#publications, #conference-presentations, #works-in-progress {
+    padding: 1rem 0;
+}
+
+#publications h2, #conference-presentations h2, #works-in-progress h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+/* Add extra spacing after conference presentations */
+#conference-presentations {
+    margin-bottom: 3rem;
+}
+
+/* Publications page content width constraint */
+.publications-page main .page-header,
+.publications-page main #publications,
+.publications-page main #conference-presentations {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.publication, .presentation, .work-in-progress {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.publication:last-child, .presentation:last-child, .work-in-progress:last-child {
+    border-bottom: none;
+}
+
+.publication h3, .presentation h3, .work-in-progress h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #222;
+    line-height: 1.4;
+}
+
+.publication-date, .presentation-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.publication-authors, .presentation-details, .work-authors {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: normal;
+}
+
+.work-status {
+    font-size: 0.9rem;
+    color: #14b8a6;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.presentation-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.read-link, .material-link {
+    color: #14b8a6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #14b8a6;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.read-link:hover, .material-link:hover {
+    color: #fff;
+    background-color: #14b8a6;
+}
+
+/* Research Profiles */
+#research-profiles {
+    padding: 3rem 0;
+}
+
+.profile-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.profile-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #14b8a6;
+}
+
+.profile-icon {
+    font-size: 1.5rem;
+}
+
+.profile-text {
+    font-weight: 600;
+}
+
+/* Teaching Page Styles */
+#instructor-of-record, #teaching-assistant, #guest-lectures, #teaching-philosophy, #student-evaluations, #professional-development {
+    padding: 0.0rem 0;
+}
+
+.teaching-experience {
+    margin-bottom: 2rem;
+}
+
+.course, .guest-lecture, .development-item {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #14b8a6;
+}
+
+.course h3, .guest-lecture h3, .development-item h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.course-details, .lecture-details, .development-details {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.course-details span, .lecture-details span, .development-details span {
+    margin-right: 1rem;
+}
+
+.institution, .course, .event, .organization {
+    font-weight: 600;
+}
+
+.course-description, .lecture-description, .development-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.course-materials {
+    display: flex;
+    gap: 1rem;
+}
+
+.philosophy-content {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.philosophy-content p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+/* Student Evaluations */
+.evaluations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.evaluation-summary {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.rating-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.rating-item:last-child {
+    border-bottom: none;
+}
+
+.rating-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.rating-score {
+    font-weight: 700;
+    color: #14b8a6;
+    font-size: 1.1rem;
+}
+
+.rating-context {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.student-quotes blockquote {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-left: 4px solid #14b8a6;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    color: #666;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Awards Page Styles */
+#major-fellowships, #academic-honors, #research-awards, #teaching-awards, #professional-recognition, #service-recognition, #media-recognition {
+    padding: 3rem 0;
+}
+
+.award-list {
+    margin-bottom: 2rem;
+}
+
+.award-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #14b8a6;
+}
+
+.award-year {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #14b8a6;
+    min-width: 60px;
+    flex-shrink: 0;
+}
+
+.award-content {
+    flex: 1;
+}
+
+.award-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.award-organization {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.award-amount {
+    font-size: 0.9rem;
+    color: #14b8a6;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.award-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Media Coverage */
+.media-list {
+    margin-bottom: 2rem;
+}
+
+.media-item {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #14b8a6;
+}
+
+.media-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.media-source {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.media-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.media-link {
+    color: #14b8a6;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #14b8a6;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.media-link:hover {
+    color: #fff;
+    background-color: #14b8a6;
+}
+
+/* Education section */
+#education {
+    padding: 4rem 0;
+}
+
+#education h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #222;
+}
+
+.education-list {
+    margin-bottom: 0.5rem;
+}
+
+.education-item {
+    display: flex;
+    margin-bottom: 0.5rem;
+    align-items: flex-start;
+}
+
+.education-number {
+    font-weight: 600;
+    margin-right: 1rem;
+    color: #666;
+    min-width: 1.5rem;
+}
+
+.education-content {
+    flex: 1;
+}
+
+.company {
+    font-size: 0.9rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+}
+
+.role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.25rem;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.cv-link {
+    color: #14b8a6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cv-link:hover {
+    color: #0d9488;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 0 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.footer-nav {
+    margin-bottom: 1rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #666;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #333;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-sidebar {
+        position: static;
+        order: -1;
+    }
+    
+    .sidebar-content {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+    
+    .profile-image-large {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    /* Override absolute positioning on mobile */
+    .nav-brand {
+        position: static;
+        order: 1;
+    }
+    
+    .nav-toggle {
+        position: static;
+        order: 2;
+        margin-left: auto;
+    }
+    
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    main {
+        padding: 0 1rem;
+        max-height: 80vh;
+        min-height: 400px;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    #hero h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .intro p {
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+    
+    .nav-menu a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .photo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .education-item, .award-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .education-number, .award-year {
+        margin-bottom: 0.5rem;
+    }
+    
+    .evaluations {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .profile-links {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .social-links-sidebar {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.5rem;
+    }
+    
+    .presentation-links, .course-materials {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1, #hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .intro p {
+        font-size: 1rem;
+    }
+    
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.4rem 1rem;
+    }
+    
+    .nav-menu a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .photo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    
+    .course, .award-item, .media-item {
+        padding: 1rem;
+    }
+    
+    .nav-profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-3d-container {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-3d-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-front,
+    .profile-back {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .social-links {
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    .social-link {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .rating-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+/* Modern About Page Styles */
+.modern-about-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80rem; /* 1280px */
+    padding: 3rem 2rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.modern-about-wrapper {
+    position: relative;
+    padding: 0;
+}
+
+.modern-about-content {
+    margin: 0 auto;
+    max-width: 42rem; /* 672px */
+}
+
+.modern-about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem 0;
+}
+
+.modern-image-section {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modern-image-wrapper {
+    max-width: 20rem;
+    padding: 0.625rem;
+    margin: 0 auto;
+}
+
+.modern-profile-image {
+    aspect-ratio: 1 / 1;
+    transform: rotate(3deg);
+    border-radius: 1rem;
+    background-color: #f4f4f5;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.modern-profile-image:hover {
+    transform: rotate(0deg);
+}
+
+.modern-content-section {
+    order: 2;
+}
+
+.modern-main-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #222;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.modern-text-content {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.modern-text-content p {
+    margin: 0;
+}
+
+.modern-text-content a {
+    color: #71717a;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.modern-text-content a:hover {
+    color: #14b8a6;
+    text-decoration: underline;
+}
+
+.modern-social-section {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.modern-social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.modern-social-item {
+    display: flex;
+}
+
+.modern-social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.modern-social-link:hover {
+    transform: translateY(-2px);
+}
+
+.modern-social-icon {
+    height: 2rem;
+    width: 2rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    filter: grayscale(0.3);
+}
+
+.modern-social-link:hover .modern-social-icon {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.modern-social-text {
+    display: none;
+}
+
+/* Dark mode styles for modern about page */
+body.dark-mode .modern-profile-image {
+    background-color: #18181b;
+}
+
+body.dark-mode .modern-main-heading {
+    color: #f9fafb;
+}
+
+body.dark-mode .modern-text-content {
+    color: #d1d5db;
+}
+
+body.dark-mode .modern-text-content a {
+    color: #9ca3af;
+}
+
+body.dark-mode .modern-text-content a:hover {
+    color: #14b8a6;
+}
+
+body.dark-mode .modern-social-link {
+    color: #d1d5db;
+}
+
+body.dark-mode .modern-social-link:hover {
+    color: #14b8a6;
+}
+
+body.dark-mode .modern-social-icon {
+    filter: invert(1) brightness(0.9);
+    opacity: 0.8;
+}
+
+body.dark-mode .modern-social-link:hover .modern-social-icon {
+    opacity: 1;
+}
+
+/* Dark mode for Midjourney icon specifically */
+body.dark-mode img[src*="Midjourney.png"] {
+    filter: invert(1) brightness(0.9);
+    opacity: 0.8;
+}
+
+/* Dark mode styles for publications page */
+body.dark-mode .paper-box {
+    background: rgba(39, 39, 42, 0.3);
+    border-color: rgba(115, 115, 115, 0.4);
+}
+
+body.dark-mode .paper-box:hover {
+    background: rgba(39, 39, 42, 0.5);
+    border-color: rgba(115, 115, 115, 0.6);
+}
+
+body.dark-mode .paper-box-text h3 {
+    color: #f9fafb;
+}
+
+body.dark-mode .paper-box-text .publication-authors {
+    color: #d1d5db;
+}
+
+/* Dark mode styles for teaching and awards pages */
+body.dark-mode .simple-item {
+    border-bottom-color: rgba(115, 115, 115, 0.3);
+}
+
+body.dark-mode .simple-item h3 {
+    color: #f9fafb;
+}
+
+body.dark-mode .simple-details {
+    color: #a1a1aa;
+}
+
+body.dark-mode .simple-description {
+    color: #d1d5db;
+}
+
+body.dark-mode .award-with-icon .award-content h3 {
+    color: #f9fafb;
+}
+
+body.dark-mode .content-container {
+    color: #d1d5db;
+}
+
+/* Dark mode styles for conference presentations */
+body.dark-mode .presentation-details {
+    color: #d1d5db;
+}
+
+body.dark-mode .presentation-details strong {
+    color: #f9fafb;
+}
+
+body.dark-mode .presentation-details u {
+    color: #14b8a6;
+    text-decoration-color: #14b8a6;
+}
+
+/* Dark mode for specific section headings that have their own color definitions */
+body.dark-mode #publications h2,
+body.dark-mode #conference-presentations h2,
+body.dark-mode #works-in-progress h2,
+body.dark-mode #teaching-assistant h2,
+body.dark-mode #guest-lectures h2,
+body.dark-mode #awards h2 {
+    color: #f9fafb !important;
+}
+
+/* Large screens (lg: 1024px and up) */
+@media (min-width: 1024px) {
+    .modern-about-container {
+        padding: 0 2rem;
+    }
+    
+    .modern-about-wrapper {
+        padding: 1rem 3rem;
+    }
+    
+    .modern-about-content {
+        max-width: 80rem; /* 1280px */
+    }
+    
+    .modern-about-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 3rem 4rem;
+    }
+    
+    .modern-image-section {
+        order: 2;
+        padding-left: 5rem;
+    }
+    
+    .modern-image-wrapper {
+        max-width: none;
+        padding: 0.625rem;
+    }
+    
+    .modern-content-section {
+        order: 1;
+        grid-row: span 2;
+        margin-bottom: 0;
+    }
+    
+    .modern-main-heading {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium screens adjustments */
+@media (min-width: 640px) {
+    .modern-main-heading {
+        font-size: 2.5rem;
+    }
+    
+    .modern-image-wrapper {
+        max-width: 32rem;
+    }
+}
+
+/* Paper box styling for publications */
+.paper-box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.paper-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.paper-box-image {
+    flex-shrink: 0;
+}
+
+.paper-box-image img {
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.paper-box-text {
+    flex: 1;
+}
+
+.paper-box-text h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.paper-box-text .publication-links {
+    margin: 0.5rem 0;
+}
+
+.paper-box-text .publication-links .read-link {
+    margin-right: 0.5rem;
+    margin-bottom: 0.25rem;
+    display: inline-block;
+}
+
+.paper-box-text .publication-authors {
+    margin: 1rem 0 0.5rem 0;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+}
+
+.status-badge.preprint {
+    background: transparent;
+    color: #333;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    vertical-align: baseline;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.achievement-highlight {
+    background: transparent;
+    color: #333;
+    padding: 0;
+    border-radius: 0;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    display: inline;
+    vertical-align: baseline;
+}
+
+/* Dark mode adjustments for paper boxes */
+.dark-mode .achievement-highlight,
+.dark-mode .status-badge.preprint {
+    background: transparent;
+    color: #d1d5db;
+}
+
+/* Responsive adjustments for paper boxes */
+@media (max-width: 768px) {
+    .paper-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .paper-box-image {
+        align-self: center;
+    }
+}
+
+/* Teaching page simple layout styles */
+.simple-list {
+    margin-bottom: 0rem;
+}
+
+.simple-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.simple-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.simple-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.simple-details {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.simple-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Content container bottom spacing */
+.content-container {
+    padding-bottom: 3rem;
+}
+
+/* Award layout with icons */
+.award-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.award-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.award-content {
+    flex: 1;
+}
+
+.award-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+.award-content .simple-details {
+    margin-bottom: 0;
+}
+
+/* Make section headings match page header font */
+#teaching-assistant h2,
+#guest-lectures h2,
+#awards h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
