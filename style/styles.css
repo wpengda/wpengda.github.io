@@ -677,7 +677,7 @@ body.dark-mode main {
 
 /* Hero section - Homepage */
 #hero {
-    padding: 3rem 0;
+    padding: 3rem 0 2.5rem 0;
 }
 
 .profile-section {
@@ -1278,7 +1278,7 @@ body.dark-mode .about-text-content p {
 /* Photo Gallery */
 #photo-gallery {
     padding: 2rem 0;
-    margin: 4rem 0;
+    margin: 1rem 0;
     /* Break out of main container's 1400px limit */
     width: 100vw;
     position: relative;
