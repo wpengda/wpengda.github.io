@@ -1381,17 +1381,18 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
     
     .photo-grid {
         gap: 0.75rem;
-        padding: 0.5rem 50vw;
+        padding: 0.5rem calc(50vw - 4rem);
         /* Better touch scrolling */
         scroll-snap-type: x mandatory;
         /* Show small scrollbar on mobile */
         overflow-x: auto;
+        justify-content: flex-start;
     }
     
     .photo-item {
         width: 8rem;
         flex-shrink: 0;
-        scroll-snap-align: start;
+        scroll-snap-align: center;
         /* Better touch feedback */
         touch-action: manipulation;
     }
@@ -1405,7 +1406,7 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
 @media (min-width: 481px) and (max-width: 639px) {
     .photo-grid {
         gap: 1rem;
-        padding: 0.75rem 50vw;
+        padding: 0.75rem calc(50vw - 5rem);
     }
     
     .photo-item {

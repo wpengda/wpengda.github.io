@@ -284,16 +284,25 @@
                     const originalScrollBehavior = photoGrid.style.scrollBehavior;
                     photoGrid.style.scrollBehavior = 'auto';
                     
-                    // Calculate the center point between second and third images
-                    const secondImg = photoItems[1];
-                    const thirdImg = photoItems[2];
-                    const secondImgCenter = secondImg.offsetLeft + secondImg.offsetWidth / 2;
-                    const thirdImgCenter = thirdImg.offsetLeft + thirdImg.offsetWidth / 2;
-                    const centerPoint = (secondImgCenter + thirdImgCenter) / 2;
+                    // Get viewport width to determine if mobile
+                    const isMobile = window.innerWidth <= 768;
                     
-                    // Scroll to center this point in viewport instantly
-                    const viewportCenter = photoGrid.clientWidth / 2;
-                    photoGrid.scrollLeft = centerPoint - viewportCenter;
+                    if (isMobile) {
+                        // On mobile, center the first image
+                        const firstImg = photoItems[0];
+                        const scrollPosition = firstImg.offsetLeft - (photoGrid.clientWidth / 2) + (firstImg.offsetWidth / 2);
+                        photoGrid.scrollLeft = Math.max(0, scrollPosition);
+                    } else {
+                        // On desktop, center between second and third images
+                        const secondImg = photoItems[1];
+                        const thirdImg = photoItems[2];
+                        const secondImgCenter = secondImg.offsetLeft + secondImg.offsetWidth / 2;
+                        const thirdImgCenter = thirdImg.offsetLeft + thirdImg.offsetWidth / 2;
+                        const centerPoint = (secondImgCenter + thirdImgCenter) / 2;
+                        
+                        const viewportCenter = photoGrid.clientWidth / 2;
+                        photoGrid.scrollLeft = centerPoint - viewportCenter;
+                    }
                     
                     // Show the gallery now that it's positioned
                     photoGrid.classList.add('centered');
@@ -302,8 +311,6 @@
                     setTimeout(() => {
                         photoGrid.style.scrollBehavior = originalScrollBehavior;
                     }, 50);
-                    
-                    console.log('Photo gallery instantly centered at:', centerPoint - viewportCenter);
                 }
             }
         }
