@@ -1240,31 +1240,30 @@ body.dark-mode .about-text-content p {
     margin-left: -50vw;
     margin-right: -50vw;
     overflow-x: hidden;
-    /* Center the scrollbar within the gallery */
-    display: flex;
-    justify-content: center;
 }
 
 .photo-grid {
     display: flex;
-    justify-content: center;
     gap: 1.25rem;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 1rem;
+    padding: 1rem 50vw;
     margin: -1rem 0;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    /* Small, centered scrollbar */
+    /* Small centered scrollbar */
     scrollbar-width: thin;
     scrollbar-color: #cbd5e1 transparent;
-    /* Center the grid with max width */
-    max-width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
+    /* Hide initially to prevent visual jump */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-/* Custom small scrollbar styling for Webkit browsers */
+.photo-grid.centered {
+    opacity: 1;
+}
+
+/* Small centered scrollbar for Webkit browsers */
 .photo-grid::-webkit-scrollbar {
     height: 4px;
 }
@@ -1356,11 +1355,10 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
     
     .photo-grid {
         gap: 0.75rem;
-        padding: 0.5rem;
-        justify-content: flex-start;
+        padding: 0.5rem 50vw;
         /* Better touch scrolling */
         scroll-snap-type: x mandatory;
-        /* Keep scrollbar hidden on mobile */
+        /* Show small scrollbar on mobile */
         overflow-x: auto;
     }
     
@@ -1381,6 +1379,7 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
 @media (min-width: 481px) and (max-width: 639px) {
     .photo-grid {
         gap: 1rem;
+        padding: 0.75rem 50vw;
     }
     
     .photo-item {
@@ -1392,6 +1391,7 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
 @media (min-width: 640px) {
     .photo-grid {
         gap: 2rem;
+        padding: 1rem 50vw;
         overflow-x: auto;
         overflow-y: hidden;
     }
@@ -1405,6 +1405,7 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
 @media (min-width: 1024px) {
     .photo-grid {
         gap: 2.5rem;
+        padding: 1.5rem 50vw;
     }
     
     .photo-item {
@@ -1415,6 +1416,7 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
 @media (min-width: 1440px) {
     .photo-grid {
         gap: 3rem;
+        padding: 2rem 50vw;
     }
     
     .photo-item {
@@ -2046,9 +2048,7 @@ footer {
         justify-content: center;
     }
     
-    .photo-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
+    /* photo-grid flex layout defined above */
     
     .education-item, .award-item {
         flex-direction: column;
@@ -2117,9 +2117,7 @@ footer {
         padding: 0.3rem 0.6rem;
     }
     
-    .photo-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
+    /* photo-grid flex layout defined above */
     
     .course, .award-item, .media-item {
         padding: 1rem;

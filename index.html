@@ -273,6 +273,64 @@
             currentRotation += 900; // Rotate 2.5 times (900 degrees) each click
             card.style.transform = `rotateY(${currentRotation}deg)`;
         }
+
+        // Center the photo gallery to show middle two images
+        function centerPhotoGallery() {
+            const photoGrid = document.querySelector('.photo-grid');
+            if (photoGrid) {
+                const photoItems = photoGrid.querySelectorAll('.photo-item');
+                if (photoItems.length >= 4) {
+                    // Temporarily disable smooth scrolling for instant positioning
+                    const originalScrollBehavior = photoGrid.style.scrollBehavior;
+                    photoGrid.style.scrollBehavior = 'auto';
+                    
+                    // Calculate the center point between second and third images
+                    const secondImg = photoItems[1];
+                    const thirdImg = photoItems[2];
+                    const secondImgCenter = secondImg.offsetLeft + secondImg.offsetWidth / 2;
+                    const thirdImgCenter = thirdImg.offsetLeft + thirdImg.offsetWidth / 2;
+                    const centerPoint = (secondImgCenter + thirdImgCenter) / 2;
+                    
+                    // Scroll to center this point in viewport instantly
+                    const viewportCenter = photoGrid.clientWidth / 2;
+                    photoGrid.scrollLeft = centerPoint - viewportCenter;
+                    
+                    // Show the gallery now that it's positioned
+                    photoGrid.classList.add('centered');
+                    
+                    // Restore smooth scrolling after a brief moment
+                    setTimeout(() => {
+                        photoGrid.style.scrollBehavior = originalScrollBehavior;
+                    }, 50);
+                    
+                    console.log('Photo gallery instantly centered at:', centerPoint - viewportCenter);
+                }
+            }
+        }
+
+        // Initialize photo gallery centering as early as possible
+        document.addEventListener('DOMContentLoaded', function() {
+            // Try immediately
+            centerPhotoGallery();
+            // Also try after images load
+            setTimeout(centerPhotoGallery, 10);
+            setTimeout(centerPhotoGallery, 50);
+        });
+        
+        // Fallback for slower loading
+        window.addEventListener('load', function() {
+            setTimeout(centerPhotoGallery, 10);
+        });
+        
+        // Re-center when window is resized
+        let resizeTimeout;
+        window.addEventListener('resize', function() {
+            // Debounce resize events to avoid excessive calls
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(function() {
+                centerPhotoGallery();
+            }, 150);
+        });
     </script>
 </body>
 </html>
