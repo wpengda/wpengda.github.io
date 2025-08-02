@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     
-                    <h1>Maybe a PSYC Researcher :)</h1>
+                    <h1>PSYC/AI Researcher :)</h1>
                     <div class="intro">
                         <p style="margin-bottom: 0.5rem;">Hi, I am <strong>Pengda Wang</strong>, a third-year Psychology Ph.D. student at Rice University and an ML/AI Ph.D. Resident at Midjourney, Inc. I do research on <strong>psychometrics</strong> (e.g., SEM, computational measurement, AI/ML approaches), <strong>individual differences</strong> (e.g., bright/dark personalities, social behaviors), and <strong>personnel selection</strong> (e.g., faking, bias, AI/ML applications, interpretable/responsible AI use).</p>
                         <p>I am always excited to collaborate with other researchers and explore new fields. Do not hesitate to contact me (<a href="mailto:pw32@rice.edu"><strong>pw32@rice.edu</strong></a>) if you are interested!</p>
@@ -284,14 +284,18 @@
                     const originalScrollBehavior = photoGrid.style.scrollBehavior;
                     photoGrid.style.scrollBehavior = 'auto';
                     
-                    // Calculate the center point between second and third images
+                    // Calculate the exact center point between second and third images
                     const secondImg = photoItems[1];
                     const thirdImg = photoItems[2];
-                    const secondImgCenter = secondImg.offsetLeft + secondImg.offsetWidth / 2;
-                    const thirdImgCenter = thirdImg.offsetLeft + thirdImg.offsetWidth / 2;
-                    const centerPoint = (secondImgCenter + thirdImgCenter) / 2;
                     
-                    // Scroll to center this point in viewport instantly
+                    // Get the right edge of second image and left edge of third image
+                    const secondImgRight = secondImg.offsetLeft + secondImg.offsetWidth;
+                    const thirdImgLeft = thirdImg.offsetLeft;
+                    
+                    // The center point is exactly between these two edges
+                    const centerPoint = (secondImgRight + thirdImgLeft) / 2;
+                    
+                    // Scroll to center this point in viewport for all screen sizes
                     const viewportCenter = photoGrid.clientWidth / 2;
                     photoGrid.scrollLeft = centerPoint - viewportCenter;
                     
@@ -303,7 +307,7 @@
                         photoGrid.style.scrollBehavior = originalScrollBehavior;
                     }, 50);
                     
-                    console.log('Photo gallery instantly centered at:', centerPoint - viewportCenter);
+                    console.log('Photo gallery centered between images 2 and 3 at:', centerPoint - viewportCenter);
                 }
             }
         }

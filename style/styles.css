@@ -306,6 +306,12 @@ body.dark-mode .styled-figure {
         order: 1;
     }
     
+    /* Service section mobile - ensure left alignment */
+    .service-section .education-institution {
+        text-align: left;
+        justify-content: flex-start;
+    }
+    
     .education-degree {
         order: 2;
         flex: none;
@@ -624,6 +630,21 @@ main {
 .service-section {
     margin-top: 0;
     margin-bottom: 3rem;
+}
+
+/* Service section - ensure conference names are left-aligned */
+.service-section .education-institution {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.service-section .education-details {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.service-section .education-item {
+    text-align: left;
 }
 
 /* Dark mode main content */
@@ -1375,23 +1396,35 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
 /* Mobile-first responsive design for photo gallery */
 @media (max-width: 480px) {
     #photo-gallery {
+        /* Reset the full-width layout for mobile */
+        width: auto;
+        position: static;
+        left: auto;
+        right: auto;
         margin: 2rem 0;
+        margin-left: 0;
+        margin-right: 0;
         padding: 1rem 0;
+        overflow-x: hidden;
     }
     
     .photo-grid {
         gap: 0.75rem;
-        padding: 0.5rem 50vw;
+        padding: 0.5rem 1rem;
         /* Better touch scrolling */
         scroll-snap-type: x mandatory;
         /* Show small scrollbar on mobile */
         overflow-x: auto;
+        justify-content: flex-start;
+        /* Center the scrollable content */
+        display: flex;
+        align-items: center;
     }
     
     .photo-item {
         width: 8rem;
         flex-shrink: 0;
-        scroll-snap-align: start;
+        scroll-snap-align: center;
         /* Better touch feedback */
         touch-action: manipulation;
     }
@@ -1402,10 +1435,29 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
     }
 }
 
+/* Extra small screens - ensure proper centering */
+@media (max-width: 375px) {
+    .photo-grid {
+        padding: 0.5rem 0.5rem;
+    }
+}
+
 @media (min-width: 481px) and (max-width: 639px) {
+    #photo-gallery {
+        /* Reset the full-width layout for tablets */
+        width: auto;
+        position: static;
+        left: auto;
+        right: auto;
+        margin-left: 0;
+        margin-right: 0;
+        overflow-x: hidden;
+    }
+    
     .photo-grid {
         gap: 1rem;
-        padding: 0.75rem 50vw;
+        padding: 0.75rem 1.5rem;
+        justify-content: flex-start;
     }
     
     .photo-item {
@@ -2153,6 +2205,12 @@ footer {
     .education-institution {
         font-size: 1rem;
         margin-bottom: 0.1rem;
+    }
+    
+    /* Service section small mobile - ensure left alignment */
+    .service-section .education-institution {
+        text-align: left;
+        justify-content: flex-start;
     }
     
     .education-degree {
