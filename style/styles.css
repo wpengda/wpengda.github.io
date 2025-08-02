@@ -285,14 +285,40 @@ body.dark-mode .styled-figure {
     }
     
     .main-content {
-        order: 2;
+        order: 1;
     }
     
     .education-section {
-        order: 1;
+        order: 2;
         margin-bottom: 0.0rem;
         margin-top: 0;
     }
+    
+    /* Education section mobile optimizations */
+    .education-details {
+        flex-direction: column;
+        gap: 0.25rem;
+        align-items: stretch;
+    }
+    
+    .education-institution {
+        width: 100%;
+        order: 1;
+    }
+    
+    .education-degree {
+        order: 2;
+        flex: none;
+        align-self: flex-start;
+    }
+    
+    .education-years {
+        order: 3;
+        margin-left: 0;
+        text-align: left;
+        align-self: flex-start;
+    }
+
     
     .about-figure {
         order: 1;
@@ -2015,9 +2041,19 @@ footer {
     }
     
     .profile-section {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+    }
+    
+    .main-content {
+        order: 1;
+    }
+    
+    .education-section {
+        order: 2;
+        margin-top: 0;
     }
     
     #hero h1 {
@@ -2105,6 +2141,30 @@ footer {
         font-size: 1rem;
     }
     
+    /* Education section extra small screen optimizations */
+    .education-section {
+        padding: 0.75rem;
+    }
+    
+    .education-item {
+        margin-bottom: 1rem;
+    }
+    
+    .education-institution {
+        font-size: 1rem;
+        margin-bottom: 0.1rem;
+    }
+    
+    .education-degree {
+        font-size: 0.8rem;
+        margin-bottom: 0.1rem;
+    }
+    
+    .education-years {
+        font-size: 0.8rem;
+    }
+
+    
     .nav-menu {
         flex-wrap: wrap;
         justify-content: center;
@@ -2185,6 +2245,8 @@ footer {
     .intro p {
         font-size: 0.9rem;
     }
+    
+
     
     .social-links {
         gap: 0.75rem;
