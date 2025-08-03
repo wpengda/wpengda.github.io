@@ -2852,7 +2852,14 @@ body.dark-mode .award-content h3 a:hover {
 }
 
 /* Dark mode for award icons (GitHub icon etc.) */
-body.dark-mode .award-icon img {
+body.dark-mode .award-icon img,
+body.dark-mode .award-with-icon .award-icon img {
+    filter: invert(1) brightness(0.9) !important;
+    opacity: 0.8 !important;
+}
+
+/* Specific fix for GitHub icon in dark mode */
+body.dark-mode img[src*="github.png"] {
     filter: invert(1) brightness(0.9) !important;
     opacity: 0.8 !important;
 }
