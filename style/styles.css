@@ -2830,3 +2830,29 @@ body.dark-mode #awards h2 {
     margin-bottom: 0.5rem;
     color: #222;
 }
+
+/* Make Personality Reading List link color consistent with other publications content */
+.award-content h3 a {
+    color: #333 !important;
+    text-decoration: none;
+}
+
+.award-content h3 a:hover {
+    color: #14b8a6 !important;
+    text-decoration: underline;
+}
+
+/* Dark mode for Personality Reading List link */
+body.dark-mode .award-content h3 a {
+    color: #f9fafb !important;
+}
+
+body.dark-mode .award-content h3 a:hover {
+    color: #14b8a6 !important;
+}
+
+/* Dark mode for award icons (GitHub icon etc.) */
+body.dark-mode .award-icon img {
+    filter: invert(1) brightness(0.9);
+    opacity: 0.8;
+}
