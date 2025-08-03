@@ -2853,6 +2853,6 @@ body.dark-mode .award-content h3 a:hover {
 
 /* Dark mode for award icons (GitHub icon etc.) */
 body.dark-mode .award-icon img {
-    filter: invert(1) brightness(0.9);
-    opacity: 0.8;
+    filter: invert(1) brightness(0.9) !important;
+    opacity: 0.8 !important;
 }
