@@ -2517,11 +2517,7 @@ body.dark-mode .modern-social-link:hover .modern-social-icon {
     opacity: 1;
 }
 
-/* Dark mode for Midjourney icon specifically */
-body.dark-mode img[src*="Midjourney.png"] {
-    filter: invert(1) brightness(0.9);
-    opacity: 0.8;
-}
+/* Dark mode for Midjourney icon - removed filter to keep original colors */
 
 /* Dark mode styles for publications page */
 body.dark-mode .paper-box {
@@ -2851,12 +2847,7 @@ body.dark-mode .award-content h3 a:hover {
     color: #14b8a6 !important;
 }
 
-/* Dark mode for award icons (GitHub icon etc.) */
-body.dark-mode .award-icon img,
-body.dark-mode .award-with-icon .award-icon img {
-    filter: invert(1) brightness(0.9) !important;
-    opacity: 0.8 !important;
-}
+/* Dark mode for award icons - removed general filter, only GitHub should invert */
 
 /* Specific fix for GitHub icon in dark mode */
 body.dark-mode img[src*="github.png"] {
