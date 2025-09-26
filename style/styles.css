@@ -1604,6 +1604,7 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
     line-height: 1.2;
     margin-bottom: 1rem;
     color: #222;
+    text-align: left;
 }
 
 /* Add extra spacing after conference presentations */
@@ -2095,7 +2096,7 @@ footer {
     .profile-section {
         display: grid;
         grid-template-columns: 1fr;
-        text-align: center;
+        text-align: left;
         gap: 2rem;
     }
     
@@ -2110,15 +2111,15 @@ footer {
     
     #hero h1 {
         font-size: 2rem;
-        text-align: center;
+        text-align: left;
     }
     
     .intro p {
-        text-align: center;
+        text-align: left;
     }
     
     .social-links {
-        justify-content: center;
+        justify-content: flex-start;
     }
     
     .nav-menu {
@@ -2669,6 +2670,7 @@ body.dark-mode #awards h2 {
 
 .paper-box-text {
     flex: 1;
+    text-align: left;
 }
 
 .paper-box-text h3 {
@@ -2741,12 +2743,17 @@ body.dark-mode #awards h2 {
 @media (max-width: 768px) {
     .paper-box {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
     
     .paper-box-image {
-        align-self: center;
+        align-self: flex-start;
     }
+}
+
+/* Ensure all publication page content is left-aligned */
+.presentation-details {
+    text-align: left;
 }
 
 /* Teaching page simple layout styles */
@@ -2758,6 +2765,7 @@ body.dark-mode #awards h2 {
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid #e5e5e5;
+    text-align: left;
 }
 
 .simple-item:last-child {
@@ -2826,6 +2834,7 @@ body.dark-mode #awards h2 {
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: #222;
+    text-align: left;
 }
 
 /* Make Personality Reading List link color consistent with other publications content */
