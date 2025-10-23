@@ -182,6 +182,18 @@ body.dark-mode .education-degree {
     color: #a1a1aa;
 }
 
+body.dark-mode .work-with-info {
+    color: #71717a;
+}
+
+body.dark-mode .work-with-info a {
+    color: #71717a;
+}
+
+body.dark-mode .work-with-info a:hover {
+    color: #14b8a6;
+}
+
 body.dark-mode .education-years {
     color: #71717a;
 }
@@ -907,6 +919,23 @@ body.dark-mode main {
     margin: 0;
     line-height: 1.2;
     flex: 1;
+}
+
+.work-with-info {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    color: #a1a1aa;
+    font-weight: 400;
+}
+
+.work-with-info a {
+    color: #a1a1aa;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.work-with-info a:hover {
+    color: #14b8a6;
 }
 
 .education-years {
