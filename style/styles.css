@@ -1623,11 +1623,11 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
 
 
 /* Publications section */
-#publications, #conference-presentations, #works-in-progress {
+#publications, #refereed-publications, #selected-preprints, #conference-presentations, #works-in-progress {
     padding: 1rem 0;
 }
 
-#publications h2, #conference-presentations h2, #works-in-progress h2 {
+#publications h2, #refereed-publications h2, #selected-preprints h2, #conference-presentations h2, #works-in-progress h2 {
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 1.2;
@@ -1644,6 +1644,8 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
 /* Publications page content width constraint */
 .publications-page main .page-header,
 .publications-page main #publications,
+.publications-page main #refereed-publications,
+.publications-page main #selected-preprints,
 .publications-page main #conference-presentations {
     max-width: 1200px;
     margin-left: auto;
@@ -2610,6 +2612,8 @@ body.dark-mode .presentation-details u {
 
 /* Dark mode for specific section headings that have their own color definitions */
 body.dark-mode #publications h2,
+body.dark-mode #refereed-publications h2,
+body.dark-mode #selected-preprints h2,
 body.dark-mode #conference-presentations h2,
 body.dark-mode #works-in-progress h2,
 body.dark-mode #teaching-assistant h2,
@@ -2858,7 +2862,9 @@ body.dark-mode #awards h2 {
 /* Make section headings match page header font */
 #teaching-assistant h2,
 #guest-lectures h2,
-#awards h2 {
+#awards h2,
+#refereed-publications h2,
+#selected-preprints h2 {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
