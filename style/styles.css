@@ -2618,7 +2618,9 @@ body.dark-mode #conference-presentations h2,
 body.dark-mode #works-in-progress h2,
 body.dark-mode #teaching-assistant h2,
 body.dark-mode #guest-lectures h2,
-body.dark-mode #awards h2 {
+body.dark-mode #awards h2,
+body.dark-mode #grants h2,
+body.dark-mode #recognition h2 {
     color: #f9fafb !important;
 }
 
@@ -2863,6 +2865,8 @@ body.dark-mode #awards h2 {
 #teaching-assistant h2,
 #guest-lectures h2,
 #awards h2,
+#grants h2,
+#recognition h2,
 #refereed-publications h2,
 #selected-preprints h2 {
     font-size: 2.2rem;
