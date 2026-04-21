@@ -440,6 +440,7 @@ body.dark-mode header {
 /* Remove extra padding since we're using sticky positioning */
 
 nav {
+    --nav-orbit-size: 48px; /* avatar + theme toggle share one size */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -468,12 +469,13 @@ nav {
 }
 
 .nav-profile-pic {
-    width: 50px;
-    height: 50px;
+    width: var(--nav-orbit-size);
+    height: var(--nav-orbit-size);
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #e9ecef;
     transition: border-color 0.3s ease;
+    display: block;
 }
 
 .nav-profile-pic:hover {
@@ -534,8 +536,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    width: var(--nav-orbit-size);
+    height: var(--nav-orbit-size);
+    flex-shrink: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     position: relative;
 }
@@ -2206,6 +2209,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+    nav {
+        --nav-orbit-size: 40px;
+    }
+
     main {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -2271,11 +2278,6 @@ footer {
     
     .course, .award-item, .media-item {
         padding: 1rem;
-    }
-    
-    .nav-profile-pic {
-        width: 40px;
-        height: 40px;
     }
     
     .profile-pic {
