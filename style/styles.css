@@ -1626,11 +1626,16 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
 
 
 /* Publications section */
-#publications, #refereed-publications, #selected-preprints, #conference-presentations, #works-in-progress {
+#publications, #refereed-publications, #chapters-technical-reports, #selected-preprints, #conference-presentations, #works-in-progress {
     padding: 1rem 0;
 }
 
-#publications h2, #refereed-publications h2, #selected-preprints h2, #conference-presentations h2, #works-in-progress h2 {
+/* Resources block on publications page: match vertical rhythm of other sections */
+.publications-page #awards {
+    padding: 1rem 0;
+}
+
+#publications h2, #refereed-publications h2, #chapters-technical-reports h2, #selected-preprints h2, #conference-presentations h2, #works-in-progress h2 {
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 1.2;
@@ -1647,7 +1652,9 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
 /* Publications page content width constraint */
 .publications-page main .page-header,
 .publications-page main #publications,
+.publications-page main #awards,
 .publications-page main #refereed-publications,
+.publications-page main #chapters-technical-reports,
 .publications-page main #selected-preprints,
 .publications-page main #conference-presentations {
     max-width: 1200px;
@@ -2615,6 +2622,7 @@ body.dark-mode .presentation-details u {
 /* Dark mode for specific section headings that have their own color definitions */
 body.dark-mode #publications h2,
 body.dark-mode #refereed-publications h2,
+body.dark-mode #chapters-technical-reports h2,
 body.dark-mode #selected-preprints h2,
 body.dark-mode #conference-presentations h2,
 body.dark-mode #works-in-progress h2,
@@ -2870,7 +2878,9 @@ body.dark-mode #recognition h2 {
 #grants h2,
 #recognition h2,
 #refereed-publications h2,
-#selected-preprints h2 {
+#chapters-technical-reports h2,
+#selected-preprints h2,
+#conference-presentations h2 {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
