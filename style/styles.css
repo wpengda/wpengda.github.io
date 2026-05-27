@@ -1722,6 +1722,130 @@ body.dark-mode .photo-grid::-webkit-scrollbar-thumb:hover {
     background-color: #14b8a6;
 }
 
+button.read-link,
+button.bibtex-copy-btn {
+    cursor: pointer;
+    font-family: inherit;
+    background: transparent;
+}
+
+button.read-link:disabled,
+button.bibtex-copy-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* BibTeX modal (publications page) */
+.bibtex-modal {
+    border: none;
+    padding: 0;
+    margin: 0;
+    max-width: min(720px, calc(100vw - 2rem));
+    width: min(720px, calc(100vw - 2rem));
+    background: transparent;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+}
+
+.bibtex-modal[open] {
+    display: block;
+}
+
+.bibtex-modal::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.bibtex-modal-panel {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+}
+
+.bibtex-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.bibtex-modal-header h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-primary, #111827);
+}
+
+.bibtex-modal-close {
+    border: none;
+    background: transparent;
+    color: #6b7280;
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.15rem 0.45rem;
+    border-radius: 6px;
+}
+
+.bibtex-modal-close:hover {
+    color: #111827;
+    background: #f3f4f6;
+}
+
+.bibtex-modal-content {
+    margin: 0;
+    padding: 1rem 1.25rem;
+    max-height: min(50vh, 420px);
+    overflow: auto;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: #1f2937;
+    background: #f9fafb;
+    border: none;
+}
+
+.bibtex-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.75rem 1.25rem 1.25rem;
+}
+
+body.dark-mode .bibtex-modal-panel {
+    background: #27272a;
+    border-color: rgba(115, 115, 115, 0.4);
+}
+
+body.dark-mode .bibtex-modal-header {
+    border-bottom-color: rgba(115, 115, 115, 0.4);
+}
+
+body.dark-mode .bibtex-modal-header h2 {
+    color: #f9fafb;
+}
+
+body.dark-mode .bibtex-modal-close {
+    color: #a1a1aa;
+}
+
+body.dark-mode .bibtex-modal-close:hover {
+    color: #f9fafb;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .bibtex-modal-content {
+    color: #e5e7eb;
+    background: rgba(0, 0, 0, 0.25);
+}
+
 /* Research Profiles */
 #research-profiles {
     padding: 3rem 0;
