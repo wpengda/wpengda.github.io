@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Scatter - Pengda Wang</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="icon" type="image/png" sizes="512x512" href="../images/android-chrome-512x512.png">
+    <style>
+        .selection-page {
+            overflow-x: hidden;
+        }
+
+        .sel-wrap {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 2.25rem 1.5rem 3.5rem;
+        }
+
+        a.sel-back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0 0 1.35rem -0.85rem;
+            padding: 0.72rem 1.15rem;
+            border-radius: 999px;
+            border: 1px solid #e4e4e7;
+            background: #fff;
+            color: #18181b;
+            font-size: 0.98rem;
+            font-weight: 700;
+            text-decoration: none;
+            line-height: 1;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+            transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+        }
+
+        a.sel-back-btn svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        a.sel-back-btn:hover {
+            color: #0d9488;
+            border-color: #14b8a6;
+            background: #f0fdfa;
+        }
+
+        .sel-hero {
+            margin-bottom: 1.5rem;
+        }
+
+        .sel-hero h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: #18181b;
+            margin-bottom: 0.45rem;
+        }
+
+        .sel-hero p {
+            color: #71717a;
+            font-size: 1.02rem;
+            line-height: 1.6;
+            max-width: none;
+        }
+
+        .sel-sliders {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.9rem;
+            margin-bottom: 1.15rem;
+            align-items: stretch;
+        }
+
+        .sel-slider-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: #fff;
+            border: 1px solid #e4e4e7;
+            border-radius: 14px;
+            padding: 1rem 1.1rem 0.95rem;
+        }
+
+        .sel-slider-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.75rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .sel-slider-card label {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: #18181b;
+        }
+
+        .sel-slider-card label span {
+            display: block;
+            margin-top: 0.12rem;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #a1a1aa;
+        }
+
+        .sel-slider-value {
+            font-variant-numeric: tabular-nums;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: #0d9488;
+            flex-shrink: 0;
+        }
+
+        .sel-slider-hint {
+            flex: 1;
+            font-size: 0.84rem;
+            color: #71717a;
+            margin: 0.15rem 0 0.85rem;
+            line-height: 1.45;
+            min-height: 2.6em;
+        }
+
+        .sel-slider-card input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 4px;
+            border-radius: 999px;
+            background: #e4e4e7;
+            outline: none;
+            margin: 0;
+        }
+
+        .sel-slider-card input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #14b8a6;
+            border: 2px solid #fff;
+            box-shadow: 0 1px 4px rgba(15, 23, 42, 0.18);
+            cursor: pointer;
+        }
+
+        .sel-slider-card input[type="range"]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #14b8a6;
+            border: 2px solid #fff;
+            box-shadow: 0 1px 4px rgba(15, 23, 42, 0.18);
+            cursor: pointer;
+        }
+
+        .sel-stage {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 260px;
+            gap: 1rem;
+            align-items: start;
+        }
+
+        .sel-plot-card {
+            position: relative;
+            background: #fff;
+            border: 1px solid #e4e4e7;
+            border-radius: 16px;
+            min-height: 560px;
+            height: min(64vh, 720px);
+            overflow: hidden;
+        }
+
+        .sel-plot-card canvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            cursor: crosshair;
+        }
+
+        .sel-tooltip {
+            position: absolute;
+            z-index: 3;
+            display: none;
+            min-width: 200px;
+            max-width: 260px;
+            padding: 0.7rem 0.85rem 0.75rem;
+            border-radius: 12px;
+            background: #fff;
+            border: 1px solid #e4e4e7;
+            box-shadow: 0 12px 28px -16px rgba(15, 23, 42, 0.45);
+            pointer-events: none;
+        }
+
+        .sel-tooltip.is-on {
+            display: block;
+        }
+
+        .sel-tooltip-title {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            color: #52525b;
+            margin-bottom: 0.35rem;
+        }
+
+        .sel-tooltip-count {
+            font-variant-numeric: tabular-nums;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #18181b;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+        }
+
+        .sel-tooltip-share {
+            margin-top: 0.28rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #0d9488;
+            line-height: 1.4;
+        }
+
+        .sel-legend {
+            position: absolute;
+            left: 76px;
+            top: 50px;
+            display: flex;
+            gap: 0.9rem;
+            z-index: 1;
+            pointer-events: none;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #52525b;
+            background: rgba(255, 255, 255, 0.88);
+            padding: 0.28rem 0.55rem;
+            border-radius: 999px;
+        }
+
+        .sel-legend span {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .sel-legend i {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .sel-legend .dot-sel { background: #0d9488; }
+        .sel-legend .dot-unsel { background: #9ca3af; }
+
+        .sel-stats {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sel-stat-card {
+            background: #fff;
+            border: 1px solid #e4e4e7;
+            border-radius: 16px;
+            padding: 1.15rem 1.2rem 1.2rem;
+        }
+
+        .sel-stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.75rem;
+        }
+
+        .sel-stat-row + .sel-stat-row {
+            margin-top: 0.75rem;
+        }
+
+        .sel-stat-label {
+            font-size: 0.92rem;
+            color: #52525b;
+            font-weight: 600;
+        }
+
+        .sel-stat-num {
+            font-variant-numeric: tabular-nums;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: #18181b;
+        }
+
+        .sel-stat-hero {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #f4f4f5;
+        }
+
+        .sel-stat-hero .sel-stat-label {
+            color: #71717a;
+            line-height: 1.45;
+            margin-bottom: 0.55rem;
+        }
+
+        .sel-stat-big {
+            font-variant-numeric: tabular-nums;
+            font-size: 3.1rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            line-height: 1;
+            color: #0d9488;
+        }
+
+        .sel-stat-note {
+            margin-top: 0.7rem;
+            font-size: 0.82rem;
+            color: #a1a1aa;
+            line-height: 1.5;
+        }
+
+        body.dark-mode .sel-hero h1 {
+            color: #fafafa;
+        }
+
+        body.dark-mode .sel-hero p,
+        body.dark-mode .sel-slider-hint,
+        body.dark-mode .sel-stat-label,
+        body.dark-mode .sel-stat-hero .sel-stat-label {
+            color: #a1a1aa;
+        }
+
+        body.dark-mode a.sel-back-btn {
+            background: #27272a;
+            border-color: #3f3f46;
+            color: #e4e4e7;
+        }
+
+        body.dark-mode a.sel-back-btn:hover {
+            color: #2dd4bf;
+            border-color: #14b8a6;
+            background: #1f2937;
+        }
+
+        body.dark-mode .sel-slider-card,
+        body.dark-mode .sel-plot-card,
+        body.dark-mode .sel-stat-card {
+            background: #27272a;
+            border-color: #3f3f46;
+        }
+
+        body.dark-mode .sel-legend {
+            color: #d4d4d8;
+            background: rgba(39, 39, 42, 0.88);
+        }
+
+        body.dark-mode .sel-legend .dot-sel { background: #2dd4bf; }
+        body.dark-mode .sel-legend .dot-unsel { background: #a1a1aa; }
+
+        body.dark-mode .sel-slider-card label,
+        body.dark-mode .sel-stat-num {
+            color: #fafafa;
+        }
+
+        body.dark-mode .sel-slider-card label span {
+            color: #71717a;
+        }
+
+        body.dark-mode .sel-stat-hero {
+            border-top-color: #3f3f46;
+        }
+
+        body.dark-mode .sel-stat-big {
+            color: #2dd4bf;
+        }
+
+        body.dark-mode .sel-slider-value {
+            color: #2dd4bf;
+        }
+
+        body.dark-mode .sel-tooltip {
+            background: #18181b;
+            border-color: #3f3f46;
+        }
+
+        body.dark-mode .sel-tooltip-title {
+            color: #a1a1aa;
+        }
+
+        body.dark-mode .sel-tooltip-count {
+            color: #fafafa;
+        }
+
+        body.dark-mode .sel-tooltip-share {
+            color: #2dd4bf;
+        }
+
+        @media (max-width: 1100px) {
+            .sel-sliders {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .sel-sliders,
+            .sel-stage {
+                grid-template-columns: 1fr;
+            }
+
+            .sel-plot-card {
+                min-height: 420px;
+                height: 68vw;
+                max-height: 560px;
+            }
+
+            .sel-legend {
+                left: 12px;
+                top: 10px;
+            }
+
+            .sel-stat-big {
+                font-size: 2.6rem;
+            }
+        }
+
+        .sel-pick {
+            margin-top: 1.15rem;
+        }
+
+        .sel-pick-head {
+            margin-bottom: 0.85rem;
+        }
+
+        .sel-pick-head h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #18181b;
+            margin-bottom: 0.25rem;
+        }
+
+        .sel-pick-head p {
+            font-size: 0.92rem;
+            color: #71717a;
+            line-height: 1.45;
+        }
+
+        .sel-pick-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.9rem;
+        }
+
+        .sel-pick-card {
+            background: #fff;
+            border: 1px solid #e4e4e7;
+            border-radius: 16px;
+            padding: 0.95rem 1rem 0.85rem;
+        }
+
+        .sel-pick-label {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #18181b;
+            margin-bottom: 0.35rem;
+        }
+
+        .sel-pick-card canvas {
+            display: block;
+            width: 100%;
+            height: 168px;
+        }
+
+        .sel-pick-meta {
+            margin-top: 0.4rem;
+            font-size: 0.82rem;
+            color: #52525b;
+            line-height: 1.45;
+            font-variant-numeric: tabular-nums;
+        }
+
+        body.dark-mode .sel-pick-head h2,
+        body.dark-mode .sel-pick-label {
+            color: #fafafa;
+        }
+
+        body.dark-mode .sel-pick-head p,
+        body.dark-mode .sel-pick-meta {
+            color: #a1a1aa;
+        }
+
+        body.dark-mode .sel-pick-card {
+            background: #27272a;
+            border-color: #3f3f46;
+        }
+
+        @media (max-width: 900px) {
+            .sel-pick-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="selection-page">
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <a href="../index.html" class="brand-link">
+                    <img src="../images/android-chrome-512x512_2.png" alt="Pengda Wang" class="nav-profile-pic">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html" class="active">Teaching</a></li>
+                <li><a href="awards.html">Awards</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">
+                    <span class="toggle-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="sel-wrap">
+            <a class="sel-back-btn" href="teaching.html">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M12.5 4.5 7 10l5.5 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                Teaching / Materials
+            </a>
+
+            <div class="sel-hero">
+                <h1>Selection Scatter</h1>
+                <p>Each point is an applicant. People to the right of the vertical line are selected; people above the horizontal line are successful. Click a point to see that applicant on both normal curves below.</p>
+            </div>
+
+            <section class="sel-sliders" aria-label="Parameters">
+                <div class="sel-slider-card">
+                    <div class="sel-slider-top">
+                        <label for="validitySlider">Validity</label>
+                        <div class="sel-slider-value" id="validityValue">0.40</div>
+                    </div>
+                    <p class="sel-slider-hint">How strongly test scores relate to job performance</p>
+                    <input type="range" id="validitySlider" min="0" max="100" value="40" step="1" aria-valuemin="0" aria-valuemax="1">
+                </div>
+                <div class="sel-slider-card">
+                    <div class="sel-slider-top">
+                        <label for="baseRateSlider">Base rate</label>
+                        <div class="sel-slider-value" id="baseRateValue">50%</div>
+                    </div>
+                    <p class="sel-slider-hint">The share of applicants who would succeed</p>
+                    <input type="range" id="baseRateSlider" min="5" max="95" value="50" step="1">
+                </div>
+                <div class="sel-slider-card">
+                    <div class="sel-slider-top">
+                        <label for="selectRatioSlider">Selection ratio</label>
+                        <div class="sel-slider-value" id="selectRatioValue">20%</div>
+                    </div>
+                    <p class="sel-slider-hint">How many applicants are selected</p>
+                    <input type="range" id="selectRatioSlider" min="5" max="95" value="20" step="1">
+                </div>
+                <div class="sel-slider-card">
+                    <div class="sel-slider-top">
+                        <label for="sampleSlider">Sample size</label>
+                        <div class="sel-slider-value" id="sampleValue">280</div>
+                    </div>
+                    <p class="sel-slider-hint">How many applicants are shown</p>
+                    <input type="range" id="sampleSlider" min="40" max="1000" value="280" step="10">
+                </div>
+            </section>
+
+            <section class="sel-stage">
+                <div class="sel-plot-card">
+                    <div class="sel-legend" aria-hidden="true">
+                        <span><i class="dot-sel"></i>Selected</span>
+                        <span><i class="dot-unsel"></i>Not selected</span>
+                    </div>
+                    <canvas id="scatter" role="img" aria-label="Scatter plot of applicant test scores and job performance"></canvas>
+                    <div class="sel-tooltip" id="regionTip">
+                        <div class="sel-tooltip-title" id="tipTitle"></div>
+                        <div class="sel-tooltip-count" id="tipCount"></div>
+                        <div class="sel-tooltip-share" id="tipShare"></div>
+                    </div>
+                </div>
+                <aside class="sel-stats">
+                    <div class="sel-stat-card">
+                        <div class="sel-stat-row">
+                            <div class="sel-stat-label">Selected</div>
+                            <div class="sel-stat-num" id="selectedPct">20%</div>
+                        </div>
+                        <div class="sel-stat-row">
+                            <div class="sel-stat-label">Not selected</div>
+                            <div class="sel-stat-num" id="unselectedPct">80%</div>
+                        </div>
+                        <div class="sel-stat-hero">
+                            <div class="sel-stat-label">Of those selected,<br>how many succeed</div>
+                            <div class="sel-stat-big" id="successPct">—</div>
+                            <p class="sel-stat-note" id="successNote"></p>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="sel-pick" id="pickPanel">
+                <div class="sel-pick-head">
+                    <h2>This applicant on each normal curve</h2>
+                    <p id="pickStatus">Click any point above to mark that applicant on both distributions.</p>
+                </div>
+                <div class="sel-pick-grid">
+                    <div class="sel-pick-card">
+                        <div class="sel-pick-label">Test score</div>
+                        <canvas id="normX" aria-label="Normal distribution of test scores"></canvas>
+                        <p class="sel-pick-meta" id="metaX"></p>
+                    </div>
+                    <div class="sel-pick-card">
+                        <div class="sel-pick-label">Job performance</div>
+                        <canvas id="normY" aria-label="Normal distribution of job performance"></canvas>
+                        <p class="sel-pick-meta" id="metaY"></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">© Pengda Wang. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const MAX_N = 1000;
+        const RANGE = 3.55;
+        let zx = [];
+        let ze = [];
+
+        const canvas = document.getElementById('scatter');
+        const ctx = canvas.getContext('2d');
+        const validitySlider = document.getElementById('validitySlider');
+        const baseRateSlider = document.getElementById('baseRateSlider');
+        const selectRatioSlider = document.getElementById('selectRatioSlider');
+        const sampleSlider = document.getElementById('sampleSlider');
+        const regionTip = document.getElementById('regionTip');
+        const normX = document.getElementById('normX');
+        const normY = document.getElementById('normY');
+        let hoverRegion = null;
+        let selectedIndex = null;
+        let plotModel = null;
+
+        function mulberry32(seed) {
+            return function () {
+                let t = seed += 0x6D2B79F5;
+                t = Math.imul(t ^ t >>> 15, t | 1);
+                t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+                return ((t ^ t >>> 14) >>> 0) / 4294967296;
+            };
+        }
+
+        function boxMuller(rng) {
+            const u = Math.max(rng(), 1e-12);
+            const v = rng();
+            return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+        }
+
+        function generateLatents() {
+            const rng = mulberry32(20260919);
+            zx = [];
+            ze = [];
+            for (let i = 0; i < MAX_N; i++) {
+                zx.push(boxMuller(rng));
+                ze.push(boxMuller(rng));
+            }
+        }
+
+        function sampleSize() {
+            return Number(sampleSlider.value);
+        }
+
+        function topCutoff(values, keepRate) {
+            const nKeep = Math.round(values.length * keepRate);
+            const sorted = values.slice().sort((a, b) => b - a);
+            if (nKeep <= 0) return sorted[0] + 1;
+            if (nKeep >= values.length) return sorted[sorted.length - 1] - 1;
+            return (sorted[nKeep - 1] + sorted[nKeep]) / 2;
+        }
+
+        function params() {
+            return {
+                r: Number(validitySlider.value) / 100,
+                baseRate: Number(baseRateSlider.value) / 100,
+                selectRatio: Number(selectRatioSlider.value) / 100
+            };
+        }
+
+        function buildPoints(r) {
+            const n = sampleSize();
+            const s = Math.sqrt(Math.max(0, 1 - r * r));
+            const points = [];
+            for (let i = 0; i < n; i++) {
+                points.push({
+                    x: zx[i],
+                    y: r * zx[i] + s * ze[i]
+                });
+            }
+            return points;
+        }
+
+        function isDark() {
+            return document.body.classList.contains('dark-mode');
+        }
+
+        function fillTrack(slider) {
+            const min = Number(slider.min);
+            const max = Number(slider.max);
+            const pct = ((Number(slider.value) - min) / (max - min)) * 100;
+            const filled = isDark() ? '#2dd4bf' : '#14b8a6';
+            const rest = isDark() ? '#3f3f46' : '#e4e4e7';
+            slider.style.background = `linear-gradient(to right, ${filled} 0%, ${filled} ${pct}%, ${rest} ${pct}%, ${rest} 100%)`;
+        }
+
+        function sizeCanvas() {
+            const dpr = window.devicePixelRatio || 1;
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = Math.max(1, Math.round(rect.width * dpr));
+            canvas.height = Math.max(1, Math.round(rect.height * dpr));
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+
+        const REGIONS = {
+            selGood: { title: 'Selected · Successful', selected: true },
+            selBad: { title: 'Selected · Unsuccessful', selected: true },
+            unselGood: { title: 'Not selected · Successful', selected: false },
+            unselBad: { title: 'Not selected · Unsuccessful', selected: false }
+        };
+
+        function regionKey(selected, successful) {
+            if (selected) return successful ? 'selGood' : 'selBad';
+            return successful ? 'unselGood' : 'unselBad';
+        }
+
+        function ratioText(part, whole) {
+            if (whole === 0) return '—';
+            return `${part} / ${whole} = ${Math.round((part / whole) * 100)}%`;
+        }
+
+        function erf(x) {
+            const sign = x < 0 ? -1 : 1;
+            x = Math.abs(x);
+            const t = 1 / (1 + 0.3275911 * x);
+            const y = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - 0.284496736) * t + 0.254829592) * t * Math.exp(-x * x);
+            return sign * y;
+        }
+
+        function ncdf(z) {
+            return 0.5 * (1 + erf(z / Math.SQRT2));
+        }
+
+        function npdf(z) {
+            return Math.exp(-0.5 * z * z) / Math.sqrt(2 * Math.PI);
+        }
+
+        function ordinal(n) {
+            const v = n % 100;
+            if (v >= 11 && v <= 13) return n + 'th';
+            switch (n % 10) {
+                case 1: return n + 'st';
+                case 2: return n + 'nd';
+                case 3: return n + 'rd';
+                default: return n + 'th';
+            }
+        }
+
+        function nearestPoint(offsetX, offsetY) {
+            if (!plotModel) return -1;
+            const { points, sx, sy, hitR } = plotModel;
+            let best = -1;
+            let bestD = hitR * hitR;
+            for (let i = 0; i < points.length; i++) {
+                const dx = sx(points[i].x) - offsetX;
+                const dy = sy(points[i].y) - offsetY;
+                const d = dx * dx + dy * dy;
+                if (d <= bestD) {
+                    bestD = d;
+                    best = i;
+                }
+            }
+            return best;
+        }
+
+        function sizeMini(canvas) {
+            const dpr = window.devicePixelRatio || 1;
+            const rect = canvas.getBoundingClientRect();
+            const ctxMini = canvas.getContext('2d');
+            canvas.width = Math.max(1, Math.round(rect.width * dpr));
+            canvas.height = Math.max(1, Math.round(rect.height * dpr));
+            ctxMini.setTransform(dpr, 0, 0, dpr, 0, 0);
+            return { ctx: ctxMini, w: rect.width, h: rect.height };
+        }
+
+        function drawDensity(canvas, z, cutoff) {
+            const { ctx: c, w, h } = sizeMini(canvas);
+            const dark = isDark();
+            const m = { t: 14, r: 14, b: 26, l: 14 };
+            const pw = w - m.l - m.r;
+            const ph = h - m.t - m.b;
+            const xmin = -RANGE;
+            const xmax = RANGE;
+            const ymax = 0.45;
+            const X = (v) => m.l + ((v - xmin) / (xmax - xmin)) * pw;
+            const Y = (p) => m.t + (1 - p / ymax) * ph;
+
+            c.clearRect(0, 0, w, h);
+            c.fillStyle = dark ? '#27272a' : '#ffffff';
+            c.fillRect(0, 0, w, h);
+
+            const cut = Math.min(xmax, Math.max(xmin, cutoff));
+            c.beginPath();
+            c.moveTo(X(cut), Y(0));
+            c.lineTo(X(cut), Y(npdf(cut)));
+            for (let i = 0; i <= 80; i++) {
+                const v = cut + (xmax - cut) * (i / 80);
+                c.lineTo(X(v), Y(npdf(v)));
+            }
+            c.lineTo(X(xmax), Y(0));
+            c.closePath();
+            c.fillStyle = dark ? 'rgba(45, 212, 191, 0.22)' : 'rgba(13, 148, 136, 0.16)';
+            c.fill();
+
+            c.beginPath();
+            for (let i = 0; i <= 140; i++) {
+                const v = xmin + (xmax - xmin) * (i / 140);
+                const p = npdf(v);
+                if (i === 0) c.moveTo(X(v), Y(p));
+                else c.lineTo(X(v), Y(p));
+            }
+            c.strokeStyle = dark ? '#d4d4d8' : '#3f3f46';
+            c.lineWidth = 1.7;
+            c.stroke();
+
+            c.beginPath();
+            c.moveTo(m.l, Y(0));
+            c.lineTo(m.l + pw, Y(0));
+            c.strokeStyle = dark ? '#3f3f46' : '#e4e4e7';
+            c.lineWidth = 1;
+            c.stroke();
+
+            c.setLineDash([4, 3]);
+            c.beginPath();
+            c.moveTo(X(cut), m.t);
+            c.lineTo(X(cut), Y(0));
+            c.strokeStyle = dark ? '#a1a1aa' : '#71717a';
+            c.lineWidth = 1.3;
+            c.stroke();
+            c.setLineDash([]);
+
+            if (z != null) {
+                const zc = Math.min(xmax, Math.max(xmin, z));
+                c.beginPath();
+                c.moveTo(X(zc), Y(npdf(zc)));
+                c.lineTo(X(zc), Y(0));
+                c.strokeStyle = dark ? '#2dd4bf' : '#0d9488';
+                c.lineWidth = 2;
+                c.stroke();
+                c.beginPath();
+                c.arc(X(zc), Y(npdf(zc)), 5.2, 0, Math.PI * 2);
+                c.fillStyle = dark ? '#2dd4bf' : '#0d9488';
+                c.fill();
+                c.lineWidth = 2;
+                c.strokeStyle = dark ? '#18181b' : '#ffffff';
+                c.stroke();
+            }
+
+            c.fillStyle = dark ? '#a1a1aa' : '#71717a';
+            c.font = '11px "Segoe UI", Roboto, sans-serif';
+            c.textAlign = 'center';
+            c.textBaseline = 'top';
+            for (const t of [-2, 0, 2]) {
+                c.fillText(String(t), X(t), Y(0) + 6);
+            }
+        }
+
+        function renderPick() {
+            if (!plotModel) return;
+            const p = selectedIndex != null ? plotModel.points[selectedIndex] : null;
+            const status = document.getElementById('pickStatus');
+            const metaX = document.getElementById('metaX');
+            const metaY = document.getElementById('metaY');
+
+            drawDensity(normX, p ? p.x : null, plotModel.xCut);
+            drawDensity(normY, p ? p.y : null, plotModel.yCut);
+
+            if (!p) {
+                status.textContent = 'Click any point above to mark that applicant on both distributions.';
+                metaX.textContent = 'Dashed line = selection cutoff. Shaded tail = selected.';
+                metaY.textContent = 'Dashed line = success criterion. Shaded tail = successful.';
+                return;
+            }
+
+            const selected = p.x >= plotModel.xCut;
+            const successful = p.y >= plotModel.yCut;
+            status.textContent = `Applicant ${selectedIndex + 1} of ${plotModel.points.length} · ${REGIONS[regionKey(selected, successful)].title}`;
+            const px = Math.round(ncdf(p.x) * 100);
+            const py = Math.round(ncdf(p.y) * 100);
+            metaX.textContent = `z = ${p.x.toFixed(2)} · ${ordinal(px)} percentile · ${selected ? 'selected (above cutoff)' : 'not selected (below cutoff)'}`;
+            metaY.textContent = `z = ${p.y.toFixed(2)} · ${ordinal(py)} percentile · ${successful ? 'successful (above criterion)' : 'unsuccessful (below criterion)'}`;
+        }
+
+        function revealPickPanel() {
+            const el = document.getElementById('pickPanel');
+            const r = el.getBoundingClientRect();
+            if (r.bottom > window.innerHeight - 24 || r.top < 72) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        function updateTooltip(key) {
+            if (!key || !plotModel) {
+                regionTip.classList.remove('is-on');
+                return;
+            }
+            const meta = REGIONS[key];
+            const count = plotModel.counts[key];
+            const group = meta.selected ? plotModel.nSelected : plotModel.nUnselected;
+            const groupLabel = meta.selected ? 'of all selected' : 'of all not selected';
+            document.getElementById('tipTitle').textContent = meta.title;
+            document.getElementById('tipCount').textContent = ratioText(count, group);
+            document.getElementById('tipShare').textContent = group === 0 ? '' : groupLabel;
+            regionTip.classList.add('is-on');
+        }
+
+        function placeTooltip(clientX, clientY) {
+            const card = canvas.parentElement.getBoundingClientRect();
+            const pad = 12;
+            let x = clientX - card.left + 16;
+            let y = clientY - card.top + 16;
+            const tw = regionTip.offsetWidth;
+            const th = regionTip.offsetHeight;
+            if (x + tw > card.width - pad) x = clientX - card.left - tw - 16;
+            if (y + th > card.height - pad) y = clientY - card.top - th - 16;
+            if (x < pad) x = pad;
+            if (y < pad) y = pad;
+            regionTip.style.left = `${x}px`;
+            regionTip.style.top = `${y}px`;
+        }
+
+        function regionFromPointer(offsetX, offsetY) {
+            if (!plotModel) return null;
+            const { margin, plotW, plotH, xCut, yCut, sx, sy } = plotModel;
+            if (offsetX < margin.left || offsetX > margin.left + plotW || offsetY < margin.top || offsetY > margin.top + plotH) {
+                return null;
+            }
+            return regionKey(offsetX >= sx(xCut), offsetY <= sy(yCut));
+        }
+
+        function setHoverRegion(key) {
+            if (hoverRegion === key) return;
+            hoverRegion = key;
+            updateTooltip(key);
+            draw();
+        }
+
+        function draw() {
+            const { r, baseRate, selectRatio } = params();
+            const points = buildPoints(r);
+            if (selectedIndex != null && selectedIndex >= points.length) selectedIndex = null;
+            const xCut = topCutoff(points.map((p) => p.x), selectRatio);
+            const yCut = topCutoff(points.map((p) => p.y), baseRate);
+
+            const counts = { selGood: 0, selBad: 0, unselGood: 0, unselBad: 0 };
+            for (const p of points) {
+                counts[regionKey(p.x >= xCut, p.y >= yCut)] += 1;
+            }
+            const nSelected = counts.selGood + counts.selBad;
+            const nUnselected = counts.unselGood + counts.unselBad;
+
+            const selectedDisplay = Math.round(selectRatio * 100);
+            document.getElementById('validityValue').textContent = r.toFixed(2);
+            document.getElementById('baseRateValue').textContent = Math.round(baseRate * 100) + '%';
+            document.getElementById('selectRatioValue').textContent = selectedDisplay + '%';
+            document.getElementById('sampleValue').textContent = String(points.length);
+            document.getElementById('selectedPct').textContent = selectedDisplay + '%';
+            document.getElementById('unselectedPct').textContent = (100 - selectedDisplay) + '%';
+
+            const successEl = document.getElementById('successPct');
+            const noteEl = document.getElementById('successNote');
+            if (nSelected === 0) {
+                successEl.textContent = '—';
+                noteEl.textContent = '';
+            } else {
+                successEl.textContent = Math.round((counts.selGood / nSelected) * 100) + '%';
+                noteEl.textContent = ratioText(counts.selGood, nSelected);
+            }
+
+            [validitySlider, baseRateSlider, selectRatioSlider, sampleSlider].forEach(fillTrack);
+
+            const dark = isDark();
+            const w = canvas.getBoundingClientRect().width;
+            const h = canvas.getBoundingClientRect().height;
+            const margin = { top: 44, right: 22, bottom: 48, left: 68 };
+            const plotW = w - margin.left - margin.right;
+            const plotH = h - margin.top - margin.bottom;
+            const sx = (x) => margin.left + ((x + RANGE) / (RANGE * 2)) * plotW;
+            const sy = (y) => margin.top + (1 - (y + RANGE) / (RANGE * 2)) * plotH;
+
+            const n = points.length;
+            const rUnsel = n > 600 ? 2.4 : n > 350 ? 3.0 : 3.6;
+            const rSel = n > 600 ? 2.9 : n > 350 ? 3.5 : 4.3;
+            plotModel = { margin, plotW, plotH, xCut, yCut, sx, sy, counts, nSelected, nUnselected, points, hitR: Math.max(12, rSel + 8) };
+            if (hoverRegion) updateTooltip(hoverRegion);
+
+            ctx.clearRect(0, 0, w, h);
+            ctx.fillStyle = dark ? '#27272a' : '#ffffff';
+            ctx.fillRect(0, 0, w, h);
+
+            ctx.save();
+            ctx.beginPath();
+            ctx.rect(margin.left, margin.top, plotW, plotH);
+            ctx.clip();
+
+            const xLine = sx(xCut);
+            const yLine = sy(yCut);
+            const right = margin.left + plotW;
+            const bottom = margin.top + plotH;
+
+            ctx.fillStyle = dark ? 'rgba(45, 212, 191, 0.07)' : 'rgba(20, 184, 166, 0.08)';
+            ctx.fillRect(xLine, margin.top, right - xLine, plotH);
+
+            if (hoverRegion) {
+                const boxes = {
+                    selGood: [xLine, margin.top, right - xLine, yLine - margin.top],
+                    selBad: [xLine, yLine, right - xLine, bottom - yLine],
+                    unselGood: [margin.left, margin.top, xLine - margin.left, yLine - margin.top],
+                    unselBad: [margin.left, yLine, xLine - margin.left, bottom - yLine]
+                };
+                const box = boxes[hoverRegion];
+                ctx.fillStyle = REGIONS[hoverRegion].selected
+                    ? (dark ? 'rgba(45, 212, 191, 0.16)' : 'rgba(13, 148, 136, 0.16)')
+                    : (dark ? 'rgba(161, 161, 170, 0.16)' : 'rgba(113, 113, 122, 0.10)');
+                ctx.fillRect(box[0], box[1], box[2], box[3]);
+            }
+
+            ctx.strokeStyle = dark ? '#3f3f46' : '#f4f4f5';
+            ctx.lineWidth = 1;
+            for (const t of [-2, 0, 2]) {
+                ctx.beginPath();
+                ctx.moveTo(sx(t), margin.top);
+                ctx.lineTo(sx(t), margin.top + plotH);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(margin.left, sy(t));
+                ctx.lineTo(margin.left + plotW, sy(t));
+                ctx.stroke();
+            }
+
+            const unselected = points.filter((p) => p.x < xCut);
+            const selected = points.filter((p) => p.x >= xCut);
+
+            function drawDots(list, color, radius, alpha) {
+                ctx.globalAlpha = alpha;
+                ctx.fillStyle = color;
+                for (const p of list) {
+                    ctx.beginPath();
+                    ctx.arc(sx(p.x), sy(p.y), radius, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+                ctx.globalAlpha = 1;
+            }
+
+            drawDots(unselected, dark ? '#a1a1aa' : '#9ca3af', rUnsel, 0.88);
+            drawDots(selected, dark ? '#2dd4bf' : '#0d9488', rSel, 0.95);
+
+            if (selectedIndex != null && points[selectedIndex]) {
+                const pick = points[selectedIndex];
+                ctx.setLineDash([4, 3]);
+                ctx.strokeStyle = dark ? 'rgba(45, 212, 191, 0.55)' : 'rgba(13, 148, 136, 0.45)';
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(sx(pick.x), margin.top);
+                ctx.lineTo(sx(pick.x), margin.top + plotH);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(margin.left, sy(pick.y));
+                ctx.lineTo(margin.left + plotW, sy(pick.y));
+                ctx.stroke();
+                ctx.setLineDash([]);
+                ctx.beginPath();
+                ctx.arc(sx(pick.x), sy(pick.y), rSel + 5, 0, Math.PI * 2);
+                ctx.strokeStyle = dark ? '#fafafa' : '#18181b';
+                ctx.lineWidth = 2.4;
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(sx(pick.x), sy(pick.y), rSel + 1.5, 0, Math.PI * 2);
+                ctx.fillStyle = dark ? '#2dd4bf' : '#0d9488';
+                ctx.fill();
+            }
+
+            ctx.strokeStyle = dark ? '#e4e4e7' : '#3f3f46';
+            ctx.lineWidth = 1.6;
+            ctx.setLineDash([5, 4]);
+            ctx.beginPath();
+            ctx.moveTo(xLine, margin.top);
+            ctx.lineTo(xLine, margin.top + plotH);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(margin.left, yLine);
+            ctx.lineTo(margin.left + plotW, yLine);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.restore();
+
+            ctx.strokeStyle = dark ? '#52525b' : '#d4d4d8';
+            ctx.lineWidth = 1;
+            ctx.strokeRect(margin.left, margin.top, plotW, plotH);
+
+            const labelFont = '12px "Segoe UI", Roboto, sans-serif';
+            const axisFont = '13px "Segoe UI", Roboto, sans-serif';
+
+            ctx.fillStyle = dark ? '#a1a1aa' : '#71717a';
+            ctx.font = labelFont;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'top';
+            const vLabelX = Math.min(Math.max(xLine, margin.left + 56), margin.left + plotW - 56);
+            ctx.fillText('Selection cutoff', vLabelX, 14);
+
+            ctx.textAlign = 'right';
+            ctx.textBaseline = 'bottom';
+            const hLabelY = Math.min(Math.max(yLine - 8, margin.top + 28), margin.top + plotH - 6);
+            ctx.fillText('Success criterion', margin.left + plotW - 8, hLabelY);
+
+            ctx.fillStyle = dark ? '#e4e4e7' : '#3f3f46';
+            ctx.font = axisFont;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('Test score', margin.left + plotW / 2, h - 18);
+
+            ctx.save();
+            ctx.translate(18, margin.top + plotH / 2);
+            ctx.rotate(-Math.PI / 2);
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('Job performance', 0, 0);
+            ctx.restore();
+            renderPick();
+        }
+
+        function refresh() {
+            sizeCanvas();
+            draw();
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            body.classList.toggle('dark-mode');
+            themeToggle.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+            themeToggle.setAttribute('aria-label', isDarkMode ? 'Switch to light mode' : 'Switch to dark mode');
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            draw();
+        }
+
+        let lastScrollTop = 0;
+        let isNavVisible = true;
+        let scrollTimeout;
+
+        function handleNavVisibility() {
+            const header = document.querySelector('header');
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScrollTop < lastScrollTop || currentScrollTop <= 100) {
+                if (!isNavVisible) {
+                    header.classList.remove('nav-hidden');
+                    header.classList.add('nav-visible');
+                    isNavVisible = true;
+                }
+            } else if (currentScrollTop > lastScrollTop && currentScrollTop > 200) {
+                if (isNavVisible) {
+                    header.classList.remove('nav-visible');
+                    header.classList.add('nav-hidden');
+                    isNavVisible = false;
+                }
+            }
+            lastScrollTop = currentScrollTop;
+        }
+
+        function handleMouseMove(e) {
+            const header = document.querySelector('header');
+            if (e.clientY <= 100 && !isNavVisible) {
+                header.classList.remove('nav-hidden');
+                header.classList.add('nav-visible');
+                isNavVisible = true;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                themeToggle.classList.add('dark-mode');
+                themeToggle.setAttribute('aria-label', 'Switch to light mode');
+            } else {
+                themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+            }
+
+            window.addEventListener('scroll', function () {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(handleNavVisibility, 10);
+            });
+            document.addEventListener('mousemove', handleMouseMove);
+            document.querySelector('header').classList.add('nav-visible');
+
+            generateLatents();
+            [validitySlider, baseRateSlider, selectRatioSlider, sampleSlider].forEach((slider) => {
+                slider.addEventListener('input', draw);
+            });
+            canvas.addEventListener('mousemove', function (e) {
+                const key = regionFromPointer(e.offsetX, e.offsetY);
+                setHoverRegion(key);
+                if (key) placeTooltip(e.clientX, e.clientY);
+                canvas.style.cursor = nearestPoint(e.offsetX, e.offsetY) >= 0 ? 'pointer' : 'crosshair';
+            });
+            canvas.addEventListener('mouseleave', function () {
+                setHoverRegion(null);
+                canvas.style.cursor = 'crosshair';
+            });
+            canvas.addEventListener('click', function (e) {
+                const i = nearestPoint(e.offsetX, e.offsetY);
+                if (i < 0) return;
+                selectedIndex = i;
+                draw();
+                revealPickPanel();
+            });
+            const observer = new ResizeObserver(refresh);
+            observer.observe(canvas.parentElement);
+            window.addEventListener('resize', renderPick);
+            refresh();
+        });
+    </script>
+</body>
+</html>
