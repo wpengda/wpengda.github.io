@@ -231,22 +231,24 @@
             position: absolute;
             left: 76px;
             top: 50px;
-            display: flex;
-            gap: 0.9rem;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 0.32rem 0.85rem;
             z-index: 1;
             pointer-events: none;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 600;
             color: #52525b;
-            background: rgba(255, 255, 255, 0.88);
-            padding: 0.28rem 0.55rem;
-            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.45rem 0.65rem;
+            border-radius: 12px;
         }
 
         .sel-legend span {
             display: flex;
             align-items: center;
             gap: 0.35rem;
+            white-space: nowrap;
         }
 
         .sel-legend i {
@@ -256,8 +258,10 @@
             display: inline-block;
         }
 
-        .sel-legend .dot-sel { background: #0d9488; }
-        .sel-legend .dot-unsel { background: #9ca3af; }
+        .sel-legend .dot-sel-good { background: #0d9488; }
+        .sel-legend .dot-sel-bad { background: #ea580c; }
+        .sel-legend .dot-unsel-good { background: #2563eb; }
+        .sel-legend .dot-unsel-bad { background: #78716c; }
 
         .sel-stats {
             display: flex;
@@ -358,8 +362,10 @@
             background: rgba(39, 39, 42, 0.88);
         }
 
-        body.dark-mode .sel-legend .dot-sel { background: #2dd4bf; }
-        body.dark-mode .sel-legend .dot-unsel { background: #a1a1aa; }
+        body.dark-mode .sel-legend .dot-sel-good { background: #2dd4bf; }
+        body.dark-mode .sel-legend .dot-sel-bad { background: #fb923c; }
+        body.dark-mode .sel-legend .dot-unsel-good { background: #60a5fa; }
+        body.dark-mode .sel-legend .dot-unsel-bad { background: #a8a29e; }
 
         body.dark-mode .sel-slider-card label,
         body.dark-mode .sel-stat-num {
@@ -578,8 +584,10 @@
             <section class="sel-stage">
                 <div class="sel-plot-card">
                     <div class="sel-legend" aria-hidden="true">
-                        <span><i class="dot-sel"></i>Selected</span>
-                        <span><i class="dot-unsel"></i>Not selected</span>
+                        <span><i class="dot-unsel-good"></i>FN</span>
+                        <span><i class="dot-sel-good"></i>TP</span>
+                        <span><i class="dot-unsel-bad"></i>TN</span>
+                        <span><i class="dot-sel-bad"></i>FP</span>
                     </div>
                     <canvas id="scatter" role="img" aria-label="Scatter plot of applicant test scores and job performance"></canvas>
                     <div class="sel-tooltip" id="regionTip">
@@ -731,11 +739,44 @@
         }
 
         const REGIONS = {
-            selGood: { title: 'Selected · Successful', selected: true },
-            selBad: { title: 'Selected · Unsuccessful', selected: true },
-            unselGood: { title: 'Not selected · Successful', selected: false },
-            unselBad: { title: 'Not selected · Unsuccessful', selected: false }
+            selGood: {
+                title: 'TP',
+                selected: true,
+                color: '#0d9488',
+                colorDark: '#2dd4bf',
+                wash: 'rgba(13, 148, 136, 0.14)',
+                washDark: 'rgba(45, 212, 191, 0.16)'
+            },
+            selBad: {
+                title: 'FP',
+                selected: true,
+                color: '#ea580c',
+                colorDark: '#fb923c',
+                wash: 'rgba(234, 88, 12, 0.12)',
+                washDark: 'rgba(251, 146, 60, 0.16)'
+            },
+            unselGood: {
+                title: 'FN',
+                selected: false,
+                color: '#2563eb',
+                colorDark: '#60a5fa',
+                wash: 'rgba(37, 99, 235, 0.10)',
+                washDark: 'rgba(96, 165, 250, 0.16)'
+            },
+            unselBad: {
+                title: 'TN',
+                selected: false,
+                color: '#78716c',
+                colorDark: '#a8a29e',
+                wash: 'rgba(120, 113, 108, 0.10)',
+                washDark: 'rgba(168, 162, 158, 0.14)'
+            }
         };
+
+        function regionColor(key, dark) {
+            const meta = REGIONS[key];
+            return dark ? meta.colorDark : meta.color;
+        }
 
         function regionKey(selected, successful) {
             if (selected) return successful ? 'selGood' : 'selBad';
@@ -1026,9 +1067,6 @@
             const right = margin.left + plotW;
             const bottom = margin.top + plotH;
 
-            ctx.fillStyle = dark ? 'rgba(45, 212, 191, 0.07)' : 'rgba(20, 184, 166, 0.08)';
-            ctx.fillRect(xLine, margin.top, right - xLine, plotH);
-
             if (hoverRegion) {
                 const boxes = {
                     selGood: [xLine, margin.top, right - xLine, yLine - margin.top],
@@ -1037,9 +1075,8 @@
                     unselBad: [margin.left, yLine, xLine - margin.left, bottom - yLine]
                 };
                 const box = boxes[hoverRegion];
-                ctx.fillStyle = REGIONS[hoverRegion].selected
-                    ? (dark ? 'rgba(45, 212, 191, 0.16)' : 'rgba(13, 148, 136, 0.16)')
-                    : (dark ? 'rgba(161, 161, 170, 0.16)' : 'rgba(113, 113, 122, 0.10)');
+                const meta = REGIONS[hoverRegion];
+                ctx.fillStyle = dark ? meta.washDark : meta.wash;
                 ctx.fillRect(box[0], box[1], box[2], box[3]);
             }
 
@@ -1056,9 +1093,6 @@
                 ctx.stroke();
             }
 
-            const unselected = points.filter((p) => p.x < xCut);
-            const selected = points.filter((p) => p.x >= xCut);
-
             function drawDots(list, color, radius, alpha) {
                 ctx.globalAlpha = alpha;
                 ctx.fillStyle = color;
@@ -1070,13 +1104,22 @@
                 ctx.globalAlpha = 1;
             }
 
-            drawDots(unselected, dark ? '#a1a1aa' : '#9ca3af', rUnsel, 0.88);
-            drawDots(selected, dark ? '#2dd4bf' : '#0d9488', rSel, 0.95);
+            const grouped = { selGood: [], selBad: [], unselGood: [], unselBad: [] };
+            for (const p of points) {
+                grouped[regionKey(p.x >= xCut, p.y >= yCut)].push(p);
+            }
+            drawDots(grouped.unselBad, regionColor('unselBad', dark), rUnsel, 0.88);
+            drawDots(grouped.unselGood, regionColor('unselGood', dark), rUnsel, 0.9);
+            drawDots(grouped.selBad, regionColor('selBad', dark), rSel, 0.92);
+            drawDots(grouped.selGood, regionColor('selGood', dark), rSel, 0.95);
 
             if (selectedIndex != null && points[selectedIndex]) {
                 const pick = points[selectedIndex];
+                const pickKey = regionKey(pick.x >= xCut, pick.y >= yCut);
+                const pickColor = regionColor(pickKey, dark);
                 ctx.setLineDash([4, 3]);
-                ctx.strokeStyle = dark ? 'rgba(45, 212, 191, 0.55)' : 'rgba(13, 148, 136, 0.45)';
+                ctx.strokeStyle = pickColor;
+                ctx.globalAlpha = 0.45;
                 ctx.lineWidth = 1;
                 ctx.beginPath();
                 ctx.moveTo(sx(pick.x), margin.top);
@@ -1086,6 +1129,7 @@
                 ctx.moveTo(margin.left, sy(pick.y));
                 ctx.lineTo(margin.left + plotW, sy(pick.y));
                 ctx.stroke();
+                ctx.globalAlpha = 1;
                 ctx.setLineDash([]);
                 ctx.beginPath();
                 ctx.arc(sx(pick.x), sy(pick.y), rSel + 5, 0, Math.PI * 2);
@@ -1094,7 +1138,7 @@
                 ctx.stroke();
                 ctx.beginPath();
                 ctx.arc(sx(pick.x), sy(pick.y), rSel + 1.5, 0, Math.PI * 2);
-                ctx.fillStyle = dark ? '#2dd4bf' : '#0d9488';
+                ctx.fillStyle = pickColor;
                 ctx.fill();
             }
 
